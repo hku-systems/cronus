@@ -17,12 +17,14 @@ If otherwise specified, all Cronus's experiments run on one NVIDIA 2080 Ti GPU o
 
 ### Prepare
 
-1. Please login to our cluster following [this page](https://github.com/hku-systems/cronus/blob/main/micro_ae/servers.md).
-2. Please login to server 23 (sosp21ae@202.45.128.182) and go to `/home/micro22ae/cronus/` to run all the experiments, where we have set up all necessary environments.
+1. Please login to our cluster following instruction in [this page](https://github.com/hku-systems/cronus/blob/main/docs/servers.md) or setup Cronus on your own cluster using instruction in [this page](https://github.com/hku-systems/cronus/blob/main/docs/config.md).
+2. Please login to server 23 (jianyu@202.45.128.182) and go to `/home/micro22ae/cronus/` to run all the experiments, where we have set up all necessary environments.
 3. Each experiment will generate a figure in the `./figure` directory. You can download all generated figures to your computer by running `python3 ./tunnel.sh [private_key]` **on your computer**, which start an ssh tunnel and copy all files in `./figure` to your computer using `scp`.
 4. When the script is running, you may see `END` multiple times. The script is still running; please do not suspend the script.
 
 Please be noted that different evaluators cannot run experiments at the same time. This is because there is only one VM instance for each evaluation setup (XXX, XXX and Cronus). You can check whether other evaluators are running the experiments by XXX.
+
+### Experiment 0: A minimum working example (CUDA matrix addition)
 
 ### Experiment 1: End-to-end performance
 
