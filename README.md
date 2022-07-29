@@ -24,13 +24,13 @@ If otherwise specified, all Cronus's experiments run on one NVIDIA 2080 Ti GPU o
 
 Please be noted that different evaluators cannot run experiments at the same time. This is because there is only one VM instance for each evaluation setup (XXX, XXX and Cronus). You can check whether other evaluators are running the experiments by XXX.
 
-### Experiment 0: A minimum working example (CUDA matrix addition)
+### Kick-off Functional (CUDA matrix addition)
 
 ### Experiment 1: End-to-end performance
 
 #### Experiment 1-1: Performance of Cronus and baseline systems (50 mins)
 
-XXX
+TBD.
 
 **Command to run:**
 
@@ -40,20 +40,8 @@ bash run.sh performance
 
 **Output:**
 
-- XXX
+- TBD.
 
 **Expected results:**
 
-- XXX
-
-### Create the docker images
-
-**Prerequisite:**
-
-1. XXX
-
-**Configurations:**
-
-1. XXX
-
-2. XXX
+- TBD.
