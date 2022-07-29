@@ -1,0 +1,102 @@
+Patches relating to the TEE subsystem
+=====================================
+
+This is a list of all the patches that relates to the TEE subsystem. The
+text inside the brackets are the kernel version where it was introduced,
+followed by the sha1 hash in the upstream kernel tree.
+
+[v5.9-rc1] 5f178bb71e3a optee: enable support for multi-stage bus enumeration
+[v5.9-rc1] 58df195cd47d optee: use uuid for sysfs driver entry
+[v5.8-rc1] d8ed45c5dcd4 mmap locking API: use coccinelle to convert mmap_sem rwsem call sites
+[v5.8-rc1] 60b4000f5464 tee: fix crypto select
+[v5.8-rc1] c5b4312bea5d tee: optee: Add support for session login client UUID generation
+[v5.8-rc1] e33bcbab16d1 tee: add support for session's client UUID generation
+[v5.8-rc1] 104edb94cc4b tee: add private login method for kernel clients
+[v5.8-rc1] 2a6ba3f794e8 tee: enable support to register kernel memory
+[v5.8-rc1] 1115899e7aad tee: remove unnecessary NULL check in tee_shm_alloc()
+[v5.7-rc1] 758ecf13a41a tee: tee_shm_op_mmap(): use TEE_SHM_USER_MAPPED
+[v5.7-rc1] 5271b2011e44 tee: remove redundant teedev in struct tee_shm
+[v5.7-rc1] f1bbacedb0af tee: don't assign shm id for private shms
+[v5.7-rc1] c180f9bbe29a tee: remove unused tee_shm_priv_alloc()
+[v5.7-rc1] 59a135f6fb66 tee: remove linked list of struct tee_shm
+[v5.6] 36fa3e50085e tee: amdtee: out of bounds read in find_session()
+[v5.6-rc5] b83685bceedb tee: amdtee: fix memory leak in amdtee_open_session()
+[v5.6-rc4] 872d92dec353 tee: amdtee: amdtee depends on CRYPTO_DEV_CCP_DD
+[v5.6-rc1] 48d625e4c4ce tee: fix memory allocation failure checks on drv_data and amdtee
+[v5.6-rc1] 279c075dc1d2 tee: amdtee: remove redundant NULL check for pool
+[v5.6-rc1] f9568eae9247 tee: amdtee: rename err label to err_device_unregister
+[v5.6-rc1] 2929015535fa tee: amdtee: skip tee_device_unregister if tee_device_alloc fails
+[v5.6-rc1] f4c58c3758f9 tee: amdtee: print error message if tee not present
+[v5.6-rc1] 5ae63958a6de tee: amdtee: remove unused variable initialization
+[v5.6-rc1] bade7e1fbd34 tee: amdtee: check TEE status during driver initialization
+[v5.6-rc1] 757cc3e9ff1d tee: add AMD-TEE driver
+[v5.6-rc1] 1a74fa3894e7 tee: allow compilation of tee subsystem for AMD CPUs
+[v5.6-rc1] f349710e413a optee: model OP-TEE as a platform device/driver
+[v5.6-rc1] 42aa7c6eb3eb drm/tee_shm: Drop dma_buf_k(unmap) support
+[v5.5] 9e0caab8e0f9 tee: optee: Fix compilation issue with nommu
+[v5.5-rc7] 5a769f6ff439 optee: Fix multi page dynamic shm pool alloc
+[v5.5-rc1] 03212e347f94 tee: optee: fix device enumeration error handling
+[v5.5-rc1] a249dd200d03 tee: optee: Fix dynamic shm pool allocations
+[v5.5-rc1] 1832f2d8ff69 compat_ioctl: move more drivers to compat_ptr_ioctl
+[v5.4-rc1] 9f02b8f61f29 tee: optee: add might_sleep for RPC requests
+[v5.2-rc1] 9733b072a12a optee: allow to work without static shared memory
+[v5.1-rc1] 32356d309c22 tee: optee: update optee_msg.h and optee_smc.h to dual license
+[v5.1-rc1] 4f062dc1b759 tee: add cancellation support to client interface
+[v5.1-rc1] 62ade1bed27c tee: optee: Fix unsigned comparison with less than zero
+[v5.1-rc1] bb342f016862 tee: fix possible error pointer ctx dereferencing
+[v5.1-rc1] 50ceca6894ad tee: optee: Initialize some structs using memset instead of braces
+[v5.1-rc1] c3fa24af9244 tee: optee: add TEE bus device enumeration support
+[v5.1-rc1] 0fc1db9d1059 tee: add bus driver framework for TEE based devices
+[v5.1-rc1] 42bf4152d8a7 tee: add supp_nowait flag in tee_context struct
+[v5.0] c7c0d8df0b94 tee: optee: add missing of_node_put after of_device_is_available
+[v5.0-rc1] 3c15ddb97c77 tee: optee: log message if dynamic shm is enabled
+[v5.0-rc1] b2d102bd0146 tee: optee: avoid possible double list_del()
+[v4.20-rc1] 25559c22cef8 tee: add kernel internal client interface
+[v4.20-rc1] db878f76b9ff tee: optee: take DT status property into account
+[v4.19] 3249527f19d6 tee: optee: making OPTEE_SHM_NUM_PRIV_PAGES configurable via Kconfig
+[v4.19] cf89fe88a676 tee: replace getnstimeofday64() with ktime_get_real_ts64()
+[v4.17] ab9d3db5b320 tee: check shm references are consistent in offset/size
+[v4.17] bb765d1c331f tee: shm: fix use-after-free via temporarily dropped reference
+[v4.16] 5c5f80307ab2 tee: optee: report OP-TEE revision information
+[v4.16] 6e112de04278 tee: optee: GET_OS_REVISION: document a2 as a build identifier
+[v4.16] 7dd003aec201 correct max value for id allocation
+[v4.16] ded4c39e93f3 arm/arm64: smccc: Make function identifiers an unsigned quantity
+[v4.16] 2490cdf6435b tee: shm: Potential NULL dereference calling tee_shm_register()
+[v4.16] c94f31b526fe tee: shm: don't put_page on null shm->pages
+[v4.16] 80ec6f5de60b tee: shm: make function __tee_shm_alloc static
+[v4.16] cdbcf83d29c1 tee: optee: check type of registered shared memory
+[v4.16] 95ffe4ca4387 tee: add start argument to shm_register callback
+[v4.16] f681e08f671a tee: optee: fix header dependencies
+[v4.16] ef8e08d24ca8 tee: shm: inline tee_shm_get_id()
+[v4.16] 217e0250cccb tee: use reference counting for tee_context
+[v4.16] f58e236c9d66 tee: optee: enable dynamic SHM support
+[v4.16] abd135ba215c tee: optee: add optee-specific shared pool implementation
+[v4.16] d885cc5e0759 tee: optee: store OP-TEE capabilities in private data
+[v4.16] 53a107c812de tee: optee: add registered buffers handling into RPC calls
+[v4.16] 64cf9d8a672e tee: optee: add registered shared parameters handling
+[v4.16] 06ca79179c4e tee: optee: add shared buffer registration functions
+[v4.16] 3bb48ba5cd60 tee: optee: add page list manipulation functions
+[v4.16] de5c6dfc43da tee: optee: Update protocol definitions
+[v4.16] e0c69ae8bfb5 tee: shm: add page accessor functions
+[v4.16] b25946ad951c tee: shm: add accessors for buffer size and page offset
+[v4.16] 033ddf12bcf5 tee: add register user memory
+[v4.16] e2aca5d8928a tee: flexible shared memory pool creation
+[v4.16] 1647a5ac1754 optee: support asynchronous supplicant requests
+[v4.16] f2aa97240c84 tee: add TEE_IOCTL_PARAM_ATTR_META
+[v4.16] 84debcc53533 tee: add tee_param_is_memref() for driver use
+[v4.15] f044113113dd optee: fix invalid of_node_put() in optee_driver_init()
+[v4.14] 39e6519a3f13 tee: optee: sync with new naming of interrupts
+[v4.14] 059cf566e123 tee: indicate privileged dev in gen_caps
+[v4.14] a9980e947ec9 tee: optee: interruptible RPC sleep
+[v4.14] 96e72ddeec45 tee: optee: add const to tee_driver_ops and tee_desc structures
+[v4.14] 53e3ca5cee24 tee: tee_shm: Constify dma_buf_ops structures.
+[v4.14] 999616b8536c tee: add forward declaration for struct device
+[v4.14] efb14036bd7f tee: optee: fix uninitialized symbol 'parg'
+[v4.12] e84188852a72 tee: add ARM_SMCCC dependency
+[v4.12] 4fb0a5eb364d tee: add OP-TEE driver
+[v4.12] 967c9cca2cc5 tee: generic TEE subsystem
+[v4.5] 14457459f9ca ARM: 8480/2: arm64: add implementation for arm-smccc
+[v4.5] b329f95d70f3 ARM: 8479/2: add implementation for arm-smccc
+[v4.5] 98dd64f34f47 ARM: 8478/2: arm/arm64: add arm-smccc
+
+
