@@ -1,0 +1,4 @@
+make -C /home/jianyu/optee/build/../optee_os O=out/arm CFG_ARM64_core=y PLATFORM=vexpress-qemu_armv8a CROSS_COMPILE="/usr/bin/ccache /home/jianyu/optee/build/../toolchains/aarch64/bin/aarch64-linux-gnu-" CROSS_COMPILE_core="/usr/bin/ccache /home/jianyu/optee/build/../toolchains/aarch64/bin/aarch64-linux-gnu-" CROSS_COMPILE_ta_arm64="/usr/bin/ccache /home/jianyu/optee/build/../toolchains/aarch64/bin/aarch64-linux-gnu-" CROSS_COMPILE_ta_arm32="/usr/bin/ccache /home/jianyu/optee/build/../toolchains/aarch32/bin/arm-linux-gnueabihf-" CFG_TEE_CORE_LOG_LEVEL=3 DEBUG=0 CFG_TEE_BENCHMARK=n DEBUG=0
+make[1]: Entering directory '/home/jianyu/optee/optee_os'
+common.mk:451: recipe for target 'optee-os-common' failed
+make: *** [optee-os-common] Interrupt
