@@ -31,13 +31,13 @@ Please be noted that different evaluators cannot run experiments at the same tim
 1. Open one terminal (T1) and connect to the machine, create the normal OS terminal
 
 ```shell
-./cronus/soc_term 54310
+./cronus/soc_term/soc_term 54310
 
 ```
 
 2. Open one terminal (T2) and connect to the machine, create the secure OS terminal
 ```shell
-./cronus/soc_term 54311
+./cronus/soc_term/soc_term 54311
 
 ```
 
