@@ -14,7 +14,7 @@ For security reasons, our department only allow access to the gatekeeper using S
 
 ### Step 2: Connect to our server
 
-    ssh [server_account]@202.45.128.182
+    ssh jianyu@202.45.128.182
 
 The server account and server password are listed in our HotCRP response.
 
