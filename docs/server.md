@@ -6,7 +6,7 @@
 
 For security reasons, our department only allow access to the gatekeeper using SSH keys.
 
-*Updates: the department updates the security policy and allows only ssh forward now, please use instructions in step 3 and step 4 now.*
+***Updates: the department updates the security policy and allows only ssh forward now, please use instructions in 3. and 4..***
 
 1. Create a key file (e.g., id_rsa) and copy the private key from our HotCRP response into it.
 
