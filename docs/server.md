@@ -12,7 +12,7 @@ For security reasons, our department only allow access to the gatekeeper using S
 
 2. `chmod 400 [key_file_name]`.
 
-3. create a ssh tunnel that forward localhost:2233 to the evaluation server (202.45.128.182): `ssh -L localhost:2233:202.45.128.182:22 micro22@gatekeeper3.cs.hku.hk -i idrsa_micro22`.
+3. create a ssh tunnel that forward localhost:2233 to the evaluation server (202.45.128.182): `ssh -L localhost:2233:202.45.128.182:22 micro22@gatekeeper3.cs.hku.hk -i idrsa_micro22`, please ***keep this terminal running*** to keep the tunnel alive.
 
 
 ### Step 2: Connect to our server
