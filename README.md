@@ -18,7 +18,7 @@ If otherwise specified, all Cronus's experiments run on one NVIDIA 2080 Ti GPU o
 ### Prepare
 
 1. Please login to our cluster following instruction in [this page](https://github.com/hku-systems/cronus/blob/main/docs/server.md) or setup Cronus on your own cluster using instruction in [this page](https://github.com/hku-systems/cronus/blob/main/docs/config.md).
-2. Please login to the evaluation server (202.45.128.182, or localhost:2233 after setting the ssh tunnel in step 1) and go to `/home/jianyu/` to run all the experiments, where we have set up all necessary environments.
+2. Please login to the evaluation server (localhost:2233 after setting up the ssh tunnel in step 1) and go to `/home/jianyu/` to run all the experiments, where we have set up all necessary environments.
 3. Each experiment will generate a figure in the `./figure` directory. You can download all generated figures to your computer by running `python3 ./tunnel.sh [private_key]` **on your computer**, which start an ssh tunnel and copy all files in `./figure` to your computer using `scp`.
 4. When the script is running, you may see `END` multiple times. The script is still running; please do not suspend the script.
 
