@@ -48,11 +48,11 @@ Please be noted that different evaluators cannot run experiments at the same tim
 3. Open one terminal (T3) and connect to the machine, and start the VM
 ```shell
 cd cronus/build
-make run-only-bg
+sudo make run-only-bg
 (qemu) c
 ```
 
-4. Wait for the OS to boot up, after booting up, start the test program at T1
+4. Wait for the OS to boot up, after booting up, at T1, use `root` as username to login the vm and start the test program
 
 ```shell
 cronus_cuda
@@ -69,7 +69,7 @@ TBD.
 **Command to run:**
 
 ```shell
-bash run.sh performance
+Tbd
 ```
 
 **Output:**
