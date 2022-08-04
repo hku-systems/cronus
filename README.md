@@ -26,6 +26,10 @@ Please be noted that different evaluators cannot run experiments at the same tim
 
 ### Kick-off Functional (CUDA matrix addition)
 
+**Troubleshooting**
+
+1. If you see `Address already in use` when running the experiment, this may be caused by others running the experiments at the same time.
+
 **Command to run:**
 
 1. Open one terminal (T1) and connect to the machine, create the normal OS terminal
