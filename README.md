@@ -31,8 +31,8 @@ Please be noted that different evaluators cannot run experiments at the same tim
 ### Major Claims
 
 1. Cronus supports general accelerators (GPU) and programs (Experiment 1 and Experiment 2)
-2. Cronus incurs a low performance overhead compared with OPTEE (Experiment 1 and Experiment 2)
-3. Cronus is much faster than HIX-Trustzone (Experiment 1)
+2. Cronus incurs a low performance overhead compared with OPTEE (Experiment 1-1 and Experiment 1-2)
+3. Cronus is much faster than HIX-Trustzone (Experiment 1-1 and 1-3)
 
 ### Kick-off Functional (CUDA matrix addition)
 
