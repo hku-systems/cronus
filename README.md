@@ -187,3 +187,25 @@ Please runs experiments using the same steps as OPTEE, but in ```optee-hix``` (`
 
 
 ### Experiment 2: End-to-end performance of DNN Training (30 mins)
+
+#### Experiment 2-1: end-to-end performance of MNIST (LeNet) in Cronus
+
+Step 1-5 is the same as experiment 1-1, in Step 6, execute the following commands:
+```shell
+mnist_cuda
+```
+
+#### Experiment 2-2: end-to-end performance of MNIST (LeNet) in OPTEE
+
+Step 1-3 is the same as experiment 1-2, in Step 4, execute the following commands:
+```shell
+mnist_cuda
+```
+
+**Expected results in Experiment-1:**
+
+- Training MNIST in Cronus incurs moderate performance overhead compared with OPTEE.
+
+
+
+
