@@ -19,16 +19,15 @@ If otherwise specified, all Cronus's experiments run on one NVIDIA 2080 Ti GPU o
 
 1. Please login to our cluster following instruction in [this page](https://github.com/hku-systems/cronus/blob/main/docs/server.md) or setup Cronus on your own cluster using instruction in [this page](https://github.com/hku-systems/cronus/blob/main/docs/config.md).
 2. Please login to the evaluation server (localhost:2233 after setting up the ssh tunnel in step 1) and go to `/home/jianyu/` to run all the experiments, where we have set up all necessary environments.
-3. Each experiment will generate a figure in the `./figure` directory. You can download all generated figures to your computer by running `python3 ./tunnel.sh [private_key]` **on your computer**, which start an ssh tunnel and copy all files in `./figure` to your computer using `scp`.
-4. When the script is running, you may see `END` multiple times. The script is still running; please do not suspend the script.
 
 Please be noted that different evaluators cannot run experiments at the same time. This is because there is only one VM instance for each evaluation setup. You can check whether other evaluators are running the experiments by using ```ps -aux|grep qemu```.
 
-### Kick-off Functional (CUDA matrix addition)
-
-**Troubleshooting**
+### Troubleshooting
 
 1. If you see `Address already in use` when running the experiment, this may be caused by others running the experiments at the same time.
+
+
+### Kick-off Functional (CUDA matrix addition)
 
 **Command to run:**
 
