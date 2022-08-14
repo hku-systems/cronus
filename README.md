@@ -192,7 +192,7 @@ Please runs experiments using the same steps as OPTEE, but in ```optee-hix``` (`
 
 Step 1-5 is the same as experiment 1-1, in Step 6, execute the following commands:
 ```shell
-mnist_cuda
+dnn_mnist
 ```
 
 #### Experiment 2-2: end-to-end performance of MNIST (LeNet) in OPTEE
