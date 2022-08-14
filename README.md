@@ -28,6 +28,11 @@ Please be noted that different evaluators cannot run experiments at the same tim
 2. If the program takes too long to run (e.g., more than 1min) or there are crashes, please reboot the machine. Please also make sure ```check_cpu``` returns ```4``` to ensure that there are multiple CPU cores for evaluations running on Cronus VM.
 3. If the program returns a long execution time (e.g., 40s), please reboot the machine.
 
+### Major Claims
+
+1. Cronus supports general accelerators (GPU) and diverse programs (Experiment 1 and Experiment 2)
+2. Cronus incurs a low performance overhead compared with OPTEE (Experiment 1 and Experiment 2)
+
 ### Kick-off Functional (CUDA matrix addition)
 
 **Command to run:**
@@ -171,8 +176,11 @@ rodinia_srad
 
 - Each program will output the execution time (in seconds)
 
+#### Experiment 1-3: End-to-end performance of Rodinia in HIX-TrustZone
 
-**Expected results:**
+Please runs experiments using the same steps as OPTEE, but in ```optee-hix``` (```/home/jianyu/optee-hix``` in the evaluation machine).
+
+**Expected results in Experiment-1:**
 
 - The execution of Rodinia in Cronus incurs moderate performance overhead compared with Optee.
 
