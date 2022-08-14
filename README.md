@@ -70,7 +70,7 @@ check_cpu
 6. start the test program
 
 ```shell
-cronus_cuda
+cuda_test
 ```
 
 5. If you see the result is ```CUDA Result is 1```, then the program works smoothly
