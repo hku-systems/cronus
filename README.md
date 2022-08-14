@@ -130,7 +130,7 @@ rodinia_srad
 
 **Output:**
 
-- Each program will output the execution time (in seconds)
+- Each program will output the execution time (in seconds). Note that we measure the computation time of the program (i.e., the time for loading data from disks is not included), so the measured time is shorter than the execution of the whole program
 
 #### Experiment 1-2: End-to-end performance of Rodinia in OPTEE
 
