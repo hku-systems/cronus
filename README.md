@@ -68,7 +68,7 @@ This experiment evaluate Cronus's and Optee's performance on Rodinia.
 
 **Command to run:**
 
-Same as the Tick-off experiments, please boot up Cronus first, specificallyas as followes
+Same as the Tick-off experiments, please boot up Cronus VM first, specifically as as followes
 
 1. Open one terminal (T1) and connect to the machine, create the normal OS terminal
 
@@ -112,7 +112,7 @@ rodinia_srad
 
 **Command to run:**
 
-Same as the Tick-off experiments, please boot up Cronus first, specificallyas as followes
+Similar to the experiment 1-1, please boot up Optee VM first, specifically as as followes
 
 1. Open one terminal (T1) and connect to the machine, create the normal OS terminal
 
