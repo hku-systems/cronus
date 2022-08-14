@@ -52,7 +52,16 @@ sudo make run-only-bg
 (qemu) c
 ```
 
-4. Wait for the OS to boot up, after booting up, at T1, use `root` as username to login the vm and start the test program
+4. Wait for the OS to boot up, after booting up, at T1, use `root` as username to login the vm 
+
+5. Check the CPUs have been properly booted up
+
+```shell
+check_cpu
+# a proper bootup returns 4, please reboot the VM if it returns 1
+```
+
+6. start the test program
 
 ```shell
 cronus_cuda
@@ -90,8 +99,16 @@ sudo make run-only-bg
 (qemu) c
 ```
 
-4. Wait for the OS to boot up, after booting up, at T1, use `root` as username to login the vm and start the rodinia benchmark (9 programs)
+4. Wait for the OS to boot up, after booting up, at T1, use `root` as username to login the vm 
 
+5. Make sure that the CPUs have been properly booted up
+
+```shell
+check_cpu
+# a proper bootup returns 4, please reboot the VM if it returns 1
+```
+
+6. start the rodinia benchmark (9 programs)
 ```shell
 rodinia_bp
 rodinia_bfs
@@ -108,7 +125,7 @@ rodinia_srad
 
 - Each program will output the execution time (in seconds)
 
-#### Experiment 1-1: End-to-end performance of Rodinia in Cronus
+#### Experiment 1-2: End-to-end performance of Rodinia in OPTEE
 
 **Command to run:**
 
