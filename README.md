@@ -199,7 +199,7 @@ mnist_cuda
 
 Step 1-3 is the same as experiment 1-2, in Step 4, execute the following commands:
 ```shell
-mnist_cuda
+dnn_mnist
 ```
 
 **Expected results in Experiment-1:**
