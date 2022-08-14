@@ -110,6 +110,7 @@ check_cpu
 
 6. start the rodinia benchmark (9 programs)
 ```shell
+# these program will usually runs less than 60s, so a long execution time suggests possible bugs in the system, please reboot the machine for solving the problem (see troubleshooting).
 rodinia_bp
 rodinia_bfs
 rodinia_gs
@@ -154,7 +155,7 @@ sudo make run-only-bg
 4. Wait for the OS to boot up, after booting up, at T1, use `root` as username to login the vm and start the rodinia benchmark (9 programs)
 
 ```shell
-# these program will usually runs less than 60s, so a long execution time suggests possible bugs in the system, please reboot the machine for solving the problem (see troubleshooting).
+# these programs will usually runs less than 60s, so a long execution time suggests possible bugs in the system, please reboot the machine for solving the problem (see troubleshooting).
 rodinia_bp
 rodinia_bfs
 rodinia_gs
