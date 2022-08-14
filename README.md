@@ -60,22 +60,102 @@ cronus_cuda
 
 5. If you see the result is ```CUDA Result is 1```, then the program works smoothly
 
-### Experiment 1: End-to-end performance
+### Experiment 1: End-to-end performance of Rodinia (30 mins)
 
-#### Experiment 1-1: Performance of Cronus and baseline systems (50 mins)
+This experiment evaluate Cronus's and Optee's performance on Rodinia.
 
-TBD.
+#### Experiment 1-1: End-to-end performance of Rodinia in Cronus
 
 **Command to run:**
 
+Same as the Tick-off experiments, please boot up Cronus first, specificallyas as followes
+
+1. Open one terminal (T1) and connect to the machine, create the normal OS terminal
+
 ```shell
-Tbd
+./cronus/soc_term/soc_term 54310
+
+```
+
+2. Open one terminal (T2) and connect to the machine, create the secure OS terminal
+```shell
+./cronus/soc_term/soc_term 54311
+
+```
+
+3. Open one terminal (T3) and connect to the machine, and start the VM
+```shell
+cd cronus/build
+sudo make run-only-bg
+(qemu) c
+```
+
+4. Wait for the OS to boot up, after booting up, at T1, use `root` as username to login the vm and start the rodinia benchmark (9 programs)
+
+```shell
+rodinia_bp
+rodinia_bfs
+rodinia_gs
+rodinia_hs
+rodinia_lud
+rodinia_nn
+rodinia_nw
+rodinia_pf
+rodinia_srad
 ```
 
 **Output:**
 
-- TBD.
+- Each program will output the execution time (in seconds)
+
+#### Experiment 1-1: End-to-end performance of Rodinia in Cronus
+
+**Command to run:**
+
+Same as the Tick-off experiments, please boot up Cronus first, specificallyas as followes
+
+1. Open one terminal (T1) and connect to the machine, create the normal OS terminal
+
+```shell
+./optee/soc_term/soc_term 54310
+
+```
+
+2. Open one terminal (T2) and connect to the machine, create the secure OS terminal
+```shell
+./optee/soc_term/soc_term 54311
+
+```
+
+3. Open one terminal (T3) and connect to the machine, and start the VM
+```shell
+cd optee/build
+sudo make run-only-bg
+(qemu) c
+```
+
+4. Wait for the OS to boot up, after booting up, at T1, use `root` as username to login the vm and start the rodinia benchmark (9 programs)
+
+```shell
+rodinia_bp
+rodinia_bfs
+rodinia_gs
+rodinia_hs
+rodinia_lud
+rodinia_nn
+rodinia_nw
+rodinia_pf
+rodinia_srad
+```
+
+**Output:**
+
+- Each program will output the execution time (in seconds)
+
 
 **Expected results:**
 
-- TBD.
+- The execution of Rodinia in Cronus incurs moderate performance overhead compared with Optee.
+
+
+### Experiment 2: End-to-end performance of DNN Training (30 mins)
