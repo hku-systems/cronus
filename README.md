@@ -25,7 +25,8 @@ Please be noted that different evaluators cannot run experiments at the same tim
 ### Troubleshooting
 
 1. If you see `Address already in use` when running the experiment, this may be caused by others running the experiments at the same time.
-
+2. If the program takes too long to run (e.g., more than 1min) or there are crashes, please reboot the machine. Please also make sure ```check_cpu``` returns ```4``` to ensure that there are multiple CPU cores for evaluations running on Cronus VM.
+3. If the program returns a long execution time (e.g., 40s), please reboot the machine.
 
 ### Kick-off Functional (CUDA matrix addition)
 
