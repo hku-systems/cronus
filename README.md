@@ -33,6 +33,7 @@ Please be noted that different evaluators cannot run experiments at the same tim
 1. Cronus supports general accelerators (GPU) and programs (Experiment 1 and Experiment 2)
 2. Cronus incurs a low performance overhead compared with OPTEE (Experiment 1-1 and Experiment 1-2)
 3. Cronus is much faster than HIX-Trustzone (Experiment 1-1 and 1-3)
+4. Cronus's spatial sharing of GPU improves performance during resource (GPU) contention (experiment 3)
 
 ### Kick-off Functional (CUDA matrix addition)
 
@@ -207,5 +208,12 @@ dnn_mnist
 - Training MNIST in Cronus incurs moderate performance overhead compared with OPTEE.
 
 
+### Experiment 3: Spatial sharing of GPU in DNN training in OPTEE/Cronus
 
+For both OPTEE and Cronus, Step 1-5 is the same as experiment 1-1 (except that the the directory for running the experiment is different). Note that the machine has only four cores, so it is expected that running more than 2 programs (as Cronus requires extra threads for each mEnclave).
+
+```shell
+# (change 2 to the number of concurrent enclaves)
+dnn_mnist_spatial 2
+```
 
