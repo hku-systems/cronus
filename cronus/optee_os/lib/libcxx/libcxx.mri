@@ -1,0 +1,7 @@
+create TARGET
+addlib ORIGIN
+addlib "lib/libcxx/build/lib/libcxxo.a"
+addlib "lib/libcxx/build-abi/lib/libcxxabi.a"
+addlib lib/libcxx/build-unwind/lib/libunwind.a
+save
+end

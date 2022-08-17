@@ -1,0 +1,812 @@
+The system is: Linux - 4.15.0-142-generic - x86_64
+Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" succeeded.
+Compiler: /home/jianyu/optee/toolchains/aarch64/bin/aarch64-none-linux-gnu-g++ 
+Build flags: 
+Id flags:  
+
+The output was:
+0
+
+
+Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" produced "a.out"
+
+The CXX compiler identification is GNU, found in "/home/jianyu/optee/optee_os/lib/libcxx/build/CMakeFiles/3.18.4/CompilerIdCXX/a.out"
+
+Compiling the C compiler identification source file "CMakeCCompilerId.c" succeeded.
+Compiler: /home/jianyu/optee/toolchains/aarch64/bin/aarch64-none-linux-gnu-gcc 
+Build flags: 
+Id flags:  
+
+The output was:
+0
+
+
+Compilation of the C compiler identification source "CMakeCCompilerId.c" produced "a.out"
+
+The C compiler identification is GNU, found in "/home/jianyu/optee/optee_os/lib/libcxx/build/CMakeFiles/3.18.4/CompilerIdC/a.out"
+
+Detecting CXX compiler ABI info compiled with the following output:
+Change Dir: /home/jianyu/optee/optee_os/lib/libcxx/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_36277/fast && /usr/bin/make  -f CMakeFiles/cmTC_36277.dir/build.make CMakeFiles/cmTC_36277.dir/build
+make[1]: Entering directory '/home/jianyu/optee/optee_os/lib/libcxx/build/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_36277.dir/CMakeCXXCompilerABI.cpp.o
+/home/jianyu/optee/toolchains/aarch64/bin/aarch64-none-linux-gnu-g++   -v -o CMakeFiles/cmTC_36277.dir/CMakeCXXCompilerABI.cpp.o -c /usr/local/share/cmake-3.18/Modules/CMakeCXXCompilerABI.cpp
+Using built-in specs.
+COLLECT_GCC=/home/jianyu/optee/toolchains/aarch64/bin/aarch64-none-linux-gnu-g++
+Target: aarch64-none-linux-gnu
+Configured with: /tmp/dgboter/bbs/rhev-vm2--rhe6x86_64/buildbot/rhe6x86_64--aarch64-none-linux-gnu/build/src/gcc/configure --target=aarch64-none-linux-gnu --prefix= --with-sysroot=/aarch64-none-linux-gnu/libc --with-build-sysroot=/tmp/dgboter/bbs/rhev-vm2--rhe6x86_64/buildbot/rhe6x86_64--aarch64-none-linux-gnu/build/build-aarch64-none-linux-gnu/install//aarch64-none-linux-gnu/libc --with-bugurl=https://bugs.linaro.org/ --enable-gnu-indirect-function --enable-shared --disable-libssp --disable-libmudflap --enable-checking=release --enable-languages=c,c++,fortran --with-gmp=/tmp/dgboter/bbs/rhev-vm2--rhe6x86_64/buildbot/rhe6x86_64--aarch64-none-linux-gnu/build/build-aarch64-none-linux-gnu/host-tools --with-mpfr=/tmp/dgboter/bbs/rhev-vm2--rhe6x86_64/buildbot/rhe6x86_64--aarch64-none-linux-gnu/build/build-aarch64-none-linux-gnu/host-tools --with-mpc=/tmp/dgboter/bbs/rhev-vm2--rhe6x86_64/buildbot/rhe6x86_64--aarch64-none-linux-gnu/build/build-aarch64-none-linux-gnu/host-tools --with-isl=/tmp/dgboter/bbs/rhev-vm2--rhe6x86_64/buildbot/rhe6x86_64--aarch64-none-linux-gnu/build/build-aarch64-none-linux-gnu/host-tools --enable-fix-cortex-a53-843419 --with-pkgversion='GNU Toolchain for the A-profile Architecture 9.2-2019.12 (arm-9.10)'
+Thread model: posix
+gcc version 9.2.1 20191025 (GNU Toolchain for the A-profile Architecture 9.2-2019.12 (arm-9.10)) 
+COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_36277.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mlittle-endian' '-mabi=lp64'
+ /home/jianyu/optee/toolchains/aarch64/bin/../libexec/gcc/aarch64-none-linux-gnu/9.2.1/cc1plus -quiet -v -iprefix /home/jianyu/optee/toolchains/aarch64/bin/../lib/gcc/aarch64-none-linux-gnu/9.2.1/ -isysroot /home/jianyu/optee/toolchains/aarch64/bin/../aarch64-none-linux-gnu/libc -D_GNU_SOURCE /usr/local/share/cmake-3.18/Modules/CMakeCXXCompilerABI.cpp -quiet -dumpbase CMakeCXXCompilerABI.cpp -mlittle-endian -mabi=lp64 -auxbase-strip CMakeFiles/cmTC_36277.dir/CMakeCXXCompilerABI.cpp.o -version -o /tmp/ccNOdnXs.s
+GNU C++14 (GNU Toolchain for the A-profile Architecture 9.2-2019.12 (arm-9.10)) version 9.2.1 20191025 (aarch64-none-linux-gnu)
+	compiled by GNU C version 4.8.1, GMP version 4.3.2, MPFR version 3.1.6, MPC version 1.0.3, isl version isl-0.15-1-g835ea3a-GMP
+
+GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
+ignoring duplicate directory "/home/jianyu/optee/toolchains/aarch64/bin/../lib/gcc/../../lib/gcc/aarch64-none-linux-gnu/9.2.1/../../../../aarch64-none-linux-gnu/include/c++/9.2.1"
+ignoring duplicate directory "/home/jianyu/optee/toolchains/aarch64/bin/../lib/gcc/../../lib/gcc/aarch64-none-linux-gnu/9.2.1/../../../../aarch64-none-linux-gnu/include/c++/9.2.1/aarch64-none-linux-gnu"
+ignoring duplicate directory "/home/jianyu/optee/toolchains/aarch64/bin/../lib/gcc/../../lib/gcc/aarch64-none-linux-gnu/9.2.1/../../../../aarch64-none-linux-gnu/include/c++/9.2.1/backward"
+ignoring duplicate directory "/home/jianyu/optee/toolchains/aarch64/bin/../lib/gcc/../../lib/gcc/aarch64-none-linux-gnu/9.2.1/include"
+ignoring nonexistent directory "/home/jianyu/optee/toolchains/aarch64/bin/../aarch64-none-linux-gnu/libc/usr/local/include"
+ignoring duplicate directory "/home/jianyu/optee/toolchains/aarch64/bin/../lib/gcc/../../lib/gcc/aarch64-none-linux-gnu/9.2.1/include-fixed"
+ignoring duplicate directory "/home/jianyu/optee/toolchains/aarch64/bin/../lib/gcc/../../lib/gcc/aarch64-none-linux-gnu/9.2.1/../../../../aarch64-none-linux-gnu/include"
+#include "..." search starts here:
+#include <...> search starts here:
+ /home/jianyu/optee/toolchains/aarch64/bin/../lib/gcc/aarch64-none-linux-gnu/9.2.1/../../../../aarch64-none-linux-gnu/include/c++/9.2.1
+ /home/jianyu/optee/toolchains/aarch64/bin/../lib/gcc/aarch64-none-linux-gnu/9.2.1/../../../../aarch64-none-linux-gnu/include/c++/9.2.1/aarch64-none-linux-gnu
+ /home/jianyu/optee/toolchains/aarch64/bin/../lib/gcc/aarch64-none-linux-gnu/9.2.1/../../../../aarch64-none-linux-gnu/include/c++/9.2.1/backward
+ /home/jianyu/optee/toolchains/aarch64/bin/../lib/gcc/aarch64-none-linux-gnu/9.2.1/include
+ /home/jianyu/optee/toolchains/aarch64/bin/../lib/gcc/aarch64-none-linux-gnu/9.2.1/include-fixed
+ /home/jianyu/optee/toolchains/aarch64/bin/../lib/gcc/aarch64-none-linux-gnu/9.2.1/../../../../aarch64-none-linux-gnu/include
+ /home/jianyu/optee/toolchains/aarch64/bin/../aarch64-none-linux-gnu/libc/usr/include
+End of search list.
+GNU C++14 (GNU Toolchain for the A-profile Architecture 9.2-2019.12 (arm-9.10)) version 9.2.1 20191025 (aarch64-none-linux-gnu)
+	compiled by GNU C version 4.8.1, GMP version 4.3.2, MPFR version 3.1.6, MPC version 1.0.3, isl version isl-0.15-1-g835ea3a-GMP
+
+GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
+Compiler executable checksum: 2c1b06ae38fc097703f75fa12d3b7029
+COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_36277.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mlittle-endian' '-mabi=lp64'
+ /home/jianyu/optee/toolchains/aarch64/bin/../lib/gcc/aarch64-none-linux-gnu/9.2.1/../../../../aarch64-none-linux-gnu/bin/as -v -EL -mabi=lp64 -o CMakeFiles/cmTC_36277.dir/CMakeCXXCompilerABI.cpp.o /tmp/ccNOdnXs.s
+GNU assembler version 2.33.1 (aarch64-none-linux-gnu) using BFD version (GNU Toolchain for the A-profile Architecture 9.2-2019.12 (arm-9.10)) 2.33.1.20191209
+COMPILER_PATH=/home/jianyu/optee/toolchains/aarch64/bin/../libexec/gcc/aarch64-none-linux-gnu/9.2.1/:/home/jianyu/optee/toolchains/aarch64/bin/../libexec/gcc/:/home/jianyu/optee/toolchains/aarch64/bin/../lib/gcc/aarch64-none-linux-gnu/9.2.1/../../../../aarch64-none-linux-gnu/bin/
+LIBRARY_PATH=/home/jianyu/optee/toolchains/aarch64/bin/../lib/gcc/aarch64-none-linux-gnu/9.2.1/:/home/jianyu/optee/toolchains/aarch64/bin/../lib/gcc/:/home/jianyu/optee/toolchains/aarch64/bin/../lib/gcc/aarch64-none-linux-gnu/9.2.1/../../../../aarch64-none-linux-gnu/lib/../lib64/:/home/jianyu/optee/toolchains/aarch64/bin/../aarch64-none-linux-gnu/libc/lib/../lib64/:/home/jianyu/optee/toolchains/aarch64/bin/../aarch64-none-linux-gnu/libc/usr/lib/../lib64/:/home/jianyu/optee/toolchains/aarch64/bin/../lib/gcc/aarch64-none-linux-gnu/9.2.1/../../../../aarch64-none-linux-gnu/lib/:/home/jianyu/optee/toolchains/aarch64/bin/../aarch64-none-linux-gnu/libc/lib/:/home/jianyu/optee/toolchains/aarch64/bin/../aarch64-none-linux-gnu/libc/usr/lib/
+COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_36277.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mlittle-endian' '-mabi=lp64'
+Linking CXX executable cmTC_36277
+/usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_36277.dir/link.txt --verbose=1
+/home/jianyu/optee/toolchains/aarch64/bin/aarch64-none-linux-gnu-g++  -v CMakeFiles/cmTC_36277.dir/CMakeCXXCompilerABI.cpp.o -o cmTC_36277 
+Using built-in specs.
+COLLECT_GCC=/home/jianyu/optee/toolchains/aarch64/bin/aarch64-none-linux-gnu-g++
+COLLECT_LTO_WRAPPER=/home/jianyu/optee/toolchains/aarch64/bin/../libexec/gcc/aarch64-none-linux-gnu/9.2.1/lto-wrapper
+Target: aarch64-none-linux-gnu
+Configured with: /tmp/dgboter/bbs/rhev-vm2--rhe6x86_64/buildbot/rhe6x86_64--aarch64-none-linux-gnu/build/src/gcc/configure --target=aarch64-none-linux-gnu --prefix= --with-sysroot=/aarch64-none-linux-gnu/libc --with-build-sysroot=/tmp/dgboter/bbs/rhev-vm2--rhe6x86_64/buildbot/rhe6x86_64--aarch64-none-linux-gnu/build/build-aarch64-none-linux-gnu/install//aarch64-none-linux-gnu/libc --with-bugurl=https://bugs.linaro.org/ --enable-gnu-indirect-function --enable-shared --disable-libssp --disable-libmudflap --enable-checking=release --enable-languages=c,c++,fortran --with-gmp=/tmp/dgboter/bbs/rhev-vm2--rhe6x86_64/buildbot/rhe6x86_64--aarch64-none-linux-gnu/build/build-aarch64-none-linux-gnu/host-tools --with-mpfr=/tmp/dgboter/bbs/rhev-vm2--rhe6x86_64/buildbot/rhe6x86_64--aarch64-none-linux-gnu/build/build-aarch64-none-linux-gnu/host-tools --with-mpc=/tmp/dgboter/bbs/rhev-vm2--rhe6x86_64/buildbot/rhe6x86_64--aarch64-none-linux-gnu/build/build-aarch64-none-linux-gnu/host-tools --with-isl=/tmp/dgboter/bbs/rhev-vm2--rhe6x86_64/buildbot/rhe6x86_64--aarch64-none-linux-gnu/build/build-aarch64-none-linux-gnu/host-tools --enable-fix-cortex-a53-843419 --with-pkgversion='GNU Toolchain for the A-profile Architecture 9.2-2019.12 (arm-9.10)'
+Thread model: posix
+gcc version 9.2.1 20191025 (GNU Toolchain for the A-profile Architecture 9.2-2019.12 (arm-9.10)) 
+COMPILER_PATH=/home/jianyu/optee/toolchains/aarch64/bin/../libexec/gcc/aarch64-none-linux-gnu/9.2.1/:/home/jianyu/optee/toolchains/aarch64/bin/../libexec/gcc/:/home/jianyu/optee/toolchains/aarch64/bin/../lib/gcc/aarch64-none-linux-gnu/9.2.1/../../../../aarch64-none-linux-gnu/bin/
+LIBRARY_PATH=/home/jianyu/optee/toolchains/aarch64/bin/../lib/gcc/aarch64-none-linux-gnu/9.2.1/:/home/jianyu/optee/toolchains/aarch64/bin/../lib/gcc/:/home/jianyu/optee/toolchains/aarch64/bin/../lib/gcc/aarch64-none-linux-gnu/9.2.1/../../../../aarch64-none-linux-gnu/lib/../lib64/:/home/jianyu/optee/toolchains/aarch64/bin/../aarch64-none-linux-gnu/libc/lib/../lib64/:/home/jianyu/optee/toolchains/aarch64/bin/../aarch64-none-linux-gnu/libc/usr/lib/../lib64/:/home/jianyu/optee/toolchains/aarch64/bin/../lib/gcc/aarch64-none-linux-gnu/9.2.1/../../../../aarch64-none-linux-gnu/lib/:/home/jianyu/optee/toolchains/aarch64/bin/../aarch64-none-linux-gnu/libc/lib/:/home/jianyu/optee/toolchains/aarch64/bin/../aarch64-none-linux-gnu/libc/usr/lib/
+COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_36277' '-shared-libgcc' '-mlittle-endian' '-mabi=lp64'
+ /home/jianyu/optee/toolchains/aarch64/bin/../libexec/gcc/aarch64-none-linux-gnu/9.2.1/collect2 -plugin /home/jianyu/optee/toolchains/aarch64/bin/../libexec/gcc/aarch64-none-linux-gnu/9.2.1/liblto_plugin.so -plugin-opt=/home/jianyu/optee/toolchains/aarch64/bin/../libexec/gcc/aarch64-none-linux-gnu/9.2.1/lto-wrapper -plugin-opt=-fresolution=/tmp/ccHQTlGu.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --sysroot=/home/jianyu/optee/toolchains/aarch64/bin/../aarch64-none-linux-gnu/libc --eh-frame-hdr -dynamic-linker /lib/ld-linux-aarch64.so.1 -X -EL -maarch64linux --fix-cortex-a53-843419 -o cmTC_36277 /home/jianyu/optee/toolchains/aarch64/bin/../aarch64-none-linux-gnu/libc/usr/lib/../lib64/crt1.o /home/jianyu/optee/toolchains/aarch64/bin/../aarch64-none-linux-gnu/libc/usr/lib/../lib64/crti.o /home/jianyu/optee/toolchains/aarch64/bin/../lib/gcc/aarch64-none-linux-gnu/9.2.1/crtbegin.o -L/home/jianyu/optee/toolchains/aarch64/bin/../lib/gcc/aarch64-none-linux-gnu/9.2.1 -L/home/jianyu/optee/toolchains/aarch64/bin/../lib/gcc -L/home/jianyu/optee/toolchains/aarch64/bin/../lib/gcc/aarch64-none-linux-gnu/9.2.1/../../../../aarch64-none-linux-gnu/lib/../lib64 -L/home/jianyu/optee/toolchains/aarch64/bin/../aarch64-none-linux-gnu/libc/lib/../lib64 -L/home/jianyu/optee/toolchains/aarch64/bin/../aarch64-none-linux-gnu/libc/usr/lib/../lib64 -L/home/jianyu/optee/toolchains/aarch64/bin/../lib/gcc/aarch64-none-linux-gnu/9.2.1/../../../../aarch64-none-linux-gnu/lib -L/home/jianyu/optee/toolchains/aarch64/bin/../aarch64-none-linux-gnu/libc/lib -L/home/jianyu/optee/toolchains/aarch64/bin/../aarch64-none-linux-gnu/libc/usr/lib CMakeFiles/cmTC_36277.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /home/jianyu/optee/toolchains/aarch64/bin/../lib/gcc/aarch64-none-linux-gnu/9.2.1/crtend.o /home/jianyu/optee/toolchains/aarch64/bin/../aarch64-none-linux-gnu/libc/usr/lib/../lib64/crtn.o
+COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_36277' '-shared-libgcc' '-mlittle-endian' '-mabi=lp64'
+make[1]: Leaving directory '/home/jianyu/optee/optee_os/lib/libcxx/build/CMakeFiles/CMakeTmp'
+
+
+
+Parsed CXX implicit include dir info from above output: rv=done
+  found start of include info
+  found start of implicit include info
+    add: [/home/jianyu/optee/toolchains/aarch64/bin/../lib/gcc/aarch64-none-linux-gnu/9.2.1/../../../../aarch64-none-linux-gnu/include/c++/9.2.1]
+    add: [/home/jianyu/optee/toolchains/aarch64/bin/../lib/gcc/aarch64-none-linux-gnu/9.2.1/../../../../aarch64-none-linux-gnu/include/c++/9.2.1/aarch64-none-linux-gnu]
+    add: [/home/jianyu/optee/toolchains/aarch64/bin/../lib/gcc/aarch64-none-linux-gnu/9.2.1/../../../../aarch64-none-linux-gnu/include/c++/9.2.1/backward]
+    add: [/home/jianyu/optee/toolchains/aarch64/bin/../lib/gcc/aarch64-none-linux-gnu/9.2.1/include]
+    add: [/home/jianyu/optee/toolchains/aarch64/bin/../lib/gcc/aarch64-none-linux-gnu/9.2.1/include-fixed]
+    add: [/home/jianyu/optee/toolchains/aarch64/bin/../lib/gcc/aarch64-none-linux-gnu/9.2.1/../../../../aarch64-none-linux-gnu/include]
+    add: [/home/jianyu/optee/toolchains/aarch64/bin/../aarch64-none-linux-gnu/libc/usr/include]
+  end of search list found
+  collapse include dir [/home/jianyu/optee/toolchains/aarch64/bin/../lib/gcc/aarch64-none-linux-gnu/9.2.1/../../../../aarch64-none-linux-gnu/include/c++/9.2.1] ==> [/home/jianyu/optee/toolchains/aarch64/aarch64-none-linux-gnu/include/c++/9.2.1]
+  collapse include dir [/home/jianyu/optee/toolchains/aarch64/bin/../lib/gcc/aarch64-none-linux-gnu/9.2.1/../../../../aarch64-none-linux-gnu/include/c++/9.2.1/aarch64-none-linux-gnu] ==> [/home/jianyu/optee/toolchains/aarch64/aarch64-none-linux-gnu/include/c++/9.2.1/aarch64-none-linux-gnu]
+  collapse include dir [/home/jianyu/optee/toolchains/aarch64/bin/../lib/gcc/aarch64-none-linux-gnu/9.2.1/../../../../aarch64-none-linux-gnu/include/c++/9.2.1/backward] ==> [/home/jianyu/optee/toolchains/aarch64/aarch64-none-linux-gnu/include/c++/9.2.1/backward]
+  collapse include dir [/home/jianyu/optee/toolchains/aarch64/bin/../lib/gcc/aarch64-none-linux-gnu/9.2.1/include] ==> [/home/jianyu/optee/toolchains/aarch64/lib/gcc/aarch64-none-linux-gnu/9.2.1/include]
+  collapse include dir [/home/jianyu/optee/toolchains/aarch64/bin/../lib/gcc/aarch64-none-linux-gnu/9.2.1/include-fixed] ==> [/home/jianyu/optee/toolchains/aarch64/lib/gcc/aarch64-none-linux-gnu/9.2.1/include-fixed]
+  collapse include dir [/home/jianyu/optee/toolchains/aarch64/bin/../lib/gcc/aarch64-none-linux-gnu/9.2.1/../../../../aarch64-none-linux-gnu/include] ==> [/home/jianyu/optee/toolchains/aarch64/aarch64-none-linux-gnu/include]
+  collapse include dir [/home/jianyu/optee/toolchains/aarch64/bin/../aarch64-none-linux-gnu/libc/usr/include] ==> [/home/jianyu/optee/toolchains/aarch64/aarch64-none-linux-gnu/libc/usr/include]
+  implicit include dirs: [/home/jianyu/optee/toolchains/aarch64/aarch64-none-linux-gnu/include/c++/9.2.1;/home/jianyu/optee/toolchains/aarch64/aarch64-none-linux-gnu/include/c++/9.2.1/aarch64-none-linux-gnu;/home/jianyu/optee/toolchains/aarch64/aarch64-none-linux-gnu/include/c++/9.2.1/backward;/home/jianyu/optee/toolchains/aarch64/lib/gcc/aarch64-none-linux-gnu/9.2.1/include;/home/jianyu/optee/toolchains/aarch64/lib/gcc/aarch64-none-linux-gnu/9.2.1/include-fixed;/home/jianyu/optee/toolchains/aarch64/aarch64-none-linux-gnu/include;/home/jianyu/optee/toolchains/aarch64/aarch64-none-linux-gnu/libc/usr/include]
+
+
+Parsed CXX implicit link information from above output:
+  link line regex: [^( *|.*[/\])(aarch64-none-linux-gnu-ld|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\]+-)?ld|collect2)[^/\]*( |$)]
+  ignore line: [Change Dir: /home/jianyu/optee/optee_os/lib/libcxx/build/CMakeFiles/CMakeTmp]
+  ignore line: []
+  ignore line: [Run Build Command(s):/usr/bin/make cmTC_36277/fast && /usr/bin/make  -f CMakeFiles/cmTC_36277.dir/build.make CMakeFiles/cmTC_36277.dir/build]
+  ignore line: [make[1]: Entering directory '/home/jianyu/optee/optee_os/lib/libcxx/build/CMakeFiles/CMakeTmp']
+  ignore line: [Building CXX object CMakeFiles/cmTC_36277.dir/CMakeCXXCompilerABI.cpp.o]
+  ignore line: [/home/jianyu/optee/toolchains/aarch64/bin/aarch64-none-linux-gnu-g++   -v -o CMakeFiles/cmTC_36277.dir/CMakeCXXCompilerABI.cpp.o -c /usr/local/share/cmake-3.18/Modules/CMakeCXXCompilerABI.cpp]
+  ignore line: [Using built-in specs.]
+  ignore line: [COLLECT_GCC=/home/jianyu/optee/toolchains/aarch64/bin/aarch64-none-linux-gnu-g++]
+  ignore line: [Target: aarch64-none-linux-gnu]
+  ignore line: [Configured with: /tmp/dgboter/bbs/rhev-vm2--rhe6x86_64/buildbot/rhe6x86_64--aarch64-none-linux-gnu/build/src/gcc/configure --target=aarch64-none-linux-gnu --prefix= --with-sysroot=/aarch64-none-linux-gnu/libc --with-build-sysroot=/tmp/dgboter/bbs/rhev-vm2--rhe6x86_64/buildbot/rhe6x86_64--aarch64-none-linux-gnu/build/build-aarch64-none-linux-gnu/install//aarch64-none-linux-gnu/libc --with-bugurl=https://bugs.linaro.org/ --enable-gnu-indirect-function --enable-shared --disable-libssp --disable-libmudflap --enable-checking=release --enable-languages=c c++ fortran --with-gmp=/tmp/dgboter/bbs/rhev-vm2--rhe6x86_64/buildbot/rhe6x86_64--aarch64-none-linux-gnu/build/build-aarch64-none-linux-gnu/host-tools --with-mpfr=/tmp/dgboter/bbs/rhev-vm2--rhe6x86_64/buildbot/rhe6x86_64--aarch64-none-linux-gnu/build/build-aarch64-none-linux-gnu/host-tools --with-mpc=/tmp/dgboter/bbs/rhev-vm2--rhe6x86_64/buildbot/rhe6x86_64--aarch64-none-linux-gnu/build/build-aarch64-none-linux-gnu/host-tools --with-isl=/tmp/dgboter/bbs/rhev-vm2--rhe6x86_64/buildbot/rhe6x86_64--aarch64-none-linux-gnu/build/build-aarch64-none-linux-gnu/host-tools --enable-fix-cortex-a53-843419 --with-pkgversion='GNU Toolchain for the A-profile Architecture 9.2-2019.12 (arm-9.10)']
+  ignore line: [Thread model: posix]
+  ignore line: [gcc version 9.2.1 20191025 (GNU Toolchain for the A-profile Architecture 9.2-2019.12 (arm-9.10)) ]
+  ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_36277.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mlittle-endian' '-mabi=lp64']
+  ignore line: [ /home/jianyu/optee/toolchains/aarch64/bin/../libexec/gcc/aarch64-none-linux-gnu/9.2.1/cc1plus -quiet -v -iprefix /home/jianyu/optee/toolchains/aarch64/bin/../lib/gcc/aarch64-none-linux-gnu/9.2.1/ -isysroot /home/jianyu/optee/toolchains/aarch64/bin/../aarch64-none-linux-gnu/libc -D_GNU_SOURCE /usr/local/share/cmake-3.18/Modules/CMakeCXXCompilerABI.cpp -quiet -dumpbase CMakeCXXCompilerABI.cpp -mlittle-endian -mabi=lp64 -auxbase-strip CMakeFiles/cmTC_36277.dir/CMakeCXXCompilerABI.cpp.o -version -o /tmp/ccNOdnXs.s]
+  ignore line: [GNU C++14 (GNU Toolchain for the A-profile Architecture 9.2-2019.12 (arm-9.10)) version 9.2.1 20191025 (aarch64-none-linux-gnu)]
+  ignore line: [	compiled by GNU C version 4.8.1  GMP version 4.3.2  MPFR version 3.1.6  MPC version 1.0.3  isl version isl-0.15-1-g835ea3a-GMP]
+  ignore line: []
+  ignore line: [GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072]
+  ignore line: [ignoring duplicate directory "/home/jianyu/optee/toolchains/aarch64/bin/../lib/gcc/../../lib/gcc/aarch64-none-linux-gnu/9.2.1/../../../../aarch64-none-linux-gnu/include/c++/9.2.1"]
+  ignore line: [ignoring duplicate directory "/home/jianyu/optee/toolchains/aarch64/bin/../lib/gcc/../../lib/gcc/aarch64-none-linux-gnu/9.2.1/../../../../aarch64-none-linux-gnu/include/c++/9.2.1/aarch64-none-linux-gnu"]
+  ignore line: [ignoring duplicate directory "/home/jianyu/optee/toolchains/aarch64/bin/../lib/gcc/../../lib/gcc/aarch64-none-linux-gnu/9.2.1/../../../../aarch64-none-linux-gnu/include/c++/9.2.1/backward"]
+  ignore line: [ignoring duplicate directory "/home/jianyu/optee/toolchains/aarch64/bin/../lib/gcc/../../lib/gcc/aarch64-none-linux-gnu/9.2.1/include"]
+  ignore line: [ignoring nonexistent directory "/home/jianyu/optee/toolchains/aarch64/bin/../aarch64-none-linux-gnu/libc/usr/local/include"]
+  ignore line: [ignoring duplicate directory "/home/jianyu/optee/toolchains/aarch64/bin/../lib/gcc/../../lib/gcc/aarch64-none-linux-gnu/9.2.1/include-fixed"]
+  ignore line: [ignoring duplicate directory "/home/jianyu/optee/toolchains/aarch64/bin/../lib/gcc/../../lib/gcc/aarch64-none-linux-gnu/9.2.1/../../../../aarch64-none-linux-gnu/include"]
+  ignore line: [#include "..." search starts here:]
+  ignore line: [#include <...> search starts here:]
+  ignore line: [ /home/jianyu/optee/toolchains/aarch64/bin/../lib/gcc/aarch64-none-linux-gnu/9.2.1/../../../../aarch64-none-linux-gnu/include/c++/9.2.1]
+  ignore line: [ /home/jianyu/optee/toolchains/aarch64/bin/../lib/gcc/aarch64-none-linux-gnu/9.2.1/../../../../aarch64-none-linux-gnu/include/c++/9.2.1/aarch64-none-linux-gnu]
+  ignore line: [ /home/jianyu/optee/toolchains/aarch64/bin/../lib/gcc/aarch64-none-linux-gnu/9.2.1/../../../../aarch64-none-linux-gnu/include/c++/9.2.1/backward]
+  ignore line: [ /home/jianyu/optee/toolchains/aarch64/bin/../lib/gcc/aarch64-none-linux-gnu/9.2.1/include]
+  ignore line: [ /home/jianyu/optee/toolchains/aarch64/bin/../lib/gcc/aarch64-none-linux-gnu/9.2.1/include-fixed]
+  ignore line: [ /home/jianyu/optee/toolchains/aarch64/bin/../lib/gcc/aarch64-none-linux-gnu/9.2.1/../../../../aarch64-none-linux-gnu/include]
+  ignore line: [ /home/jianyu/optee/toolchains/aarch64/bin/../aarch64-none-linux-gnu/libc/usr/include]
+  ignore line: [End of search list.]
+  ignore line: [GNU C++14 (GNU Toolchain for the A-profile Architecture 9.2-2019.12 (arm-9.10)) version 9.2.1 20191025 (aarch64-none-linux-gnu)]
+  ignore line: [	compiled by GNU C version 4.8.1  GMP version 4.3.2  MPFR version 3.1.6  MPC version 1.0.3  isl version isl-0.15-1-g835ea3a-GMP]
+  ignore line: []
+  ignore line: [GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072]
+  ignore line: [Compiler executable checksum: 2c1b06ae38fc097703f75fa12d3b7029]
+  ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_36277.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mlittle-endian' '-mabi=lp64']
+  ignore line: [ /home/jianyu/optee/toolchains/aarch64/bin/../lib/gcc/aarch64-none-linux-gnu/9.2.1/../../../../aarch64-none-linux-gnu/bin/as -v -EL -mabi=lp64 -o CMakeFiles/cmTC_36277.dir/CMakeCXXCompilerABI.cpp.o /tmp/ccNOdnXs.s]
+  ignore line: [GNU assembler version 2.33.1 (aarch64-none-linux-gnu) using BFD version (GNU Toolchain for the A-profile Architecture 9.2-2019.12 (arm-9.10)) 2.33.1.20191209]
+  ignore line: [COMPILER_PATH=/home/jianyu/optee/toolchains/aarch64/bin/../libexec/gcc/aarch64-none-linux-gnu/9.2.1/:/home/jianyu/optee/toolchains/aarch64/bin/../libexec/gcc/:/home/jianyu/optee/toolchains/aarch64/bin/../lib/gcc/aarch64-none-linux-gnu/9.2.1/../../../../aarch64-none-linux-gnu/bin/]
+  ignore line: [LIBRARY_PATH=/home/jianyu/optee/toolchains/aarch64/bin/../lib/gcc/aarch64-none-linux-gnu/9.2.1/:/home/jianyu/optee/toolchains/aarch64/bin/../lib/gcc/:/home/jianyu/optee/toolchains/aarch64/bin/../lib/gcc/aarch64-none-linux-gnu/9.2.1/../../../../aarch64-none-linux-gnu/lib/../lib64/:/home/jianyu/optee/toolchains/aarch64/bin/../aarch64-none-linux-gnu/libc/lib/../lib64/:/home/jianyu/optee/toolchains/aarch64/bin/../aarch64-none-linux-gnu/libc/usr/lib/../lib64/:/home/jianyu/optee/toolchains/aarch64/bin/../lib/gcc/aarch64-none-linux-gnu/9.2.1/../../../../aarch64-none-linux-gnu/lib/:/home/jianyu/optee/toolchains/aarch64/bin/../aarch64-none-linux-gnu/libc/lib/:/home/jianyu/optee/toolchains/aarch64/bin/../aarch64-none-linux-gnu/libc/usr/lib/]
+  ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_36277.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mlittle-endian' '-mabi=lp64']
+  ignore line: [Linking CXX executable cmTC_36277]
+  ignore line: [/usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_36277.dir/link.txt --verbose=1]
+  ignore line: [/home/jianyu/optee/toolchains/aarch64/bin/aarch64-none-linux-gnu-g++  -v CMakeFiles/cmTC_36277.dir/CMakeCXXCompilerABI.cpp.o -o cmTC_36277 ]
+  ignore line: [Using built-in specs.]
+  ignore line: [COLLECT_GCC=/home/jianyu/optee/toolchains/aarch64/bin/aarch64-none-linux-gnu-g++]
+  ignore line: [COLLECT_LTO_WRAPPER=/home/jianyu/optee/toolchains/aarch64/bin/../libexec/gcc/aarch64-none-linux-gnu/9.2.1/lto-wrapper]
+  ignore line: [Target: aarch64-none-linux-gnu]
+  ignore line: [Configured with: /tmp/dgboter/bbs/rhev-vm2--rhe6x86_64/buildbot/rhe6x86_64--aarch64-none-linux-gnu/build/src/gcc/configure --target=aarch64-none-linux-gnu --prefix= --with-sysroot=/aarch64-none-linux-gnu/libc --with-build-sysroot=/tmp/dgboter/bbs/rhev-vm2--rhe6x86_64/buildbot/rhe6x86_64--aarch64-none-linux-gnu/build/build-aarch64-none-linux-gnu/install//aarch64-none-linux-gnu/libc --with-bugurl=https://bugs.linaro.org/ --enable-gnu-indirect-function --enable-shared --disable-libssp --disable-libmudflap --enable-checking=release --enable-languages=c c++ fortran --with-gmp=/tmp/dgboter/bbs/rhev-vm2--rhe6x86_64/buildbot/rhe6x86_64--aarch64-none-linux-gnu/build/build-aarch64-none-linux-gnu/host-tools --with-mpfr=/tmp/dgboter/bbs/rhev-vm2--rhe6x86_64/buildbot/rhe6x86_64--aarch64-none-linux-gnu/build/build-aarch64-none-linux-gnu/host-tools --with-mpc=/tmp/dgboter/bbs/rhev-vm2--rhe6x86_64/buildbot/rhe6x86_64--aarch64-none-linux-gnu/build/build-aarch64-none-linux-gnu/host-tools --with-isl=/tmp/dgboter/bbs/rhev-vm2--rhe6x86_64/buildbot/rhe6x86_64--aarch64-none-linux-gnu/build/build-aarch64-none-linux-gnu/host-tools --enable-fix-cortex-a53-843419 --with-pkgversion='GNU Toolchain for the A-profile Architecture 9.2-2019.12 (arm-9.10)']
+  ignore line: [Thread model: posix]
+  ignore line: [gcc version 9.2.1 20191025 (GNU Toolchain for the A-profile Architecture 9.2-2019.12 (arm-9.10)) ]
+  ignore line: [COMPILER_PATH=/home/jianyu/optee/toolchains/aarch64/bin/../libexec/gcc/aarch64-none-linux-gnu/9.2.1/:/home/jianyu/optee/toolchains/aarch64/bin/../libexec/gcc/:/home/jianyu/optee/toolchains/aarch64/bin/../lib/gcc/aarch64-none-linux-gnu/9.2.1/../../../../aarch64-none-linux-gnu/bin/]
+  ignore line: [LIBRARY_PATH=/home/jianyu/optee/toolchains/aarch64/bin/../lib/gcc/aarch64-none-linux-gnu/9.2.1/:/home/jianyu/optee/toolchains/aarch64/bin/../lib/gcc/:/home/jianyu/optee/toolchains/aarch64/bin/../lib/gcc/aarch64-none-linux-gnu/9.2.1/../../../../aarch64-none-linux-gnu/lib/../lib64/:/home/jianyu/optee/toolchains/aarch64/bin/../aarch64-none-linux-gnu/libc/lib/../lib64/:/home/jianyu/optee/toolchains/aarch64/bin/../aarch64-none-linux-gnu/libc/usr/lib/../lib64/:/home/jianyu/optee/toolchains/aarch64/bin/../lib/gcc/aarch64-none-linux-gnu/9.2.1/../../../../aarch64-none-linux-gnu/lib/:/home/jianyu/optee/toolchains/aarch64/bin/../aarch64-none-linux-gnu/libc/lib/:/home/jianyu/optee/toolchains/aarch64/bin/../aarch64-none-linux-gnu/libc/usr/lib/]
+  ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_36277' '-shared-libgcc' '-mlittle-endian' '-mabi=lp64']
+  link line: [ /home/jianyu/optee/toolchains/aarch64/bin/../libexec/gcc/aarch64-none-linux-gnu/9.2.1/collect2 -plugin /home/jianyu/optee/toolchains/aarch64/bin/../libexec/gcc/aarch64-none-linux-gnu/9.2.1/liblto_plugin.so -plugin-opt=/home/jianyu/optee/toolchains/aarch64/bin/../libexec/gcc/aarch64-none-linux-gnu/9.2.1/lto-wrapper -plugin-opt=-fresolution=/tmp/ccHQTlGu.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --sysroot=/home/jianyu/optee/toolchains/aarch64/bin/../aarch64-none-linux-gnu/libc --eh-frame-hdr -dynamic-linker /lib/ld-linux-aarch64.so.1 -X -EL -maarch64linux --fix-cortex-a53-843419 -o cmTC_36277 /home/jianyu/optee/toolchains/aarch64/bin/../aarch64-none-linux-gnu/libc/usr/lib/../lib64/crt1.o /home/jianyu/optee/toolchains/aarch64/bin/../aarch64-none-linux-gnu/libc/usr/lib/../lib64/crti.o /home/jianyu/optee/toolchains/aarch64/bin/../lib/gcc/aarch64-none-linux-gnu/9.2.1/crtbegin.o -L/home/jianyu/optee/toolchains/aarch64/bin/../lib/gcc/aarch64-none-linux-gnu/9.2.1 -L/home/jianyu/optee/toolchains/aarch64/bin/../lib/gcc -L/home/jianyu/optee/toolchains/aarch64/bin/../lib/gcc/aarch64-none-linux-gnu/9.2.1/../../../../aarch64-none-linux-gnu/lib/../lib64 -L/home/jianyu/optee/toolchains/aarch64/bin/../aarch64-none-linux-gnu/libc/lib/../lib64 -L/home/jianyu/optee/toolchains/aarch64/bin/../aarch64-none-linux-gnu/libc/usr/lib/../lib64 -L/home/jianyu/optee/toolchains/aarch64/bin/../lib/gcc/aarch64-none-linux-gnu/9.2.1/../../../../aarch64-none-linux-gnu/lib -L/home/jianyu/optee/toolchains/aarch64/bin/../aarch64-none-linux-gnu/libc/lib -L/home/jianyu/optee/toolchains/aarch64/bin/../aarch64-none-linux-gnu/libc/usr/lib CMakeFiles/cmTC_36277.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /home/jianyu/optee/toolchains/aarch64/bin/../lib/gcc/aarch64-none-linux-gnu/9.2.1/crtend.o /home/jianyu/optee/toolchains/aarch64/bin/../aarch64-none-linux-gnu/libc/usr/lib/../lib64/crtn.o]
+    arg [/home/jianyu/optee/toolchains/aarch64/bin/../libexec/gcc/aarch64-none-linux-gnu/9.2.1/collect2] ==> ignore
+    arg [-plugin] ==> ignore
+    arg [/home/jianyu/optee/toolchains/aarch64/bin/../libexec/gcc/aarch64-none-linux-gnu/9.2.1/liblto_plugin.so] ==> ignore
+    arg [-plugin-opt=/home/jianyu/optee/toolchains/aarch64/bin/../libexec/gcc/aarch64-none-linux-gnu/9.2.1/lto-wrapper] ==> ignore
+    arg [-plugin-opt=-fresolution=/tmp/ccHQTlGu.res] ==> ignore
+    arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
+    arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
+    arg [-plugin-opt=-pass-through=-lc] ==> ignore
+    arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
+    arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
+    arg [--sysroot=/home/jianyu/optee/toolchains/aarch64/bin/../aarch64-none-linux-gnu/libc] ==> ignore
+    arg [--eh-frame-hdr] ==> ignore
+    arg [-dynamic-linker] ==> ignore
+    arg [/lib/ld-linux-aarch64.so.1] ==> ignore
+    arg [-X] ==> ignore
+    arg [-EL] ==> ignore
+    arg [-maarch64linux] ==> ignore
+    arg [--fix-cortex-a53-843419] ==> ignore
+    arg [-o] ==> ignore
+    arg [cmTC_36277] ==> ignore
+    arg [/home/jianyu/optee/toolchains/aarch64/bin/../aarch64-none-linux-gnu/libc/usr/lib/../lib64/crt1.o] ==> ignore
+    arg [/home/jianyu/optee/toolchains/aarch64/bin/../aarch64-none-linux-gnu/libc/usr/lib/../lib64/crti.o] ==> ignore
+    arg [/home/jianyu/optee/toolchains/aarch64/bin/../lib/gcc/aarch64-none-linux-gnu/9.2.1/crtbegin.o] ==> ignore
+    arg [-L/home/jianyu/optee/toolchains/aarch64/bin/../lib/gcc/aarch64-none-linux-gnu/9.2.1] ==> dir [/home/jianyu/optee/toolchains/aarch64/bin/../lib/gcc/aarch64-none-linux-gnu/9.2.1]
+    arg [-L/home/jianyu/optee/toolchains/aarch64/bin/../lib/gcc] ==> dir [/home/jianyu/optee/toolchains/aarch64/bin/../lib/gcc]
+    arg [-L/home/jianyu/optee/toolchains/aarch64/bin/../lib/gcc/aarch64-none-linux-gnu/9.2.1/../../../../aarch64-none-linux-gnu/lib/../lib64] ==> dir [/home/jianyu/optee/toolchains/aarch64/bin/../lib/gcc/aarch64-none-linux-gnu/9.2.1/../../../../aarch64-none-linux-gnu/lib/../lib64]
+    arg [-L/home/jianyu/optee/toolchains/aarch64/bin/../aarch64-none-linux-gnu/libc/lib/../lib64] ==> dir [/home/jianyu/optee/toolchains/aarch64/bin/../aarch64-none-linux-gnu/libc/lib/../lib64]
+    arg [-L/home/jianyu/optee/toolchains/aarch64/bin/../aarch64-none-linux-gnu/libc/usr/lib/../lib64] ==> dir [/home/jianyu/optee/toolchains/aarch64/bin/../aarch64-none-linux-gnu/libc/usr/lib/../lib64]
+    arg [-L/home/jianyu/optee/toolchains/aarch64/bin/../lib/gcc/aarch64-none-linux-gnu/9.2.1/../../../../aarch64-none-linux-gnu/lib] ==> dir [/home/jianyu/optee/toolchains/aarch64/bin/../lib/gcc/aarch64-none-linux-gnu/9.2.1/../../../../aarch64-none-linux-gnu/lib]
+    arg [-L/home/jianyu/optee/toolchains/aarch64/bin/../aarch64-none-linux-gnu/libc/lib] ==> dir [/home/jianyu/optee/toolchains/aarch64/bin/../aarch64-none-linux-gnu/libc/lib]
+    arg [-L/home/jianyu/optee/toolchains/aarch64/bin/../aarch64-none-linux-gnu/libc/usr/lib] ==> dir [/home/jianyu/optee/toolchains/aarch64/bin/../aarch64-none-linux-gnu/libc/usr/lib]
+    arg [CMakeFiles/cmTC_36277.dir/CMakeCXXCompilerABI.cpp.o] ==> ignore
+    arg [-lstdc++] ==> lib [stdc++]
+    arg [-lm] ==> lib [m]
+    arg [-lgcc_s] ==> lib [gcc_s]
+    arg [-lgcc] ==> lib [gcc]
+    arg [-lc] ==> lib [c]
+    arg [-lgcc_s] ==> lib [gcc_s]
+    arg [-lgcc] ==> lib [gcc]
+    arg [/home/jianyu/optee/toolchains/aarch64/bin/../lib/gcc/aarch64-none-linux-gnu/9.2.1/crtend.o] ==> ignore
+    arg [/home/jianyu/optee/toolchains/aarch64/bin/../aarch64-none-linux-gnu/libc/usr/lib/../lib64/crtn.o] ==> ignore
+  collapse library dir [/home/jianyu/optee/toolchains/aarch64/bin/../lib/gcc/aarch64-none-linux-gnu/9.2.1] ==> [/home/jianyu/optee/toolchains/aarch64/lib/gcc/aarch64-none-linux-gnu/9.2.1]
+  collapse library dir [/home/jianyu/optee/toolchains/aarch64/bin/../lib/gcc] ==> [/home/jianyu/optee/toolchains/aarch64/lib/gcc]
+  collapse library dir [/home/jianyu/optee/toolchains/aarch64/bin/../lib/gcc/aarch64-none-linux-gnu/9.2.1/../../../../aarch64-none-linux-gnu/lib/../lib64] ==> [/home/jianyu/optee/toolchains/aarch64/aarch64-none-linux-gnu/lib64]
+  collapse library dir [/home/jianyu/optee/toolchains/aarch64/bin/../aarch64-none-linux-gnu/libc/lib/../lib64] ==> [/home/jianyu/optee/toolchains/aarch64/aarch64-none-linux-gnu/libc/lib64]
+  collapse library dir [/home/jianyu/optee/toolchains/aarch64/bin/../aarch64-none-linux-gnu/libc/usr/lib/../lib64] ==> [/home/jianyu/optee/toolchains/aarch64/aarch64-none-linux-gnu/libc/usr/lib64]
+  collapse library dir [/home/jianyu/optee/toolchains/aarch64/bin/../lib/gcc/aarch64-none-linux-gnu/9.2.1/../../../../aarch64-none-linux-gnu/lib] ==> [/home/jianyu/optee/toolchains/aarch64/aarch64-none-linux-gnu/lib]
+  collapse library dir [/home/jianyu/optee/toolchains/aarch64/bin/../aarch64-none-linux-gnu/libc/lib] ==> [/home/jianyu/optee/toolchains/aarch64/aarch64-none-linux-gnu/libc/lib]
+  collapse library dir [/home/jianyu/optee/toolchains/aarch64/bin/../aarch64-none-linux-gnu/libc/usr/lib] ==> [/home/jianyu/optee/toolchains/aarch64/aarch64-none-linux-gnu/libc/usr/lib]
+  implicit libs: [stdc++;m;gcc_s;gcc;c;gcc_s;gcc]
+  implicit dirs: [/home/jianyu/optee/toolchains/aarch64/lib/gcc/aarch64-none-linux-gnu/9.2.1;/home/jianyu/optee/toolchains/aarch64/lib/gcc;/home/jianyu/optee/toolchains/aarch64/aarch64-none-linux-gnu/lib64;/home/jianyu/optee/toolchains/aarch64/aarch64-none-linux-gnu/libc/lib64;/home/jianyu/optee/toolchains/aarch64/aarch64-none-linux-gnu/libc/usr/lib64;/home/jianyu/optee/toolchains/aarch64/aarch64-none-linux-gnu/lib;/home/jianyu/optee/toolchains/aarch64/aarch64-none-linux-gnu/libc/lib;/home/jianyu/optee/toolchains/aarch64/aarch64-none-linux-gnu/libc/usr/lib]
+  implicit fwks: []
+
+
+Detecting C compiler ABI info compiled with the following output:
+Change Dir: /home/jianyu/optee/optee_os/lib/libcxx/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_d698b/fast && /usr/bin/make  -f CMakeFiles/cmTC_d698b.dir/build.make CMakeFiles/cmTC_d698b.dir/build
+make[1]: Entering directory '/home/jianyu/optee/optee_os/lib/libcxx/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_d698b.dir/CMakeCCompilerABI.c.o
+/home/jianyu/optee/toolchains/aarch64/bin/aarch64-none-linux-gnu-gcc   -v -o CMakeFiles/cmTC_d698b.dir/CMakeCCompilerABI.c.o -c /usr/local/share/cmake-3.18/Modules/CMakeCCompilerABI.c
+Using built-in specs.
+COLLECT_GCC=/home/jianyu/optee/toolchains/aarch64/bin/aarch64-none-linux-gnu-gcc
+Target: aarch64-none-linux-gnu
+Configured with: /tmp/dgboter/bbs/rhev-vm2--rhe6x86_64/buildbot/rhe6x86_64--aarch64-none-linux-gnu/build/src/gcc/configure --target=aarch64-none-linux-gnu --prefix= --with-sysroot=/aarch64-none-linux-gnu/libc --with-build-sysroot=/tmp/dgboter/bbs/rhev-vm2--rhe6x86_64/buildbot/rhe6x86_64--aarch64-none-linux-gnu/build/build-aarch64-none-linux-gnu/install//aarch64-none-linux-gnu/libc --with-bugurl=https://bugs.linaro.org/ --enable-gnu-indirect-function --enable-shared --disable-libssp --disable-libmudflap --enable-checking=release --enable-languages=c,c++,fortran --with-gmp=/tmp/dgboter/bbs/rhev-vm2--rhe6x86_64/buildbot/rhe6x86_64--aarch64-none-linux-gnu/build/build-aarch64-none-linux-gnu/host-tools --with-mpfr=/tmp/dgboter/bbs/rhev-vm2--rhe6x86_64/buildbot/rhe6x86_64--aarch64-none-linux-gnu/build/build-aarch64-none-linux-gnu/host-tools --with-mpc=/tmp/dgboter/bbs/rhev-vm2--rhe6x86_64/buildbot/rhe6x86_64--aarch64-none-linux-gnu/build/build-aarch64-none-linux-gnu/host-tools --with-isl=/tmp/dgboter/bbs/rhev-vm2--rhe6x86_64/buildbot/rhe6x86_64--aarch64-none-linux-gnu/build/build-aarch64-none-linux-gnu/host-tools --enable-fix-cortex-a53-843419 --with-pkgversion='GNU Toolchain for the A-profile Architecture 9.2-2019.12 (arm-9.10)'
+Thread model: posix
+gcc version 9.2.1 20191025 (GNU Toolchain for the A-profile Architecture 9.2-2019.12 (arm-9.10)) 
+COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_d698b.dir/CMakeCCompilerABI.c.o' '-c' '-mlittle-endian' '-mabi=lp64'
+ /home/jianyu/optee/toolchains/aarch64/bin/../libexec/gcc/aarch64-none-linux-gnu/9.2.1/cc1 -quiet -v -iprefix /home/jianyu/optee/toolchains/aarch64/bin/../lib/gcc/aarch64-none-linux-gnu/9.2.1/ -isysroot /home/jianyu/optee/toolchains/aarch64/bin/../aarch64-none-linux-gnu/libc /usr/local/share/cmake-3.18/Modules/CMakeCCompilerABI.c -quiet -dumpbase CMakeCCompilerABI.c -mlittle-endian -mabi=lp64 -auxbase-strip CMakeFiles/cmTC_d698b.dir/CMakeCCompilerABI.c.o -version -o /tmp/ccqOXipB.s
+GNU C17 (GNU Toolchain for the A-profile Architecture 9.2-2019.12 (arm-9.10)) version 9.2.1 20191025 (aarch64-none-linux-gnu)
+	compiled by GNU C version 4.8.1, GMP version 4.3.2, MPFR version 3.1.6, MPC version 1.0.3, isl version isl-0.15-1-g835ea3a-GMP
+
+GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
+ignoring duplicate directory "/home/jianyu/optee/toolchains/aarch64/bin/../lib/gcc/../../lib/gcc/aarch64-none-linux-gnu/9.2.1/include"
+ignoring nonexistent directory "/home/jianyu/optee/toolchains/aarch64/bin/../aarch64-none-linux-gnu/libc/usr/local/include"
+ignoring duplicate directory "/home/jianyu/optee/toolchains/aarch64/bin/../lib/gcc/../../lib/gcc/aarch64-none-linux-gnu/9.2.1/include-fixed"
+ignoring duplicate directory "/home/jianyu/optee/toolchains/aarch64/bin/../lib/gcc/../../lib/gcc/aarch64-none-linux-gnu/9.2.1/../../../../aarch64-none-linux-gnu/include"
+#include "..." search starts here:
+#include <...> search starts here:
+ /home/jianyu/optee/toolchains/aarch64/bin/../lib/gcc/aarch64-none-linux-gnu/9.2.1/include
+ /home/jianyu/optee/toolchains/aarch64/bin/../lib/gcc/aarch64-none-linux-gnu/9.2.1/include-fixed
+ /home/jianyu/optee/toolchains/aarch64/bin/../lib/gcc/aarch64-none-linux-gnu/9.2.1/../../../../aarch64-none-linux-gnu/include
+ /home/jianyu/optee/toolchains/aarch64/bin/../aarch64-none-linux-gnu/libc/usr/include
+End of search list.
+GNU C17 (GNU Toolchain for the A-profile Architecture 9.2-2019.12 (arm-9.10)) version 9.2.1 20191025 (aarch64-none-linux-gnu)
+	compiled by GNU C version 4.8.1, GMP version 4.3.2, MPFR version 3.1.6, MPC version 1.0.3, isl version isl-0.15-1-g835ea3a-GMP
+
+GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
+Compiler executable checksum: 85e1dc113eca18ee24842097eb6e9185
+COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_d698b.dir/CMakeCCompilerABI.c.o' '-c' '-mlittle-endian' '-mabi=lp64'
+ /home/jianyu/optee/toolchains/aarch64/bin/../lib/gcc/aarch64-none-linux-gnu/9.2.1/../../../../aarch64-none-linux-gnu/bin/as -v -EL -mabi=lp64 -o CMakeFiles/cmTC_d698b.dir/CMakeCCompilerABI.c.o /tmp/ccqOXipB.s
+GNU assembler version 2.33.1 (aarch64-none-linux-gnu) using BFD version (GNU Toolchain for the A-profile Architecture 9.2-2019.12 (arm-9.10)) 2.33.1.20191209
+COMPILER_PATH=/home/jianyu/optee/toolchains/aarch64/bin/../libexec/gcc/aarch64-none-linux-gnu/9.2.1/:/home/jianyu/optee/toolchains/aarch64/bin/../libexec/gcc/:/home/jianyu/optee/toolchains/aarch64/bin/../lib/gcc/aarch64-none-linux-gnu/9.2.1/../../../../aarch64-none-linux-gnu/bin/
+LIBRARY_PATH=/home/jianyu/optee/toolchains/aarch64/bin/../lib/gcc/aarch64-none-linux-gnu/9.2.1/:/home/jianyu/optee/toolchains/aarch64/bin/../lib/gcc/:/home/jianyu/optee/toolchains/aarch64/bin/../lib/gcc/aarch64-none-linux-gnu/9.2.1/../../../../aarch64-none-linux-gnu/lib/../lib64/:/home/jianyu/optee/toolchains/aarch64/bin/../aarch64-none-linux-gnu/libc/lib/../lib64/:/home/jianyu/optee/toolchains/aarch64/bin/../aarch64-none-linux-gnu/libc/usr/lib/../lib64/:/home/jianyu/optee/toolchains/aarch64/bin/../lib/gcc/aarch64-none-linux-gnu/9.2.1/../../../../aarch64-none-linux-gnu/lib/:/home/jianyu/optee/toolchains/aarch64/bin/../aarch64-none-linux-gnu/libc/lib/:/home/jianyu/optee/toolchains/aarch64/bin/../aarch64-none-linux-gnu/libc/usr/lib/
+COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_d698b.dir/CMakeCCompilerABI.c.o' '-c' '-mlittle-endian' '-mabi=lp64'
+Linking C executable cmTC_d698b
+/usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_d698b.dir/link.txt --verbose=1
+/home/jianyu/optee/toolchains/aarch64/bin/aarch64-none-linux-gnu-gcc  -v CMakeFiles/cmTC_d698b.dir/CMakeCCompilerABI.c.o -o cmTC_d698b 
+Using built-in specs.
+COLLECT_GCC=/home/jianyu/optee/toolchains/aarch64/bin/aarch64-none-linux-gnu-gcc
+COLLECT_LTO_WRAPPER=/home/jianyu/optee/toolchains/aarch64/bin/../libexec/gcc/aarch64-none-linux-gnu/9.2.1/lto-wrapper
+Target: aarch64-none-linux-gnu
+Configured with: /tmp/dgboter/bbs/rhev-vm2--rhe6x86_64/buildbot/rhe6x86_64--aarch64-none-linux-gnu/build/src/gcc/configure --target=aarch64-none-linux-gnu --prefix= --with-sysroot=/aarch64-none-linux-gnu/libc --with-build-sysroot=/tmp/dgboter/bbs/rhev-vm2--rhe6x86_64/buildbot/rhe6x86_64--aarch64-none-linux-gnu/build/build-aarch64-none-linux-gnu/install//aarch64-none-linux-gnu/libc --with-bugurl=https://bugs.linaro.org/ --enable-gnu-indirect-function --enable-shared --disable-libssp --disable-libmudflap --enable-checking=release --enable-languages=c,c++,fortran --with-gmp=/tmp/dgboter/bbs/rhev-vm2--rhe6x86_64/buildbot/rhe6x86_64--aarch64-none-linux-gnu/build/build-aarch64-none-linux-gnu/host-tools --with-mpfr=/tmp/dgboter/bbs/rhev-vm2--rhe6x86_64/buildbot/rhe6x86_64--aarch64-none-linux-gnu/build/build-aarch64-none-linux-gnu/host-tools --with-mpc=/tmp/dgboter/bbs/rhev-vm2--rhe6x86_64/buildbot/rhe6x86_64--aarch64-none-linux-gnu/build/build-aarch64-none-linux-gnu/host-tools --with-isl=/tmp/dgboter/bbs/rhev-vm2--rhe6x86_64/buildbot/rhe6x86_64--aarch64-none-linux-gnu/build/build-aarch64-none-linux-gnu/host-tools --enable-fix-cortex-a53-843419 --with-pkgversion='GNU Toolchain for the A-profile Architecture 9.2-2019.12 (arm-9.10)'
+Thread model: posix
+gcc version 9.2.1 20191025 (GNU Toolchain for the A-profile Architecture 9.2-2019.12 (arm-9.10)) 
+COMPILER_PATH=/home/jianyu/optee/toolchains/aarch64/bin/../libexec/gcc/aarch64-none-linux-gnu/9.2.1/:/home/jianyu/optee/toolchains/aarch64/bin/../libexec/gcc/:/home/jianyu/optee/toolchains/aarch64/bin/../lib/gcc/aarch64-none-linux-gnu/9.2.1/../../../../aarch64-none-linux-gnu/bin/
+LIBRARY_PATH=/home/jianyu/optee/toolchains/aarch64/bin/../lib/gcc/aarch64-none-linux-gnu/9.2.1/:/home/jianyu/optee/toolchains/aarch64/bin/../lib/gcc/:/home/jianyu/optee/toolchains/aarch64/bin/../lib/gcc/aarch64-none-linux-gnu/9.2.1/../../../../aarch64-none-linux-gnu/lib/../lib64/:/home/jianyu/optee/toolchains/aarch64/bin/../aarch64-none-linux-gnu/libc/lib/../lib64/:/home/jianyu/optee/toolchains/aarch64/bin/../aarch64-none-linux-gnu/libc/usr/lib/../lib64/:/home/jianyu/optee/toolchains/aarch64/bin/../lib/gcc/aarch64-none-linux-gnu/9.2.1/../../../../aarch64-none-linux-gnu/lib/:/home/jianyu/optee/toolchains/aarch64/bin/../aarch64-none-linux-gnu/libc/lib/:/home/jianyu/optee/toolchains/aarch64/bin/../aarch64-none-linux-gnu/libc/usr/lib/
+COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_d698b' '-mlittle-endian' '-mabi=lp64'
+ /home/jianyu/optee/toolchains/aarch64/bin/../libexec/gcc/aarch64-none-linux-gnu/9.2.1/collect2 -plugin /home/jianyu/optee/toolchains/aarch64/bin/../libexec/gcc/aarch64-none-linux-gnu/9.2.1/liblto_plugin.so -plugin-opt=/home/jianyu/optee/toolchains/aarch64/bin/../libexec/gcc/aarch64-none-linux-gnu/9.2.1/lto-wrapper -plugin-opt=-fresolution=/tmp/ccEIVFTF.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s --sysroot=/home/jianyu/optee/toolchains/aarch64/bin/../aarch64-none-linux-gnu/libc --eh-frame-hdr -dynamic-linker /lib/ld-linux-aarch64.so.1 -X -EL -maarch64linux --fix-cortex-a53-843419 -o cmTC_d698b /home/jianyu/optee/toolchains/aarch64/bin/../aarch64-none-linux-gnu/libc/usr/lib/../lib64/crt1.o /home/jianyu/optee/toolchains/aarch64/bin/../aarch64-none-linux-gnu/libc/usr/lib/../lib64/crti.o /home/jianyu/optee/toolchains/aarch64/bin/../lib/gcc/aarch64-none-linux-gnu/9.2.1/crtbegin.o -L/home/jianyu/optee/toolchains/aarch64/bin/../lib/gcc/aarch64-none-linux-gnu/9.2.1 -L/home/jianyu/optee/toolchains/aarch64/bin/../lib/gcc -L/home/jianyu/optee/toolchains/aarch64/bin/../lib/gcc/aarch64-none-linux-gnu/9.2.1/../../../../aarch64-none-linux-gnu/lib/../lib64 -L/home/jianyu/optee/toolchains/aarch64/bin/../aarch64-none-linux-gnu/libc/lib/../lib64 -L/home/jianyu/optee/toolchains/aarch64/bin/../aarch64-none-linux-gnu/libc/usr/lib/../lib64 -L/home/jianyu/optee/toolchains/aarch64/bin/../lib/gcc/aarch64-none-linux-gnu/9.2.1/../../../../aarch64-none-linux-gnu/lib -L/home/jianyu/optee/toolchains/aarch64/bin/../aarch64-none-linux-gnu/libc/lib -L/home/jianyu/optee/toolchains/aarch64/bin/../aarch64-none-linux-gnu/libc/usr/lib CMakeFiles/cmTC_d698b.dir/CMakeCCompilerABI.c.o -lgcc --push-state --as-needed -lgcc_s --pop-state -lc -lgcc --push-state --as-needed -lgcc_s --pop-state /home/jianyu/optee/toolchains/aarch64/bin/../lib/gcc/aarch64-none-linux-gnu/9.2.1/crtend.o /home/jianyu/optee/toolchains/aarch64/bin/../aarch64-none-linux-gnu/libc/usr/lib/../lib64/crtn.o
+COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_d698b' '-mlittle-endian' '-mabi=lp64'
+make[1]: Leaving directory '/home/jianyu/optee/optee_os/lib/libcxx/build/CMakeFiles/CMakeTmp'
+
+
+
+Parsed C implicit include dir info from above output: rv=done
+  found start of include info
+  found start of implicit include info
+    add: [/home/jianyu/optee/toolchains/aarch64/bin/../lib/gcc/aarch64-none-linux-gnu/9.2.1/include]
+    add: [/home/jianyu/optee/toolchains/aarch64/bin/../lib/gcc/aarch64-none-linux-gnu/9.2.1/include-fixed]
+    add: [/home/jianyu/optee/toolchains/aarch64/bin/../lib/gcc/aarch64-none-linux-gnu/9.2.1/../../../../aarch64-none-linux-gnu/include]
+    add: [/home/jianyu/optee/toolchains/aarch64/bin/../aarch64-none-linux-gnu/libc/usr/include]
+  end of search list found
+  collapse include dir [/home/jianyu/optee/toolchains/aarch64/bin/../lib/gcc/aarch64-none-linux-gnu/9.2.1/include] ==> [/home/jianyu/optee/toolchains/aarch64/lib/gcc/aarch64-none-linux-gnu/9.2.1/include]
+  collapse include dir [/home/jianyu/optee/toolchains/aarch64/bin/../lib/gcc/aarch64-none-linux-gnu/9.2.1/include-fixed] ==> [/home/jianyu/optee/toolchains/aarch64/lib/gcc/aarch64-none-linux-gnu/9.2.1/include-fixed]
+  collapse include dir [/home/jianyu/optee/toolchains/aarch64/bin/../lib/gcc/aarch64-none-linux-gnu/9.2.1/../../../../aarch64-none-linux-gnu/include] ==> [/home/jianyu/optee/toolchains/aarch64/aarch64-none-linux-gnu/include]
+  collapse include dir [/home/jianyu/optee/toolchains/aarch64/bin/../aarch64-none-linux-gnu/libc/usr/include] ==> [/home/jianyu/optee/toolchains/aarch64/aarch64-none-linux-gnu/libc/usr/include]
+  implicit include dirs: [/home/jianyu/optee/toolchains/aarch64/lib/gcc/aarch64-none-linux-gnu/9.2.1/include;/home/jianyu/optee/toolchains/aarch64/lib/gcc/aarch64-none-linux-gnu/9.2.1/include-fixed;/home/jianyu/optee/toolchains/aarch64/aarch64-none-linux-gnu/include;/home/jianyu/optee/toolchains/aarch64/aarch64-none-linux-gnu/libc/usr/include]
+
+
+Parsed C implicit link information from above output:
+  link line regex: [^( *|.*[/\])(aarch64-none-linux-gnu-ld|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\]+-)?ld|collect2)[^/\]*( |$)]
+  ignore line: [Change Dir: /home/jianyu/optee/optee_os/lib/libcxx/build/CMakeFiles/CMakeTmp]
+  ignore line: []
+  ignore line: [Run Build Command(s):/usr/bin/make cmTC_d698b/fast && /usr/bin/make  -f CMakeFiles/cmTC_d698b.dir/build.make CMakeFiles/cmTC_d698b.dir/build]
+  ignore line: [make[1]: Entering directory '/home/jianyu/optee/optee_os/lib/libcxx/build/CMakeFiles/CMakeTmp']
+  ignore line: [Building C object CMakeFiles/cmTC_d698b.dir/CMakeCCompilerABI.c.o]
+  ignore line: [/home/jianyu/optee/toolchains/aarch64/bin/aarch64-none-linux-gnu-gcc   -v -o CMakeFiles/cmTC_d698b.dir/CMakeCCompilerABI.c.o -c /usr/local/share/cmake-3.18/Modules/CMakeCCompilerABI.c]
+  ignore line: [Using built-in specs.]
+  ignore line: [COLLECT_GCC=/home/jianyu/optee/toolchains/aarch64/bin/aarch64-none-linux-gnu-gcc]
+  ignore line: [Target: aarch64-none-linux-gnu]
+  ignore line: [Configured with: /tmp/dgboter/bbs/rhev-vm2--rhe6x86_64/buildbot/rhe6x86_64--aarch64-none-linux-gnu/build/src/gcc/configure --target=aarch64-none-linux-gnu --prefix= --with-sysroot=/aarch64-none-linux-gnu/libc --with-build-sysroot=/tmp/dgboter/bbs/rhev-vm2--rhe6x86_64/buildbot/rhe6x86_64--aarch64-none-linux-gnu/build/build-aarch64-none-linux-gnu/install//aarch64-none-linux-gnu/libc --with-bugurl=https://bugs.linaro.org/ --enable-gnu-indirect-function --enable-shared --disable-libssp --disable-libmudflap --enable-checking=release --enable-languages=c c++ fortran --with-gmp=/tmp/dgboter/bbs/rhev-vm2--rhe6x86_64/buildbot/rhe6x86_64--aarch64-none-linux-gnu/build/build-aarch64-none-linux-gnu/host-tools --with-mpfr=/tmp/dgboter/bbs/rhev-vm2--rhe6x86_64/buildbot/rhe6x86_64--aarch64-none-linux-gnu/build/build-aarch64-none-linux-gnu/host-tools --with-mpc=/tmp/dgboter/bbs/rhev-vm2--rhe6x86_64/buildbot/rhe6x86_64--aarch64-none-linux-gnu/build/build-aarch64-none-linux-gnu/host-tools --with-isl=/tmp/dgboter/bbs/rhev-vm2--rhe6x86_64/buildbot/rhe6x86_64--aarch64-none-linux-gnu/build/build-aarch64-none-linux-gnu/host-tools --enable-fix-cortex-a53-843419 --with-pkgversion='GNU Toolchain for the A-profile Architecture 9.2-2019.12 (arm-9.10)']
+  ignore line: [Thread model: posix]
+  ignore line: [gcc version 9.2.1 20191025 (GNU Toolchain for the A-profile Architecture 9.2-2019.12 (arm-9.10)) ]
+  ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_d698b.dir/CMakeCCompilerABI.c.o' '-c' '-mlittle-endian' '-mabi=lp64']
+  ignore line: [ /home/jianyu/optee/toolchains/aarch64/bin/../libexec/gcc/aarch64-none-linux-gnu/9.2.1/cc1 -quiet -v -iprefix /home/jianyu/optee/toolchains/aarch64/bin/../lib/gcc/aarch64-none-linux-gnu/9.2.1/ -isysroot /home/jianyu/optee/toolchains/aarch64/bin/../aarch64-none-linux-gnu/libc /usr/local/share/cmake-3.18/Modules/CMakeCCompilerABI.c -quiet -dumpbase CMakeCCompilerABI.c -mlittle-endian -mabi=lp64 -auxbase-strip CMakeFiles/cmTC_d698b.dir/CMakeCCompilerABI.c.o -version -o /tmp/ccqOXipB.s]
+  ignore line: [GNU C17 (GNU Toolchain for the A-profile Architecture 9.2-2019.12 (arm-9.10)) version 9.2.1 20191025 (aarch64-none-linux-gnu)]
+  ignore line: [	compiled by GNU C version 4.8.1  GMP version 4.3.2  MPFR version 3.1.6  MPC version 1.0.3  isl version isl-0.15-1-g835ea3a-GMP]
+  ignore line: []
+  ignore line: [GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072]
+  ignore line: [ignoring duplicate directory "/home/jianyu/optee/toolchains/aarch64/bin/../lib/gcc/../../lib/gcc/aarch64-none-linux-gnu/9.2.1/include"]
+  ignore line: [ignoring nonexistent directory "/home/jianyu/optee/toolchains/aarch64/bin/../aarch64-none-linux-gnu/libc/usr/local/include"]
+  ignore line: [ignoring duplicate directory "/home/jianyu/optee/toolchains/aarch64/bin/../lib/gcc/../../lib/gcc/aarch64-none-linux-gnu/9.2.1/include-fixed"]
+  ignore line: [ignoring duplicate directory "/home/jianyu/optee/toolchains/aarch64/bin/../lib/gcc/../../lib/gcc/aarch64-none-linux-gnu/9.2.1/../../../../aarch64-none-linux-gnu/include"]
+  ignore line: [#include "..." search starts here:]
+  ignore line: [#include <...> search starts here:]
+  ignore line: [ /home/jianyu/optee/toolchains/aarch64/bin/../lib/gcc/aarch64-none-linux-gnu/9.2.1/include]
+  ignore line: [ /home/jianyu/optee/toolchains/aarch64/bin/../lib/gcc/aarch64-none-linux-gnu/9.2.1/include-fixed]
+  ignore line: [ /home/jianyu/optee/toolchains/aarch64/bin/../lib/gcc/aarch64-none-linux-gnu/9.2.1/../../../../aarch64-none-linux-gnu/include]
+  ignore line: [ /home/jianyu/optee/toolchains/aarch64/bin/../aarch64-none-linux-gnu/libc/usr/include]
+  ignore line: [End of search list.]
+  ignore line: [GNU C17 (GNU Toolchain for the A-profile Architecture 9.2-2019.12 (arm-9.10)) version 9.2.1 20191025 (aarch64-none-linux-gnu)]
+  ignore line: [	compiled by GNU C version 4.8.1  GMP version 4.3.2  MPFR version 3.1.6  MPC version 1.0.3  isl version isl-0.15-1-g835ea3a-GMP]
+  ignore line: []
+  ignore line: [GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072]
+  ignore line: [Compiler executable checksum: 85e1dc113eca18ee24842097eb6e9185]
+  ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_d698b.dir/CMakeCCompilerABI.c.o' '-c' '-mlittle-endian' '-mabi=lp64']
+  ignore line: [ /home/jianyu/optee/toolchains/aarch64/bin/../lib/gcc/aarch64-none-linux-gnu/9.2.1/../../../../aarch64-none-linux-gnu/bin/as -v -EL -mabi=lp64 -o CMakeFiles/cmTC_d698b.dir/CMakeCCompilerABI.c.o /tmp/ccqOXipB.s]
+  ignore line: [GNU assembler version 2.33.1 (aarch64-none-linux-gnu) using BFD version (GNU Toolchain for the A-profile Architecture 9.2-2019.12 (arm-9.10)) 2.33.1.20191209]
+  ignore line: [COMPILER_PATH=/home/jianyu/optee/toolchains/aarch64/bin/../libexec/gcc/aarch64-none-linux-gnu/9.2.1/:/home/jianyu/optee/toolchains/aarch64/bin/../libexec/gcc/:/home/jianyu/optee/toolchains/aarch64/bin/../lib/gcc/aarch64-none-linux-gnu/9.2.1/../../../../aarch64-none-linux-gnu/bin/]
+  ignore line: [LIBRARY_PATH=/home/jianyu/optee/toolchains/aarch64/bin/../lib/gcc/aarch64-none-linux-gnu/9.2.1/:/home/jianyu/optee/toolchains/aarch64/bin/../lib/gcc/:/home/jianyu/optee/toolchains/aarch64/bin/../lib/gcc/aarch64-none-linux-gnu/9.2.1/../../../../aarch64-none-linux-gnu/lib/../lib64/:/home/jianyu/optee/toolchains/aarch64/bin/../aarch64-none-linux-gnu/libc/lib/../lib64/:/home/jianyu/optee/toolchains/aarch64/bin/../aarch64-none-linux-gnu/libc/usr/lib/../lib64/:/home/jianyu/optee/toolchains/aarch64/bin/../lib/gcc/aarch64-none-linux-gnu/9.2.1/../../../../aarch64-none-linux-gnu/lib/:/home/jianyu/optee/toolchains/aarch64/bin/../aarch64-none-linux-gnu/libc/lib/:/home/jianyu/optee/toolchains/aarch64/bin/../aarch64-none-linux-gnu/libc/usr/lib/]
+  ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_d698b.dir/CMakeCCompilerABI.c.o' '-c' '-mlittle-endian' '-mabi=lp64']
+  ignore line: [Linking C executable cmTC_d698b]
+  ignore line: [/usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_d698b.dir/link.txt --verbose=1]
+  ignore line: [/home/jianyu/optee/toolchains/aarch64/bin/aarch64-none-linux-gnu-gcc  -v CMakeFiles/cmTC_d698b.dir/CMakeCCompilerABI.c.o -o cmTC_d698b ]
+  ignore line: [Using built-in specs.]
+  ignore line: [COLLECT_GCC=/home/jianyu/optee/toolchains/aarch64/bin/aarch64-none-linux-gnu-gcc]
+  ignore line: [COLLECT_LTO_WRAPPER=/home/jianyu/optee/toolchains/aarch64/bin/../libexec/gcc/aarch64-none-linux-gnu/9.2.1/lto-wrapper]
+  ignore line: [Target: aarch64-none-linux-gnu]
+  ignore line: [Configured with: /tmp/dgboter/bbs/rhev-vm2--rhe6x86_64/buildbot/rhe6x86_64--aarch64-none-linux-gnu/build/src/gcc/configure --target=aarch64-none-linux-gnu --prefix= --with-sysroot=/aarch64-none-linux-gnu/libc --with-build-sysroot=/tmp/dgboter/bbs/rhev-vm2--rhe6x86_64/buildbot/rhe6x86_64--aarch64-none-linux-gnu/build/build-aarch64-none-linux-gnu/install//aarch64-none-linux-gnu/libc --with-bugurl=https://bugs.linaro.org/ --enable-gnu-indirect-function --enable-shared --disable-libssp --disable-libmudflap --enable-checking=release --enable-languages=c c++ fortran --with-gmp=/tmp/dgboter/bbs/rhev-vm2--rhe6x86_64/buildbot/rhe6x86_64--aarch64-none-linux-gnu/build/build-aarch64-none-linux-gnu/host-tools --with-mpfr=/tmp/dgboter/bbs/rhev-vm2--rhe6x86_64/buildbot/rhe6x86_64--aarch64-none-linux-gnu/build/build-aarch64-none-linux-gnu/host-tools --with-mpc=/tmp/dgboter/bbs/rhev-vm2--rhe6x86_64/buildbot/rhe6x86_64--aarch64-none-linux-gnu/build/build-aarch64-none-linux-gnu/host-tools --with-isl=/tmp/dgboter/bbs/rhev-vm2--rhe6x86_64/buildbot/rhe6x86_64--aarch64-none-linux-gnu/build/build-aarch64-none-linux-gnu/host-tools --enable-fix-cortex-a53-843419 --with-pkgversion='GNU Toolchain for the A-profile Architecture 9.2-2019.12 (arm-9.10)']
+  ignore line: [Thread model: posix]
+  ignore line: [gcc version 9.2.1 20191025 (GNU Toolchain for the A-profile Architecture 9.2-2019.12 (arm-9.10)) ]
+  ignore line: [COMPILER_PATH=/home/jianyu/optee/toolchains/aarch64/bin/../libexec/gcc/aarch64-none-linux-gnu/9.2.1/:/home/jianyu/optee/toolchains/aarch64/bin/../libexec/gcc/:/home/jianyu/optee/toolchains/aarch64/bin/../lib/gcc/aarch64-none-linux-gnu/9.2.1/../../../../aarch64-none-linux-gnu/bin/]
+  ignore line: [LIBRARY_PATH=/home/jianyu/optee/toolchains/aarch64/bin/../lib/gcc/aarch64-none-linux-gnu/9.2.1/:/home/jianyu/optee/toolchains/aarch64/bin/../lib/gcc/:/home/jianyu/optee/toolchains/aarch64/bin/../lib/gcc/aarch64-none-linux-gnu/9.2.1/../../../../aarch64-none-linux-gnu/lib/../lib64/:/home/jianyu/optee/toolchains/aarch64/bin/../aarch64-none-linux-gnu/libc/lib/../lib64/:/home/jianyu/optee/toolchains/aarch64/bin/../aarch64-none-linux-gnu/libc/usr/lib/../lib64/:/home/jianyu/optee/toolchains/aarch64/bin/../lib/gcc/aarch64-none-linux-gnu/9.2.1/../../../../aarch64-none-linux-gnu/lib/:/home/jianyu/optee/toolchains/aarch64/bin/../aarch64-none-linux-gnu/libc/lib/:/home/jianyu/optee/toolchains/aarch64/bin/../aarch64-none-linux-gnu/libc/usr/lib/]
+  ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_d698b' '-mlittle-endian' '-mabi=lp64']
+  link line: [ /home/jianyu/optee/toolchains/aarch64/bin/../libexec/gcc/aarch64-none-linux-gnu/9.2.1/collect2 -plugin /home/jianyu/optee/toolchains/aarch64/bin/../libexec/gcc/aarch64-none-linux-gnu/9.2.1/liblto_plugin.so -plugin-opt=/home/jianyu/optee/toolchains/aarch64/bin/../libexec/gcc/aarch64-none-linux-gnu/9.2.1/lto-wrapper -plugin-opt=-fresolution=/tmp/ccEIVFTF.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s --sysroot=/home/jianyu/optee/toolchains/aarch64/bin/../aarch64-none-linux-gnu/libc --eh-frame-hdr -dynamic-linker /lib/ld-linux-aarch64.so.1 -X -EL -maarch64linux --fix-cortex-a53-843419 -o cmTC_d698b /home/jianyu/optee/toolchains/aarch64/bin/../aarch64-none-linux-gnu/libc/usr/lib/../lib64/crt1.o /home/jianyu/optee/toolchains/aarch64/bin/../aarch64-none-linux-gnu/libc/usr/lib/../lib64/crti.o /home/jianyu/optee/toolchains/aarch64/bin/../lib/gcc/aarch64-none-linux-gnu/9.2.1/crtbegin.o -L/home/jianyu/optee/toolchains/aarch64/bin/../lib/gcc/aarch64-none-linux-gnu/9.2.1 -L/home/jianyu/optee/toolchains/aarch64/bin/../lib/gcc -L/home/jianyu/optee/toolchains/aarch64/bin/../lib/gcc/aarch64-none-linux-gnu/9.2.1/../../../../aarch64-none-linux-gnu/lib/../lib64 -L/home/jianyu/optee/toolchains/aarch64/bin/../aarch64-none-linux-gnu/libc/lib/../lib64 -L/home/jianyu/optee/toolchains/aarch64/bin/../aarch64-none-linux-gnu/libc/usr/lib/../lib64 -L/home/jianyu/optee/toolchains/aarch64/bin/../lib/gcc/aarch64-none-linux-gnu/9.2.1/../../../../aarch64-none-linux-gnu/lib -L/home/jianyu/optee/toolchains/aarch64/bin/../aarch64-none-linux-gnu/libc/lib -L/home/jianyu/optee/toolchains/aarch64/bin/../aarch64-none-linux-gnu/libc/usr/lib CMakeFiles/cmTC_d698b.dir/CMakeCCompilerABI.c.o -lgcc --push-state --as-needed -lgcc_s --pop-state -lc -lgcc --push-state --as-needed -lgcc_s --pop-state /home/jianyu/optee/toolchains/aarch64/bin/../lib/gcc/aarch64-none-linux-gnu/9.2.1/crtend.o /home/jianyu/optee/toolchains/aarch64/bin/../aarch64-none-linux-gnu/libc/usr/lib/../lib64/crtn.o]
+    arg [/home/jianyu/optee/toolchains/aarch64/bin/../libexec/gcc/aarch64-none-linux-gnu/9.2.1/collect2] ==> ignore
+    arg [-plugin] ==> ignore
+    arg [/home/jianyu/optee/toolchains/aarch64/bin/../libexec/gcc/aarch64-none-linux-gnu/9.2.1/liblto_plugin.so] ==> ignore
+    arg [-plugin-opt=/home/jianyu/optee/toolchains/aarch64/bin/../libexec/gcc/aarch64-none-linux-gnu/9.2.1/lto-wrapper] ==> ignore
+    arg [-plugin-opt=-fresolution=/tmp/ccEIVFTF.res] ==> ignore
+    arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
+    arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
+    arg [-plugin-opt=-pass-through=-lc] ==> ignore
+    arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
+    arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
+    arg [--sysroot=/home/jianyu/optee/toolchains/aarch64/bin/../aarch64-none-linux-gnu/libc] ==> ignore
+    arg [--eh-frame-hdr] ==> ignore
+    arg [-dynamic-linker] ==> ignore
+    arg [/lib/ld-linux-aarch64.so.1] ==> ignore
+    arg [-X] ==> ignore
+    arg [-EL] ==> ignore
+    arg [-maarch64linux] ==> ignore
+    arg [--fix-cortex-a53-843419] ==> ignore
+    arg [-o] ==> ignore
+    arg [cmTC_d698b] ==> ignore
+    arg [/home/jianyu/optee/toolchains/aarch64/bin/../aarch64-none-linux-gnu/libc/usr/lib/../lib64/crt1.o] ==> ignore
+    arg [/home/jianyu/optee/toolchains/aarch64/bin/../aarch64-none-linux-gnu/libc/usr/lib/../lib64/crti.o] ==> ignore
+    arg [/home/jianyu/optee/toolchains/aarch64/bin/../lib/gcc/aarch64-none-linux-gnu/9.2.1/crtbegin.o] ==> ignore
+    arg [-L/home/jianyu/optee/toolchains/aarch64/bin/../lib/gcc/aarch64-none-linux-gnu/9.2.1] ==> dir [/home/jianyu/optee/toolchains/aarch64/bin/../lib/gcc/aarch64-none-linux-gnu/9.2.1]
+    arg [-L/home/jianyu/optee/toolchains/aarch64/bin/../lib/gcc] ==> dir [/home/jianyu/optee/toolchains/aarch64/bin/../lib/gcc]
+    arg [-L/home/jianyu/optee/toolchains/aarch64/bin/../lib/gcc/aarch64-none-linux-gnu/9.2.1/../../../../aarch64-none-linux-gnu/lib/../lib64] ==> dir [/home/jianyu/optee/toolchains/aarch64/bin/../lib/gcc/aarch64-none-linux-gnu/9.2.1/../../../../aarch64-none-linux-gnu/lib/../lib64]
+    arg [-L/home/jianyu/optee/toolchains/aarch64/bin/../aarch64-none-linux-gnu/libc/lib/../lib64] ==> dir [/home/jianyu/optee/toolchains/aarch64/bin/../aarch64-none-linux-gnu/libc/lib/../lib64]
+    arg [-L/home/jianyu/optee/toolchains/aarch64/bin/../aarch64-none-linux-gnu/libc/usr/lib/../lib64] ==> dir [/home/jianyu/optee/toolchains/aarch64/bin/../aarch64-none-linux-gnu/libc/usr/lib/../lib64]
+    arg [-L/home/jianyu/optee/toolchains/aarch64/bin/../lib/gcc/aarch64-none-linux-gnu/9.2.1/../../../../aarch64-none-linux-gnu/lib] ==> dir [/home/jianyu/optee/toolchains/aarch64/bin/../lib/gcc/aarch64-none-linux-gnu/9.2.1/../../../../aarch64-none-linux-gnu/lib]
+    arg [-L/home/jianyu/optee/toolchains/aarch64/bin/../aarch64-none-linux-gnu/libc/lib] ==> dir [/home/jianyu/optee/toolchains/aarch64/bin/../aarch64-none-linux-gnu/libc/lib]
+    arg [-L/home/jianyu/optee/toolchains/aarch64/bin/../aarch64-none-linux-gnu/libc/usr/lib] ==> dir [/home/jianyu/optee/toolchains/aarch64/bin/../aarch64-none-linux-gnu/libc/usr/lib]
+    arg [CMakeFiles/cmTC_d698b.dir/CMakeCCompilerABI.c.o] ==> ignore
+    arg [-lgcc] ==> lib [gcc]
+    arg [--push-state] ==> ignore
+    arg [--as-needed] ==> ignore
+    arg [-lgcc_s] ==> lib [gcc_s]
+    arg [--pop-state] ==> ignore
+    arg [-lc] ==> lib [c]
+    arg [-lgcc] ==> lib [gcc]
+    arg [--push-state] ==> ignore
+    arg [--as-needed] ==> ignore
+    arg [-lgcc_s] ==> lib [gcc_s]
+    arg [--pop-state] ==> ignore
+    arg [/home/jianyu/optee/toolchains/aarch64/bin/../lib/gcc/aarch64-none-linux-gnu/9.2.1/crtend.o] ==> ignore
+    arg [/home/jianyu/optee/toolchains/aarch64/bin/../aarch64-none-linux-gnu/libc/usr/lib/../lib64/crtn.o] ==> ignore
+  collapse library dir [/home/jianyu/optee/toolchains/aarch64/bin/../lib/gcc/aarch64-none-linux-gnu/9.2.1] ==> [/home/jianyu/optee/toolchains/aarch64/lib/gcc/aarch64-none-linux-gnu/9.2.1]
+  collapse library dir [/home/jianyu/optee/toolchains/aarch64/bin/../lib/gcc] ==> [/home/jianyu/optee/toolchains/aarch64/lib/gcc]
+  collapse library dir [/home/jianyu/optee/toolchains/aarch64/bin/../lib/gcc/aarch64-none-linux-gnu/9.2.1/../../../../aarch64-none-linux-gnu/lib/../lib64] ==> [/home/jianyu/optee/toolchains/aarch64/aarch64-none-linux-gnu/lib64]
+  collapse library dir [/home/jianyu/optee/toolchains/aarch64/bin/../aarch64-none-linux-gnu/libc/lib/../lib64] ==> [/home/jianyu/optee/toolchains/aarch64/aarch64-none-linux-gnu/libc/lib64]
+  collapse library dir [/home/jianyu/optee/toolchains/aarch64/bin/../aarch64-none-linux-gnu/libc/usr/lib/../lib64] ==> [/home/jianyu/optee/toolchains/aarch64/aarch64-none-linux-gnu/libc/usr/lib64]
+  collapse library dir [/home/jianyu/optee/toolchains/aarch64/bin/../lib/gcc/aarch64-none-linux-gnu/9.2.1/../../../../aarch64-none-linux-gnu/lib] ==> [/home/jianyu/optee/toolchains/aarch64/aarch64-none-linux-gnu/lib]
+  collapse library dir [/home/jianyu/optee/toolchains/aarch64/bin/../aarch64-none-linux-gnu/libc/lib] ==> [/home/jianyu/optee/toolchains/aarch64/aarch64-none-linux-gnu/libc/lib]
+  collapse library dir [/home/jianyu/optee/toolchains/aarch64/bin/../aarch64-none-linux-gnu/libc/usr/lib] ==> [/home/jianyu/optee/toolchains/aarch64/aarch64-none-linux-gnu/libc/usr/lib]
+  implicit libs: [gcc;gcc_s;c;gcc;gcc_s]
+  implicit dirs: [/home/jianyu/optee/toolchains/aarch64/lib/gcc/aarch64-none-linux-gnu/9.2.1;/home/jianyu/optee/toolchains/aarch64/lib/gcc;/home/jianyu/optee/toolchains/aarch64/aarch64-none-linux-gnu/lib64;/home/jianyu/optee/toolchains/aarch64/aarch64-none-linux-gnu/libc/lib64;/home/jianyu/optee/toolchains/aarch64/aarch64-none-linux-gnu/libc/usr/lib64;/home/jianyu/optee/toolchains/aarch64/aarch64-none-linux-gnu/lib;/home/jianyu/optee/toolchains/aarch64/aarch64-none-linux-gnu/libc/lib;/home/jianyu/optee/toolchains/aarch64/aarch64-none-linux-gnu/libc/usr/lib]
+  implicit fwks: []
+
+
+Determining if the function fopen exists in the c passed with the following output:
+Change Dir: /home/jianyu/optee/optee_os/lib/libcxx/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_46fc3/fast && /usr/bin/make  -f CMakeFiles/cmTC_46fc3.dir/build.make CMakeFiles/cmTC_46fc3.dir/build
+make[1]: Entering directory '/home/jianyu/optee/optee_os/lib/libcxx/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_46fc3.dir/CheckFunctionExists.c.o
+/home/jianyu/optee/toolchains/aarch64/bin/aarch64-none-linux-gnu-gcc   -DCHECK_FUNCTION_EXISTS=fopen -o CMakeFiles/cmTC_46fc3.dir/CheckFunctionExists.c.o -c /usr/local/share/cmake-3.18/Modules/CheckFunctionExists.c
+Linking C executable cmTC_46fc3
+/usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_46fc3.dir/link.txt --verbose=1
+/home/jianyu/optee/toolchains/aarch64/bin/aarch64-none-linux-gnu-gcc  -DCHECK_FUNCTION_EXISTS=fopen CMakeFiles/cmTC_46fc3.dir/CheckFunctionExists.c.o -o cmTC_46fc3  -lc 
+make[1]: Leaving directory '/home/jianyu/optee/optee_os/lib/libcxx/build/CMakeFiles/CMakeTmp'
+
+
+
+Determining if the function __gcc_personality_v0 exists in the gcc_s passed with the following output:
+Change Dir: /home/jianyu/optee/optee_os/lib/libcxx/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_c7ff1/fast && /usr/bin/make  -f CMakeFiles/cmTC_c7ff1.dir/build.make CMakeFiles/cmTC_c7ff1.dir/build
+make[1]: Entering directory '/home/jianyu/optee/optee_os/lib/libcxx/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_c7ff1.dir/CheckFunctionExists.c.o
+/home/jianyu/optee/toolchains/aarch64/bin/aarch64-none-linux-gnu-gcc   -DCHECK_FUNCTION_EXISTS=__gcc_personality_v0 -o CMakeFiles/cmTC_c7ff1.dir/CheckFunctionExists.c.o -c /usr/local/share/cmake-3.18/Modules/CheckFunctionExists.c
+Linking C executable cmTC_c7ff1
+/usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_c7ff1.dir/link.txt --verbose=1
+/home/jianyu/optee/toolchains/aarch64/bin/aarch64-none-linux-gnu-gcc  -DCHECK_FUNCTION_EXISTS=__gcc_personality_v0 CMakeFiles/cmTC_c7ff1.dir/CheckFunctionExists.c.o -o cmTC_c7ff1  -lgcc_s 
+make[1]: Leaving directory '/home/jianyu/optee/optee_os/lib/libcxx/build/CMakeFiles/CMakeTmp'
+
+
+
+Performing C SOURCE FILE Test LIBCXX_SUPPORTS_NODEFAULTLIBS_FLAG succeeded with the following output:
+Change Dir: /home/jianyu/optee/optee_os/lib/libcxx/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_047a1/fast && /usr/bin/make  -f CMakeFiles/cmTC_047a1.dir/build.make CMakeFiles/cmTC_047a1.dir/build
+make[1]: Entering directory '/home/jianyu/optee/optee_os/lib/libcxx/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_047a1.dir/src.c.o
+/home/jianyu/optee/toolchains/aarch64/bin/aarch64-none-linux-gnu-gcc   -DLIBCXX_SUPPORTS_NODEFAULTLIBS_FLAG   -nodefaultlibs -o CMakeFiles/cmTC_047a1.dir/src.c.o -c /home/jianyu/optee/optee_os/lib/libcxx/build/CMakeFiles/CMakeTmp/src.c
+Linking C executable cmTC_047a1
+/usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_047a1.dir/link.txt --verbose=1
+/home/jianyu/optee/toolchains/aarch64/bin/aarch64-none-linux-gnu-gcc  -DLIBCXX_SUPPORTS_NODEFAULTLIBS_FLAG CMakeFiles/cmTC_047a1.dir/src.c.o -o cmTC_047a1 
+make[1]: Leaving directory '/home/jianyu/optee/optee_os/lib/libcxx/build/CMakeFiles/CMakeTmp'
+
+
+Source file was:
+int main(void) { return 0; }
+Determining if the function pthread_create exists in the pthread passed with the following output:
+Change Dir: /home/jianyu/optee/optee_os/lib/libcxx/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_420a2/fast && /usr/bin/make  -f CMakeFiles/cmTC_420a2.dir/build.make CMakeFiles/cmTC_420a2.dir/build
+make[1]: Entering directory '/home/jianyu/optee/optee_os/lib/libcxx/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_420a2.dir/CheckFunctionExists.c.o
+/home/jianyu/optee/toolchains/aarch64/bin/aarch64-none-linux-gnu-gcc   -DCHECK_FUNCTION_EXISTS=pthread_create  -nodefaultlibs -o CMakeFiles/cmTC_420a2.dir/CheckFunctionExists.c.o -c /usr/local/share/cmake-3.18/Modules/CheckFunctionExists.c
+Linking C executable cmTC_420a2
+/usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_420a2.dir/link.txt --verbose=1
+/home/jianyu/optee/toolchains/aarch64/bin/aarch64-none-linux-gnu-gcc  -DCHECK_FUNCTION_EXISTS=pthread_create  -nodefaultlibs CMakeFiles/cmTC_420a2.dir/CheckFunctionExists.c.o -o cmTC_420a2  -lpthread -lc -lgcc_s 
+make[1]: Leaving directory '/home/jianyu/optee/optee_os/lib/libcxx/build/CMakeFiles/CMakeTmp'
+
+
+
+Determining if the function ccos exists in the m passed with the following output:
+Change Dir: /home/jianyu/optee/optee_os/lib/libcxx/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_d7ae7/fast && /usr/bin/make  -f CMakeFiles/cmTC_d7ae7.dir/build.make CMakeFiles/cmTC_d7ae7.dir/build
+make[1]: Entering directory '/home/jianyu/optee/optee_os/lib/libcxx/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_d7ae7.dir/CheckFunctionExists.c.o
+/home/jianyu/optee/toolchains/aarch64/bin/aarch64-none-linux-gnu-gcc   -DCHECK_FUNCTION_EXISTS=ccos  -nodefaultlibs -o CMakeFiles/cmTC_d7ae7.dir/CheckFunctionExists.c.o -c /usr/local/share/cmake-3.18/Modules/CheckFunctionExists.c
+<command-line>: warning: conflicting types for built-in function ‘ccos’; expected ‘_Complex double(_Complex double)’ [-Wbuiltin-declaration-mismatch]
+/usr/local/share/cmake-3.18/Modules/CheckFunctionExists.c:7:3: note: in expansion of macro ‘CHECK_FUNCTION_EXISTS’
+    7 |   CHECK_FUNCTION_EXISTS(void);
+      |   ^~~~~~~~~~~~~~~~~~~~~
+/usr/local/share/cmake-3.18/Modules/CheckFunctionExists.c:1:1: note: ‘ccos’ is declared in header ‘<complex.h>’
+  +++ |+#include <complex.h>
+    1 | #ifdef CHECK_FUNCTION_EXISTS
+Linking C executable cmTC_d7ae7
+/usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_d7ae7.dir/link.txt --verbose=1
+/home/jianyu/optee/toolchains/aarch64/bin/aarch64-none-linux-gnu-gcc  -DCHECK_FUNCTION_EXISTS=ccos  -nodefaultlibs CMakeFiles/cmTC_d7ae7.dir/CheckFunctionExists.c.o -o cmTC_d7ae7  -lm -lc -lgcc_s 
+make[1]: Leaving directory '/home/jianyu/optee/optee_os/lib/libcxx/build/CMakeFiles/CMakeTmp'
+
+
+
+Determining if the function clock_gettime exists in the rt passed with the following output:
+Change Dir: /home/jianyu/optee/optee_os/lib/libcxx/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_b90d0/fast && /usr/bin/make  -f CMakeFiles/cmTC_b90d0.dir/build.make CMakeFiles/cmTC_b90d0.dir/build
+make[1]: Entering directory '/home/jianyu/optee/optee_os/lib/libcxx/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_b90d0.dir/CheckFunctionExists.c.o
+/home/jianyu/optee/toolchains/aarch64/bin/aarch64-none-linux-gnu-gcc   -DCHECK_FUNCTION_EXISTS=clock_gettime  -nodefaultlibs -o CMakeFiles/cmTC_b90d0.dir/CheckFunctionExists.c.o -c /usr/local/share/cmake-3.18/Modules/CheckFunctionExists.c
+Linking C executable cmTC_b90d0
+/usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_b90d0.dir/link.txt --verbose=1
+/home/jianyu/optee/toolchains/aarch64/bin/aarch64-none-linux-gnu-gcc  -DCHECK_FUNCTION_EXISTS=clock_gettime  -nodefaultlibs CMakeFiles/cmTC_b90d0.dir/CheckFunctionExists.c.o -o cmTC_b90d0  -lrt -lc -lgcc_s 
+make[1]: Leaving directory '/home/jianyu/optee/optee_os/lib/libcxx/build/CMakeFiles/CMakeTmp'
+
+
+
+Determining if the function __atomic_fetch_add_8 exists in the atomic passed with the following output:
+Change Dir: /home/jianyu/optee/optee_os/lib/libcxx/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_a7af2/fast && /usr/bin/make  -f CMakeFiles/cmTC_a7af2.dir/build.make CMakeFiles/cmTC_a7af2.dir/build
+make[1]: Entering directory '/home/jianyu/optee/optee_os/lib/libcxx/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_a7af2.dir/CheckFunctionExists.c.o
+/home/jianyu/optee/toolchains/aarch64/bin/aarch64-none-linux-gnu-gcc   -DCHECK_FUNCTION_EXISTS=__atomic_fetch_add_8  -nodefaultlibs -o CMakeFiles/cmTC_a7af2.dir/CheckFunctionExists.c.o -c /usr/local/share/cmake-3.18/Modules/CheckFunctionExists.c
+<command-line>: warning: conflicting types for built-in function ‘__atomic_fetch_add_8’; expected ‘long unsigned int(volatile void *, long unsigned int,  int)’ [-Wbuiltin-declaration-mismatch]
+<command-line>: note: in definition of macro ‘CHECK_FUNCTION_EXISTS’
+Linking C executable cmTC_a7af2
+/usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_a7af2.dir/link.txt --verbose=1
+/home/jianyu/optee/toolchains/aarch64/bin/aarch64-none-linux-gnu-gcc  -DCHECK_FUNCTION_EXISTS=__atomic_fetch_add_8  -nodefaultlibs CMakeFiles/cmTC_a7af2.dir/CheckFunctionExists.c.o -o cmTC_a7af2  -latomic -lc -lgcc_s 
+make[1]: Leaving directory '/home/jianyu/optee/optee_os/lib/libcxx/build/CMakeFiles/CMakeTmp'
+
+
+
+Performing C++ SOURCE FILE Test LIBCXX_SUPPORTS_NOSTDINCXX_FLAG succeeded with the following output:
+Change Dir: /home/jianyu/optee/optee_os/lib/libcxx/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_ea322/fast && /usr/bin/make  -f CMakeFiles/cmTC_ea322.dir/build.make CMakeFiles/cmTC_ea322.dir/build
+make[1]: Entering directory '/home/jianyu/optee/optee_os/lib/libcxx/build/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_ea322.dir/src.cxx.o
+/home/jianyu/optee/toolchains/aarch64/bin/aarch64-none-linux-gnu-g++   -DLIBCXX_SUPPORTS_NOSTDINCXX_FLAG  -nodefaultlibs   -nostdinc++ -o CMakeFiles/cmTC_ea322.dir/src.cxx.o -c /home/jianyu/optee/optee_os/lib/libcxx/build/CMakeFiles/CMakeTmp/src.cxx
+Linking CXX executable cmTC_ea322
+/usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_ea322.dir/link.txt --verbose=1
+/home/jianyu/optee/toolchains/aarch64/bin/aarch64-none-linux-gnu-g++  -DLIBCXX_SUPPORTS_NOSTDINCXX_FLAG  -nodefaultlibs CMakeFiles/cmTC_ea322.dir/src.cxx.o -o cmTC_ea322  -lc -lgcc_s 
+make[1]: Leaving directory '/home/jianyu/optee/optee_os/lib/libcxx/build/CMakeFiles/CMakeTmp'
+
+
+Source file was:
+int main() { return 0; }
+Performing C++ SOURCE FILE Test LIBCXX_SUPPORTS_FVISIBILITY_INLINES_HIDDEN_FLAG succeeded with the following output:
+Change Dir: /home/jianyu/optee/optee_os/lib/libcxx/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_11d80/fast && /usr/bin/make  -f CMakeFiles/cmTC_11d80.dir/build.make CMakeFiles/cmTC_11d80.dir/build
+make[1]: Entering directory '/home/jianyu/optee/optee_os/lib/libcxx/build/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_11d80.dir/src.cxx.o
+/home/jianyu/optee/toolchains/aarch64/bin/aarch64-none-linux-gnu-g++   -DLIBCXX_SUPPORTS_FVISIBILITY_INLINES_HIDDEN_FLAG  -nodefaultlibs   -fvisibility-inlines-hidden -o CMakeFiles/cmTC_11d80.dir/src.cxx.o -c /home/jianyu/optee/optee_os/lib/libcxx/build/CMakeFiles/CMakeTmp/src.cxx
+Linking CXX executable cmTC_11d80
+/usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_11d80.dir/link.txt --verbose=1
+/home/jianyu/optee/toolchains/aarch64/bin/aarch64-none-linux-gnu-g++  -DLIBCXX_SUPPORTS_FVISIBILITY_INLINES_HIDDEN_FLAG  -nodefaultlibs CMakeFiles/cmTC_11d80.dir/src.cxx.o -o cmTC_11d80  -lc -lgcc_s 
+make[1]: Leaving directory '/home/jianyu/optee/optee_os/lib/libcxx/build/CMakeFiles/CMakeTmp'
+
+
+Source file was:
+int main() { return 0; }
+Performing C++ SOURCE FILE Test LIBCXX_SUPPORTS_NOSTDINC_FLAG succeeded with the following output:
+Change Dir: /home/jianyu/optee/optee_os/lib/libcxx/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_e4bed/fast && /usr/bin/make  -f CMakeFiles/cmTC_e4bed.dir/build.make CMakeFiles/cmTC_e4bed.dir/build
+make[1]: Entering directory '/home/jianyu/optee/optee_os/lib/libcxx/build/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_e4bed.dir/src.cxx.o
+/home/jianyu/optee/toolchains/aarch64/bin/aarch64-none-linux-gnu-g++   -DLIBCXX_SUPPORTS_NOSTDINC_FLAG  -nodefaultlibs   -nostdinc -o CMakeFiles/cmTC_e4bed.dir/src.cxx.o -c /home/jianyu/optee/optee_os/lib/libcxx/build/CMakeFiles/CMakeTmp/src.cxx
+Linking CXX executable cmTC_e4bed
+/usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_e4bed.dir/link.txt --verbose=1
+/home/jianyu/optee/toolchains/aarch64/bin/aarch64-none-linux-gnu-g++  -DLIBCXX_SUPPORTS_NOSTDINC_FLAG  -nodefaultlibs CMakeFiles/cmTC_e4bed.dir/src.cxx.o -o cmTC_e4bed  -lc -lgcc_s 
+make[1]: Leaving directory '/home/jianyu/optee/optee_os/lib/libcxx/build/CMakeFiles/CMakeTmp'
+
+
+Source file was:
+int main() { return 0; }
+Performing C++ SOURCE FILE Test LIBCXX_SUPPORTS_WNO_ATTRIBUTES_FLAG succeeded with the following output:
+Change Dir: /home/jianyu/optee/optee_os/lib/libcxx/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_fbe99/fast && /usr/bin/make  -f CMakeFiles/cmTC_fbe99.dir/build.make CMakeFiles/cmTC_fbe99.dir/build
+make[1]: Entering directory '/home/jianyu/optee/optee_os/lib/libcxx/build/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_fbe99.dir/src.cxx.o
+/home/jianyu/optee/toolchains/aarch64/bin/aarch64-none-linux-gnu-g++   -DLIBCXX_SUPPORTS_WNO_ATTRIBUTES_FLAG  -nodefaultlibs   -Wno-attributes -o CMakeFiles/cmTC_fbe99.dir/src.cxx.o -c /home/jianyu/optee/optee_os/lib/libcxx/build/CMakeFiles/CMakeTmp/src.cxx
+Linking CXX executable cmTC_fbe99
+/usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_fbe99.dir/link.txt --verbose=1
+/home/jianyu/optee/toolchains/aarch64/bin/aarch64-none-linux-gnu-g++  -DLIBCXX_SUPPORTS_WNO_ATTRIBUTES_FLAG  -nodefaultlibs CMakeFiles/cmTC_fbe99.dir/src.cxx.o -o cmTC_fbe99  -lc -lgcc_s 
+make[1]: Leaving directory '/home/jianyu/optee/optee_os/lib/libcxx/build/CMakeFiles/CMakeTmp'
+
+
+Source file was:
+int main() { return 0; }
+Performing C++ SOURCE FILE Test LIBCXX_SUPPORTS_WNO_DEPRECATED_DECLARATIONS_FLAG succeeded with the following output:
+Change Dir: /home/jianyu/optee/optee_os/lib/libcxx/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_17819/fast && /usr/bin/make  -f CMakeFiles/cmTC_17819.dir/build.make CMakeFiles/cmTC_17819.dir/build
+make[1]: Entering directory '/home/jianyu/optee/optee_os/lib/libcxx/build/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_17819.dir/src.cxx.o
+/home/jianyu/optee/toolchains/aarch64/bin/aarch64-none-linux-gnu-g++   -DLIBCXX_SUPPORTS_WNO_DEPRECATED_DECLARATIONS_FLAG  -nodefaultlibs   -Wno-deprecated-declarations -o CMakeFiles/cmTC_17819.dir/src.cxx.o -c /home/jianyu/optee/optee_os/lib/libcxx/build/CMakeFiles/CMakeTmp/src.cxx
+Linking CXX executable cmTC_17819
+/usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_17819.dir/link.txt --verbose=1
+/home/jianyu/optee/toolchains/aarch64/bin/aarch64-none-linux-gnu-g++  -DLIBCXX_SUPPORTS_WNO_DEPRECATED_DECLARATIONS_FLAG  -nodefaultlibs CMakeFiles/cmTC_17819.dir/src.cxx.o -o cmTC_17819  -lc -lgcc_s 
+make[1]: Leaving directory '/home/jianyu/optee/optee_os/lib/libcxx/build/CMakeFiles/CMakeTmp'
+
+
+Source file was:
+int main() { return 0; }
+Performing C++ SOURCE FILE Test LIBCXX_SUPPORTS_WALL_FLAG succeeded with the following output:
+Change Dir: /home/jianyu/optee/optee_os/lib/libcxx/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_5f5b7/fast && /usr/bin/make  -f CMakeFiles/cmTC_5f5b7.dir/build.make CMakeFiles/cmTC_5f5b7.dir/build
+make[1]: Entering directory '/home/jianyu/optee/optee_os/lib/libcxx/build/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_5f5b7.dir/src.cxx.o
+/home/jianyu/optee/toolchains/aarch64/bin/aarch64-none-linux-gnu-g++   -DLIBCXX_SUPPORTS_WALL_FLAG  -nodefaultlibs   -Wall -o CMakeFiles/cmTC_5f5b7.dir/src.cxx.o -c /home/jianyu/optee/optee_os/lib/libcxx/build/CMakeFiles/CMakeTmp/src.cxx
+Linking CXX executable cmTC_5f5b7
+/usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_5f5b7.dir/link.txt --verbose=1
+/home/jianyu/optee/toolchains/aarch64/bin/aarch64-none-linux-gnu-g++  -DLIBCXX_SUPPORTS_WALL_FLAG  -nodefaultlibs CMakeFiles/cmTC_5f5b7.dir/src.cxx.o -o cmTC_5f5b7  -lc -lgcc_s 
+make[1]: Leaving directory '/home/jianyu/optee/optee_os/lib/libcxx/build/CMakeFiles/CMakeTmp'
+
+
+Source file was:
+int main() { return 0; }
+Performing C++ SOURCE FILE Test LIBCXX_SUPPORTS_WEXTRA_FLAG succeeded with the following output:
+Change Dir: /home/jianyu/optee/optee_os/lib/libcxx/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_2296d/fast && /usr/bin/make  -f CMakeFiles/cmTC_2296d.dir/build.make CMakeFiles/cmTC_2296d.dir/build
+make[1]: Entering directory '/home/jianyu/optee/optee_os/lib/libcxx/build/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_2296d.dir/src.cxx.o
+/home/jianyu/optee/toolchains/aarch64/bin/aarch64-none-linux-gnu-g++   -DLIBCXX_SUPPORTS_WEXTRA_FLAG  -nodefaultlibs   -Wextra -o CMakeFiles/cmTC_2296d.dir/src.cxx.o -c /home/jianyu/optee/optee_os/lib/libcxx/build/CMakeFiles/CMakeTmp/src.cxx
+Linking CXX executable cmTC_2296d
+/usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_2296d.dir/link.txt --verbose=1
+/home/jianyu/optee/toolchains/aarch64/bin/aarch64-none-linux-gnu-g++  -DLIBCXX_SUPPORTS_WEXTRA_FLAG  -nodefaultlibs CMakeFiles/cmTC_2296d.dir/src.cxx.o -o cmTC_2296d  -lc -lgcc_s 
+make[1]: Leaving directory '/home/jianyu/optee/optee_os/lib/libcxx/build/CMakeFiles/CMakeTmp'
+
+
+Source file was:
+int main() { return 0; }
+Performing C++ SOURCE FILE Test LIBCXX_SUPPORTS_W_FLAG succeeded with the following output:
+Change Dir: /home/jianyu/optee/optee_os/lib/libcxx/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_8cb5e/fast && /usr/bin/make  -f CMakeFiles/cmTC_8cb5e.dir/build.make CMakeFiles/cmTC_8cb5e.dir/build
+make[1]: Entering directory '/home/jianyu/optee/optee_os/lib/libcxx/build/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_8cb5e.dir/src.cxx.o
+/home/jianyu/optee/toolchains/aarch64/bin/aarch64-none-linux-gnu-g++   -DLIBCXX_SUPPORTS_W_FLAG  -nodefaultlibs   -W -o CMakeFiles/cmTC_8cb5e.dir/src.cxx.o -c /home/jianyu/optee/optee_os/lib/libcxx/build/CMakeFiles/CMakeTmp/src.cxx
+Linking CXX executable cmTC_8cb5e
+/usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_8cb5e.dir/link.txt --verbose=1
+/home/jianyu/optee/toolchains/aarch64/bin/aarch64-none-linux-gnu-g++  -DLIBCXX_SUPPORTS_W_FLAG  -nodefaultlibs CMakeFiles/cmTC_8cb5e.dir/src.cxx.o -o cmTC_8cb5e  -lc -lgcc_s 
+make[1]: Leaving directory '/home/jianyu/optee/optee_os/lib/libcxx/build/CMakeFiles/CMakeTmp'
+
+
+Source file was:
+int main() { return 0; }
+Performing C++ SOURCE FILE Test LIBCXX_SUPPORTS_WWRITE_STRINGS_FLAG succeeded with the following output:
+Change Dir: /home/jianyu/optee/optee_os/lib/libcxx/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_b6908/fast && /usr/bin/make  -f CMakeFiles/cmTC_b6908.dir/build.make CMakeFiles/cmTC_b6908.dir/build
+make[1]: Entering directory '/home/jianyu/optee/optee_os/lib/libcxx/build/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_b6908.dir/src.cxx.o
+/home/jianyu/optee/toolchains/aarch64/bin/aarch64-none-linux-gnu-g++   -DLIBCXX_SUPPORTS_WWRITE_STRINGS_FLAG  -nodefaultlibs   -Wwrite-strings -o CMakeFiles/cmTC_b6908.dir/src.cxx.o -c /home/jianyu/optee/optee_os/lib/libcxx/build/CMakeFiles/CMakeTmp/src.cxx
+Linking CXX executable cmTC_b6908
+/usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_b6908.dir/link.txt --verbose=1
+/home/jianyu/optee/toolchains/aarch64/bin/aarch64-none-linux-gnu-g++  -DLIBCXX_SUPPORTS_WWRITE_STRINGS_FLAG  -nodefaultlibs CMakeFiles/cmTC_b6908.dir/src.cxx.o -o cmTC_b6908  -lc -lgcc_s 
+make[1]: Leaving directory '/home/jianyu/optee/optee_os/lib/libcxx/build/CMakeFiles/CMakeTmp'
+
+
+Source file was:
+int main() { return 0; }
+Performing C++ SOURCE FILE Test LIBCXX_SUPPORTS_WNO_UNUSED_PARAMETER_FLAG succeeded with the following output:
+Change Dir: /home/jianyu/optee/optee_os/lib/libcxx/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_a8279/fast && /usr/bin/make  -f CMakeFiles/cmTC_a8279.dir/build.make CMakeFiles/cmTC_a8279.dir/build
+make[1]: Entering directory '/home/jianyu/optee/optee_os/lib/libcxx/build/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_a8279.dir/src.cxx.o
+/home/jianyu/optee/toolchains/aarch64/bin/aarch64-none-linux-gnu-g++   -DLIBCXX_SUPPORTS_WNO_UNUSED_PARAMETER_FLAG  -nodefaultlibs   -Wno-unused-parameter -o CMakeFiles/cmTC_a8279.dir/src.cxx.o -c /home/jianyu/optee/optee_os/lib/libcxx/build/CMakeFiles/CMakeTmp/src.cxx
+Linking CXX executable cmTC_a8279
+/usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_a8279.dir/link.txt --verbose=1
+/home/jianyu/optee/toolchains/aarch64/bin/aarch64-none-linux-gnu-g++  -DLIBCXX_SUPPORTS_WNO_UNUSED_PARAMETER_FLAG  -nodefaultlibs CMakeFiles/cmTC_a8279.dir/src.cxx.o -o cmTC_a8279  -lc -lgcc_s 
+make[1]: Leaving directory '/home/jianyu/optee/optee_os/lib/libcxx/build/CMakeFiles/CMakeTmp'
+
+
+Source file was:
+int main() { return 0; }
+Performing C++ SOURCE FILE Test LIBCXX_SUPPORTS_WNO_LONG_LONG_FLAG succeeded with the following output:
+Change Dir: /home/jianyu/optee/optee_os/lib/libcxx/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_c8426/fast && /usr/bin/make  -f CMakeFiles/cmTC_c8426.dir/build.make CMakeFiles/cmTC_c8426.dir/build
+make[1]: Entering directory '/home/jianyu/optee/optee_os/lib/libcxx/build/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_c8426.dir/src.cxx.o
+/home/jianyu/optee/toolchains/aarch64/bin/aarch64-none-linux-gnu-g++   -DLIBCXX_SUPPORTS_WNO_LONG_LONG_FLAG  -nodefaultlibs   -Wno-long-long -o CMakeFiles/cmTC_c8426.dir/src.cxx.o -c /home/jianyu/optee/optee_os/lib/libcxx/build/CMakeFiles/CMakeTmp/src.cxx
+Linking CXX executable cmTC_c8426
+/usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_c8426.dir/link.txt --verbose=1
+/home/jianyu/optee/toolchains/aarch64/bin/aarch64-none-linux-gnu-g++  -DLIBCXX_SUPPORTS_WNO_LONG_LONG_FLAG  -nodefaultlibs CMakeFiles/cmTC_c8426.dir/src.cxx.o -o cmTC_c8426  -lc -lgcc_s 
+make[1]: Leaving directory '/home/jianyu/optee/optee_os/lib/libcxx/build/CMakeFiles/CMakeTmp'
+
+
+Source file was:
+int main() { return 0; }
+Performing C++ SOURCE FILE Test LIBCXX_SUPPORTS_WERROR_EQ_RETURN_TYPE_FLAG succeeded with the following output:
+Change Dir: /home/jianyu/optee/optee_os/lib/libcxx/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_a2948/fast && /usr/bin/make  -f CMakeFiles/cmTC_a2948.dir/build.make CMakeFiles/cmTC_a2948.dir/build
+make[1]: Entering directory '/home/jianyu/optee/optee_os/lib/libcxx/build/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_a2948.dir/src.cxx.o
+/home/jianyu/optee/toolchains/aarch64/bin/aarch64-none-linux-gnu-g++   -DLIBCXX_SUPPORTS_WERROR_EQ_RETURN_TYPE_FLAG  -nodefaultlibs   -Werror=return-type -o CMakeFiles/cmTC_a2948.dir/src.cxx.o -c /home/jianyu/optee/optee_os/lib/libcxx/build/CMakeFiles/CMakeTmp/src.cxx
+Linking CXX executable cmTC_a2948
+/usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_a2948.dir/link.txt --verbose=1
+/home/jianyu/optee/toolchains/aarch64/bin/aarch64-none-linux-gnu-g++  -DLIBCXX_SUPPORTS_WERROR_EQ_RETURN_TYPE_FLAG  -nodefaultlibs CMakeFiles/cmTC_a2948.dir/src.cxx.o -o cmTC_a2948  -lc -lgcc_s 
+make[1]: Leaving directory '/home/jianyu/optee/optee_os/lib/libcxx/build/CMakeFiles/CMakeTmp'
+
+
+Source file was:
+int main() { return 0; }
+Performing C++ SOURCE FILE Test LIBCXX_SUPPORTS_WEXTRA_SEMI_FLAG succeeded with the following output:
+Change Dir: /home/jianyu/optee/optee_os/lib/libcxx/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_12f28/fast && /usr/bin/make  -f CMakeFiles/cmTC_12f28.dir/build.make CMakeFiles/cmTC_12f28.dir/build
+make[1]: Entering directory '/home/jianyu/optee/optee_os/lib/libcxx/build/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_12f28.dir/src.cxx.o
+/home/jianyu/optee/toolchains/aarch64/bin/aarch64-none-linux-gnu-g++   -DLIBCXX_SUPPORTS_WEXTRA_SEMI_FLAG  -nodefaultlibs   -Wextra-semi -o CMakeFiles/cmTC_12f28.dir/src.cxx.o -c /home/jianyu/optee/optee_os/lib/libcxx/build/CMakeFiles/CMakeTmp/src.cxx
+Linking CXX executable cmTC_12f28
+/usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_12f28.dir/link.txt --verbose=1
+/home/jianyu/optee/toolchains/aarch64/bin/aarch64-none-linux-gnu-g++  -DLIBCXX_SUPPORTS_WEXTRA_SEMI_FLAG  -nodefaultlibs CMakeFiles/cmTC_12f28.dir/src.cxx.o -o cmTC_12f28  -lc -lgcc_s 
+make[1]: Leaving directory '/home/jianyu/optee/optee_os/lib/libcxx/build/CMakeFiles/CMakeTmp'
+
+
+Source file was:
+int main() { return 0; }
+Performing C++ SOURCE FILE Test LIBCXX_SUPPORTS_WUNDEF_FLAG succeeded with the following output:
+Change Dir: /home/jianyu/optee/optee_os/lib/libcxx/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_f5ae1/fast && /usr/bin/make  -f CMakeFiles/cmTC_f5ae1.dir/build.make CMakeFiles/cmTC_f5ae1.dir/build
+make[1]: Entering directory '/home/jianyu/optee/optee_os/lib/libcxx/build/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_f5ae1.dir/src.cxx.o
+/home/jianyu/optee/toolchains/aarch64/bin/aarch64-none-linux-gnu-g++   -DLIBCXX_SUPPORTS_WUNDEF_FLAG  -nodefaultlibs   -Wundef -o CMakeFiles/cmTC_f5ae1.dir/src.cxx.o -c /home/jianyu/optee/optee_os/lib/libcxx/build/CMakeFiles/CMakeTmp/src.cxx
+Linking CXX executable cmTC_f5ae1
+/usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_f5ae1.dir/link.txt --verbose=1
+/home/jianyu/optee/toolchains/aarch64/bin/aarch64-none-linux-gnu-g++  -DLIBCXX_SUPPORTS_WUNDEF_FLAG  -nodefaultlibs CMakeFiles/cmTC_f5ae1.dir/src.cxx.o -o cmTC_f5ae1  -lc -lgcc_s 
+make[1]: Leaving directory '/home/jianyu/optee/optee_os/lib/libcxx/build/CMakeFiles/CMakeTmp'
+
+
+Source file was:
+int main() { return 0; }
+Performing C++ SOURCE FILE Test LIBCXX_SUPPORTS_WNO_LITERAL_SUFFIX_FLAG succeeded with the following output:
+Change Dir: /home/jianyu/optee/optee_os/lib/libcxx/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_6daf4/fast && /usr/bin/make  -f CMakeFiles/cmTC_6daf4.dir/build.make CMakeFiles/cmTC_6daf4.dir/build
+make[1]: Entering directory '/home/jianyu/optee/optee_os/lib/libcxx/build/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_6daf4.dir/src.cxx.o
+/home/jianyu/optee/toolchains/aarch64/bin/aarch64-none-linux-gnu-g++   -DLIBCXX_SUPPORTS_WNO_LITERAL_SUFFIX_FLAG  -nodefaultlibs   -Wno-literal-suffix -o CMakeFiles/cmTC_6daf4.dir/src.cxx.o -c /home/jianyu/optee/optee_os/lib/libcxx/build/CMakeFiles/CMakeTmp/src.cxx
+Linking CXX executable cmTC_6daf4
+/usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_6daf4.dir/link.txt --verbose=1
+/home/jianyu/optee/toolchains/aarch64/bin/aarch64-none-linux-gnu-g++  -DLIBCXX_SUPPORTS_WNO_LITERAL_SUFFIX_FLAG  -nodefaultlibs CMakeFiles/cmTC_6daf4.dir/src.cxx.o -o cmTC_6daf4  -lc -lgcc_s 
+make[1]: Leaving directory '/home/jianyu/optee/optee_os/lib/libcxx/build/CMakeFiles/CMakeTmp'
+
+
+Source file was:
+int main() { return 0; }
+Performing C++ SOURCE FILE Test LIBCXX_SUPPORTS_WNO_CXX14_COMPAT_FLAG succeeded with the following output:
+Change Dir: /home/jianyu/optee/optee_os/lib/libcxx/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_c716c/fast && /usr/bin/make  -f CMakeFiles/cmTC_c716c.dir/build.make CMakeFiles/cmTC_c716c.dir/build
+make[1]: Entering directory '/home/jianyu/optee/optee_os/lib/libcxx/build/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_c716c.dir/src.cxx.o
+/home/jianyu/optee/toolchains/aarch64/bin/aarch64-none-linux-gnu-g++   -DLIBCXX_SUPPORTS_WNO_CXX14_COMPAT_FLAG  -nodefaultlibs   -Wno-c++14-compat -o CMakeFiles/cmTC_c716c.dir/src.cxx.o -c /home/jianyu/optee/optee_os/lib/libcxx/build/CMakeFiles/CMakeTmp/src.cxx
+Linking CXX executable cmTC_c716c
+/usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_c716c.dir/link.txt --verbose=1
+/home/jianyu/optee/toolchains/aarch64/bin/aarch64-none-linux-gnu-g++  -DLIBCXX_SUPPORTS_WNO_CXX14_COMPAT_FLAG  -nodefaultlibs CMakeFiles/cmTC_c716c.dir/src.cxx.o -o cmTC_c716c  -lc -lgcc_s 
+make[1]: Leaving directory '/home/jianyu/optee/optee_os/lib/libcxx/build/CMakeFiles/CMakeTmp'
+
+
+Source file was:
+int main() { return 0; }
+Performing C++ SOURCE FILE Test LIBCXX_SUPPORTS_WNO_NOEXCEPT_TYPE_FLAG succeeded with the following output:
+Change Dir: /home/jianyu/optee/optee_os/lib/libcxx/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_6ec02/fast && /usr/bin/make  -f CMakeFiles/cmTC_6ec02.dir/build.make CMakeFiles/cmTC_6ec02.dir/build
+make[1]: Entering directory '/home/jianyu/optee/optee_os/lib/libcxx/build/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_6ec02.dir/src.cxx.o
+/home/jianyu/optee/toolchains/aarch64/bin/aarch64-none-linux-gnu-g++   -DLIBCXX_SUPPORTS_WNO_NOEXCEPT_TYPE_FLAG  -nodefaultlibs   -Wno-noexcept-type -o CMakeFiles/cmTC_6ec02.dir/src.cxx.o -c /home/jianyu/optee/optee_os/lib/libcxx/build/CMakeFiles/CMakeTmp/src.cxx
+Linking CXX executable cmTC_6ec02
+/usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_6ec02.dir/link.txt --verbose=1
+/home/jianyu/optee/toolchains/aarch64/bin/aarch64-none-linux-gnu-g++  -DLIBCXX_SUPPORTS_WNO_NOEXCEPT_TYPE_FLAG  -nodefaultlibs CMakeFiles/cmTC_6ec02.dir/src.cxx.o -o cmTC_6ec02  -lc -lgcc_s 
+make[1]: Leaving directory '/home/jianyu/optee/optee_os/lib/libcxx/build/CMakeFiles/CMakeTmp'
+
+
+Source file was:
+int main() { return 0; }
+Performing C++ SOURCE FILE Test LIBCXX_SUPPORTS_WNO_SUGGEST_OVERRIDE_FLAG succeeded with the following output:
+Change Dir: /home/jianyu/optee/optee_os/lib/libcxx/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_5cf4c/fast && /usr/bin/make  -f CMakeFiles/cmTC_5cf4c.dir/build.make CMakeFiles/cmTC_5cf4c.dir/build
+make[1]: Entering directory '/home/jianyu/optee/optee_os/lib/libcxx/build/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_5cf4c.dir/src.cxx.o
+/home/jianyu/optee/toolchains/aarch64/bin/aarch64-none-linux-gnu-g++   -DLIBCXX_SUPPORTS_WNO_SUGGEST_OVERRIDE_FLAG  -nodefaultlibs   -Wno-suggest-override -o CMakeFiles/cmTC_5cf4c.dir/src.cxx.o -c /home/jianyu/optee/optee_os/lib/libcxx/build/CMakeFiles/CMakeTmp/src.cxx
+Linking CXX executable cmTC_5cf4c
+/usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_5cf4c.dir/link.txt --verbose=1
+/home/jianyu/optee/toolchains/aarch64/bin/aarch64-none-linux-gnu-g++  -DLIBCXX_SUPPORTS_WNO_SUGGEST_OVERRIDE_FLAG  -nodefaultlibs CMakeFiles/cmTC_5cf4c.dir/src.cxx.o -o cmTC_5cf4c  -lc -lgcc_s 
+make[1]: Leaving directory '/home/jianyu/optee/optee_os/lib/libcxx/build/CMakeFiles/CMakeTmp'
+
+
+Source file was:
+int main() { return 0; }
+Performing C++ SOURCE FILE Test LIBCXX_SUPPORTS_WNO_ERROR_FLAG succeeded with the following output:
+Change Dir: /home/jianyu/optee/optee_os/lib/libcxx/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_907eb/fast && /usr/bin/make  -f CMakeFiles/cmTC_907eb.dir/build.make CMakeFiles/cmTC_907eb.dir/build
+make[1]: Entering directory '/home/jianyu/optee/optee_os/lib/libcxx/build/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_907eb.dir/src.cxx.o
+/home/jianyu/optee/toolchains/aarch64/bin/aarch64-none-linux-gnu-g++   -DLIBCXX_SUPPORTS_WNO_ERROR_FLAG  -nodefaultlibs   -Wno-error -o CMakeFiles/cmTC_907eb.dir/src.cxx.o -c /home/jianyu/optee/optee_os/lib/libcxx/build/CMakeFiles/CMakeTmp/src.cxx
+Linking CXX executable cmTC_907eb
+/usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_907eb.dir/link.txt --verbose=1
+/home/jianyu/optee/toolchains/aarch64/bin/aarch64-none-linux-gnu-g++  -DLIBCXX_SUPPORTS_WNO_ERROR_FLAG  -nodefaultlibs CMakeFiles/cmTC_907eb.dir/src.cxx.o -o cmTC_907eb  -lc -lgcc_s 
+make[1]: Leaving directory '/home/jianyu/optee/optee_os/lib/libcxx/build/CMakeFiles/CMakeTmp'
+
+
+Source file was:
+int main() { return 0; }

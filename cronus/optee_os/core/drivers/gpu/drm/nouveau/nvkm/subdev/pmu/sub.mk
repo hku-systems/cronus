@@ -1,0 +1,15 @@
+# SPDX-License-Identifier: MIT
+srcs-y += base.c
+srcs-y += memx.c
+srcs-y += gt215.c
+srcs-y += gf100.c
+srcs-y += gf119.c
+srcs-y += gk104.c
+srcs-y += gk110.c
+srcs-y += gk208.c
+srcs-y += gk20a.c
+srcs-y += gm107.c
+srcs-y += gm200.c
+srcs-y += gm20b.c
+srcs-y += gp102.c
+srcs-y += gp10b.c

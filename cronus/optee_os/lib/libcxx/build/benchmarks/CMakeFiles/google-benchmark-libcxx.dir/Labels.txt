@@ -1,0 +1,13 @@
+# Target labels
+ google-benchmark-libcxx
+# Source files and their labels
+/home/jianyu/optee/optee_os/lib/libcxx/build/benchmarks/CMakeFiles/google-benchmark-libcxx
+/home/jianyu/optee/optee_os/lib/libcxx/build/benchmarks/CMakeFiles/google-benchmark-libcxx.rule
+/home/jianyu/optee/optee_os/lib/libcxx/build/benchmarks/CMakeFiles/google-benchmark-libcxx-complete.rule
+/home/jianyu/optee/optee_os/lib/libcxx/build/benchmarks/benchmark-libcxx/src/google-benchmark-libcxx-stamp/google-benchmark-libcxx-install.rule
+/home/jianyu/optee/optee_os/lib/libcxx/build/benchmarks/benchmark-libcxx/src/google-benchmark-libcxx-stamp/google-benchmark-libcxx-mkdir.rule
+/home/jianyu/optee/optee_os/lib/libcxx/build/benchmarks/benchmark-libcxx/src/google-benchmark-libcxx-stamp/google-benchmark-libcxx-download.rule
+/home/jianyu/optee/optee_os/lib/libcxx/build/benchmarks/benchmark-libcxx/src/google-benchmark-libcxx-stamp/google-benchmark-libcxx-update.rule
+/home/jianyu/optee/optee_os/lib/libcxx/build/benchmarks/benchmark-libcxx/src/google-benchmark-libcxx-stamp/google-benchmark-libcxx-patch.rule
+/home/jianyu/optee/optee_os/lib/libcxx/build/benchmarks/benchmark-libcxx/src/google-benchmark-libcxx-stamp/google-benchmark-libcxx-configure.rule
+/home/jianyu/optee/optee_os/lib/libcxx/build/benchmarks/benchmark-libcxx/src/google-benchmark-libcxx-stamp/google-benchmark-libcxx-build.rule

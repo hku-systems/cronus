@@ -1,0 +1,22 @@
+/* Enclave.edl - Top EDL file. */
+
+enclave {
+    include "vta/driver.h"
+    include "vta/hw_spec.h"
+
+    trusted {
+        public VTADeviceHandle VTADeviceAlloc();
+        public void VTADeviceFree(VTADeviceHandle handle);
+        public int VTADeviceRun(VTADeviceHandle device,
+                        vta_phy_addr_t insn_phy_addr,
+                        uint32_t insn_count,
+                        uint32_t wait_cycles);
+        public void* VTAMemAlloc(size_t size, int cached);
+        public void VTAMemFree([user_check]void* buf);
+        public vta_phy_addr_t VTAMemGetPhyAddr([user_check]void* buf);
+        public void VTAMemCopyFromHost([user_check]void* dst, [in, size=size]const void* src, size_t size);
+        public void VTAMemCopyToHost([out, size=size]void* dst, [user_check]const void* src, size_t size);
+        public void VTAFlushCache([user_check]void* vir_addr, vta_phy_addr_t phy_addr, int size);
+        public void VTAInvalidateCache([user_check]void* vir_addr, vta_phy_addr_t phy_addr, int size);
+    };
+};

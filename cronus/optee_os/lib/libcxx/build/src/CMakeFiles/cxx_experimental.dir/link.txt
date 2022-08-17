@@ -1,0 +1,2 @@
+/home/jianyu/optee/toolchains/aarch64/bin/aarch64-none-linux-gnu-ar qc ../lib/libc++experimental.a CMakeFiles/cxx_experimental.dir/experimental/memory_resource.cpp.o
+/home/jianyu/optee/toolchains/aarch64/bin/aarch64-none-linux-gnu-ranlib ../lib/libc++experimental.a

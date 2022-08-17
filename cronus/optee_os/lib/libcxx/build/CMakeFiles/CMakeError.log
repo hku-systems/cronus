@@ -1,0 +1,85 @@
+Performing C SOURCE FILE Test LIBCXX_SUPPORTS_NOSTDLIBXX_FLAG failed with the following output:
+Change Dir: /home/jianyu/optee/optee_os/lib/libcxx/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_67039/fast && /usr/bin/make  -f CMakeFiles/cmTC_67039.dir/build.make CMakeFiles/cmTC_67039.dir/build
+make[1]: Entering directory '/home/jianyu/optee/optee_os/lib/libcxx/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_67039.dir/src.c.o
+/home/jianyu/optee/toolchains/aarch64/bin/aarch64-none-linux-gnu-gcc   -DLIBCXX_SUPPORTS_NOSTDLIBXX_FLAG   -nostdlib++ -o CMakeFiles/cmTC_67039.dir/src.c.o -c /home/jianyu/optee/optee_os/lib/libcxx/build/CMakeFiles/CMakeTmp/src.c
+aarch64-none-linux-gnu-gcc: error: unrecognized command line option '-nostdlib++'; did you mean '-nostdlib'?
+CMakeFiles/cmTC_67039.dir/build.make:84: recipe for target 'CMakeFiles/cmTC_67039.dir/src.c.o' failed
+make[1]: *** [CMakeFiles/cmTC_67039.dir/src.c.o] Error 1
+make[1]: Leaving directory '/home/jianyu/optee/optee_os/lib/libcxx/build/CMakeFiles/CMakeTmp'
+Makefile:140: recipe for target 'cmTC_67039/fast' failed
+make: *** [cmTC_67039/fast] Error 2
+
+
+Source file was:
+int main(void) { return 0; }
+Performing C++ SOURCE FILE Test LIBCXX_SUPPORTS_FALIGNED_ALLOCATION_FLAG failed with the following output:
+Change Dir: /home/jianyu/optee/optee_os/lib/libcxx/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_8212e/fast && /usr/bin/make  -f CMakeFiles/cmTC_8212e.dir/build.make CMakeFiles/cmTC_8212e.dir/build
+make[1]: Entering directory '/home/jianyu/optee/optee_os/lib/libcxx/build/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_8212e.dir/src.cxx.o
+/home/jianyu/optee/toolchains/aarch64/bin/aarch64-none-linux-gnu-g++   -DLIBCXX_SUPPORTS_FALIGNED_ALLOCATION_FLAG  -nodefaultlibs   -faligned-allocation -o CMakeFiles/cmTC_8212e.dir/src.cxx.o -c /home/jianyu/optee/optee_os/lib/libcxx/build/CMakeFiles/CMakeTmp/src.cxx
+aarch64-none-linux-gnu-g++: error: unrecognized command line option '-faligned-allocation'; did you mean '-fsized-deallocation'?
+CMakeFiles/cmTC_8212e.dir/build.make:84: recipe for target 'CMakeFiles/cmTC_8212e.dir/src.cxx.o' failed
+make[1]: *** [CMakeFiles/cmTC_8212e.dir/src.cxx.o] Error 1
+make[1]: Leaving directory '/home/jianyu/optee/optee_os/lib/libcxx/build/CMakeFiles/CMakeTmp'
+Makefile:140: recipe for target 'cmTC_8212e/fast' failed
+make: *** [cmTC_8212e/fast] Error 2
+
+
+Source file was:
+int main() { return 0; }
+Performing C++ SOURCE FILE Test LIBCXX_SUPPORTS_EHSC_FLAG failed with the following output:
+Change Dir: /home/jianyu/optee/optee_os/lib/libcxx/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_0c331/fast && /usr/bin/make  -f CMakeFiles/cmTC_0c331.dir/build.make CMakeFiles/cmTC_0c331.dir/build
+make[1]: Entering directory '/home/jianyu/optee/optee_os/lib/libcxx/build/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_0c331.dir/src.cxx.o
+/home/jianyu/optee/toolchains/aarch64/bin/aarch64-none-linux-gnu-g++   -DLIBCXX_SUPPORTS_EHSC_FLAG  -nodefaultlibs   -EHsc -o CMakeFiles/cmTC_0c331.dir/src.cxx.o -c /home/jianyu/optee/optee_os/lib/libcxx/build/CMakeFiles/CMakeTmp/src.cxx
+aarch64-none-linux-gnu-g++: error: unrecognized command line option '-EHsc'
+CMakeFiles/cmTC_0c331.dir/build.make:84: recipe for target 'CMakeFiles/cmTC_0c331.dir/src.cxx.o' failed
+make[1]: *** [CMakeFiles/cmTC_0c331.dir/src.cxx.o] Error 1
+make[1]: Leaving directory '/home/jianyu/optee/optee_os/lib/libcxx/build/CMakeFiles/CMakeTmp'
+Makefile:140: recipe for target 'cmTC_0c331/fast' failed
+make: *** [cmTC_0c331/fast] Error 2
+
+
+Source file was:
+int main() { return 0; }
+Performing C++ SOURCE FILE Test LIBCXX_SUPPORTS_ZL_FLAG failed with the following output:
+Change Dir: /home/jianyu/optee/optee_os/lib/libcxx/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_d4743/fast && /usr/bin/make  -f CMakeFiles/cmTC_d4743.dir/build.make CMakeFiles/cmTC_d4743.dir/build
+make[1]: Entering directory '/home/jianyu/optee/optee_os/lib/libcxx/build/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_d4743.dir/src.cxx.o
+/home/jianyu/optee/toolchains/aarch64/bin/aarch64-none-linux-gnu-g++   -DLIBCXX_SUPPORTS_ZL_FLAG  -nodefaultlibs   /Zl -o CMakeFiles/cmTC_d4743.dir/src.cxx.o -c /home/jianyu/optee/optee_os/lib/libcxx/build/CMakeFiles/CMakeTmp/src.cxx
+aarch64-none-linux-gnu-g++: error: /Zl: No such file or directory
+CMakeFiles/cmTC_d4743.dir/build.make:84: recipe for target 'CMakeFiles/cmTC_d4743.dir/src.cxx.o' failed
+make[1]: *** [CMakeFiles/cmTC_d4743.dir/src.cxx.o] Error 1
+make[1]: Leaving directory '/home/jianyu/optee/optee_os/lib/libcxx/build/CMakeFiles/CMakeTmp'
+Makefile:140: recipe for target 'cmTC_d4743/fast' failed
+make: *** [cmTC_d4743/fast] Error 2
+
+
+Source file was:
+int main() { return 0; }
+Performing C++ SOURCE FILE Test LIBCXX_SUPPORTS_NODEFAULTLIB_FLAG failed with the following output:
+Change Dir: /home/jianyu/optee/optee_os/lib/libcxx/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_04274/fast && /usr/bin/make  -f CMakeFiles/cmTC_04274.dir/build.make CMakeFiles/cmTC_04274.dir/build
+make[1]: Entering directory '/home/jianyu/optee/optee_os/lib/libcxx/build/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_04274.dir/src.cxx.o
+/home/jianyu/optee/toolchains/aarch64/bin/aarch64-none-linux-gnu-g++   -DLIBCXX_SUPPORTS_NODEFAULTLIB_FLAG  -nodefaultlibs   /nodefaultlib -o CMakeFiles/cmTC_04274.dir/src.cxx.o -c /home/jianyu/optee/optee_os/lib/libcxx/build/CMakeFiles/CMakeTmp/src.cxx
+aarch64-none-linux-gnu-g++: error: /nodefaultlib: No such file or directory
+CMakeFiles/cmTC_04274.dir/build.make:84: recipe for target 'CMakeFiles/cmTC_04274.dir/src.cxx.o' failed
+make[1]: *** [CMakeFiles/cmTC_04274.dir/src.cxx.o] Error 1
+make[1]: Leaving directory '/home/jianyu/optee/optee_os/lib/libcxx/build/CMakeFiles/CMakeTmp'
+Makefile:140: recipe for target 'cmTC_04274/fast' failed
+make: *** [cmTC_04274/fast] Error 2
+
+
+Source file was:
+int main() { return 0; }
