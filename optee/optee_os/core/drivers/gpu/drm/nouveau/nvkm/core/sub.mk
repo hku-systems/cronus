@@ -1,0 +1,16 @@
+# SPDX-License-Identifier: MIT
+srcs-y := client.c
+srcs-y += engine.c
+srcs-y += enum.c
+srcs-y += event.c
+srcs-y += firmware.c
+srcs-y += gpuobj.c
+srcs-y += ioctl.c
+srcs-y += memory.c
+srcs-y += mm.c
+srcs-y += notify.c
+srcs-y += object.c
+srcs-y += oproxy.c
+srcs-y += option.c
+srcs-y += ramht.c
+srcs-y += subdev.c

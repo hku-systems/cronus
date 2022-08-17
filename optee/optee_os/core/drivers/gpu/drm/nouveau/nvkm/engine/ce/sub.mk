@@ -1,0 +1,10 @@
+# SPDX-License-Identifier: MIT
+srcs-y += gt215.c
+srcs-y += gf100.c
+srcs-y += gk104.c
+srcs-y += gm107.c
+srcs-y += gm200.c
+srcs-y += gp100.c
+srcs-y += gp102.c
+srcs-y += gv100.c
+srcs-y += tu102.c

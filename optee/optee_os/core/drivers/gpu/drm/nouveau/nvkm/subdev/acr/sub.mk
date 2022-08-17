@@ -1,0 +1,10 @@
+# SPDX-License-Identifier: MIT
+srcs-y += base.c
+srcs-y += hsfw.c
+srcs-y += lsfw.c
+srcs-y += gm200.c
+srcs-y += gm20b.c
+srcs-y += gp102.c
+srcs-y += gp108.c
+srcs-y += gp10b.c
+srcs-y += tu102.c

@@ -1,0 +1,29 @@
+#!/bin/sh
+
+gdev='gdev'
+common='common'
+
+# debug on/off
+debug=0
+
+# parse the given options.
+for option
+do
+  case "$option" in
+  -*=*) optarg=`echo "$option" | sed 's/[-_a-zA-Z0-9]*=//'` ;;
+  *) optarg= ;;
+  esac
+
+  case "$option" in
+  --debug)
+    debug=1 ;;
+  esac
+done
+
+# copy driver-independent files
+cp -fr ../$gdev/* ./
+cp -fr ../../$common/* ./
+cp -fr ../../util/* ./
+
+# detect which driver to be used
+sh ./autogen.sh

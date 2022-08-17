@@ -1,0 +1,129 @@
+# This is the tag of the docker image used for the build jobs. If the
+# image doesn't exist yet, the containers stage generates it.
+#
+# In order to generate a new image, one should generally change the tag.
+# While removing the image from the registry would also work, that's not
+# recommended except for ephemeral images during development: Replacing
+# an image after a significant amount of time might pull in newer
+# versions of gcc/clang or other packages, which might break the build
+# with older commits using the same tag.
+#
+# After merging a change resulting in generating a new image to the
+# main repository, it's recommended to remove the image from the source
+# repository's container registry, so that the image from the main
+# repository's registry will be used there as well.
+variables:
+  UPSTREAM_REPO: mesa/drm
+  DEBIAN_TAG: "2020-11-15"
+  DEBIAN_VERSION: buster-slim
+  DEBIAN_IMAGE: "$CI_REGISTRY_IMAGE/debian/$DEBIAN_VERSION:$DEBIAN_TAG"
+
+include:
+  - project: 'wayland/ci-templates'
+    ref: 0a9bdd33a98f05af6761ab118b5074952242aab0
+    file: '/templates/debian.yml'
+
+stages:
+  - containers
+  - build
+
+
+# When & how to run the CI
+.ci-run-policy:
+  except:
+    - schedules
+  retry:
+    max: 2
+    when:
+      - runner_system_failure
+
+# CONTAINERS
+
+debian:
+  stage: containers
+  extends:
+    - .ci-run-policy
+    - .debian@container-ifnot-exists
+  variables:
+    GIT_STRATEGY: none # no need to pull the whole tree for rebuilding the image
+    DEBIAN_EXEC: 'bash .gitlab-ci/debian-install.sh'
+
+
+# BUILD
+
+.meson-build:
+  stage: build
+  variables:
+    GIT_DEPTH: 10
+  script:
+    - meson build
+        -D amdgpu=true
+        -D cairo-tests=true
+        -D etnaviv=true
+        -D exynos=true
+        -D freedreno=true
+        -D freedreno-kgsl=true
+        -D intel=true
+        -D libkms=true
+        -D man-pages=true
+        -D nouveau=true
+        -D omap=true
+        -D radeon=true
+        -D tegra=true
+        -D udev=true
+        -D valgrind=auto
+        -D vc4=true
+        -D vmwgfx=true
+        ${CROSS+--cross /cross_file-$CROSS.txt}
+    - ninja -C build
+    - ninja -C build test
+    - DESTDIR=$PWD/install ninja -C build install
+  artifacts:
+    when: on_failure
+    paths:
+      - build/meson-logs/*
+
+meson-x86_64:
+  extends:
+    - .ci-run-policy
+    - .meson-build
+  image: $DEBIAN_IMAGE
+  needs:
+    - debian
+
+meson-i386:
+  extends: meson-x86_64
+  variables:
+    CROSS: i386
+
+meson-aarch64:
+  extends: meson-x86_64
+  variables:
+    CROSS: arm64
+
+meson-armhf:
+  extends: meson-x86_64
+  variables:
+    CROSS: armhf
+
+meson-ppc64el:
+  extends: meson-x86_64
+  variables:
+    CROSS: ppc64el
+
+meson-arch-daily:
+  rules:
+    - if: '$SCHEDULE == "arch-daily"'
+      when: on_success
+    - when: never
+  image: archlinux/archlinux:base-devel
+  before_script:
+    - pacman -Syu --noconfirm --needed
+        cairo
+        cunit
+        libatomic_ops
+        libpciaccess
+        meson
+        valgrind
+        python-docutils
+  extends: .meson-build

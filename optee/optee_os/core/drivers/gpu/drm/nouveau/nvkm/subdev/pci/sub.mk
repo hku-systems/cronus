@@ -1,0 +1,15 @@
+# SPDX-License-Identifier: MIT
+srcs-y += agp.c
+srcs-y += base.c
+srcs-y += pcie.c
+srcs-y += nv04.c
+srcs-y += nv40.c
+srcs-y += nv46.c
+srcs-y += nv4c.c
+srcs-y += g84.c
+srcs-y += g92.c
+srcs-y += g94.c
+srcs-y += gf100.c
+srcs-y += gf106.c
+srcs-y += gk104.c
+srcs-y += gp100.c

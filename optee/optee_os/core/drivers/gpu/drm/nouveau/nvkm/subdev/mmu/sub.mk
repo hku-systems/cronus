@@ -1,0 +1,42 @@
+# SPDX-License-Identifier: MIT
+srcs-y += base.c
+srcs-y += nv04.c
+srcs-y += nv41.c
+srcs-y += nv44.c
+srcs-y += nv50.c
+srcs-y += g84.c
+srcs-y += mcp77.c
+srcs-y += gf100.c
+srcs-y += gk104.c
+srcs-y += gk20a.c
+srcs-y += gm200.c
+srcs-y += gm20b.c
+srcs-y += gp100.c
+srcs-y += gp10b.c
+srcs-y += gv100.c
+srcs-y += tu102.c
+
+srcs-y += mem.c
+srcs-y += memnv04.c
+srcs-y += memnv50.c
+srcs-y += memgf100.c
+
+srcs-y += vmm.c
+srcs-y += vmmnv04.c
+srcs-y += vmmnv41.c
+srcs-y += vmmnv44.c
+srcs-y += vmmnv50.c
+srcs-y += vmmmcp77.c
+srcs-y += vmmgf100.c
+srcs-y += vmmgk104.c
+srcs-y += vmmgk20a.c
+srcs-y += vmmgm200.c
+srcs-y += vmmgm20b.c
+srcs-y += vmmgp100.c
+srcs-y += vmmgp10b.c
+srcs-y += vmmgv100.c
+srcs-y += vmmtu102.c
+
+srcs-y += umem.c
+srcs-y += ummu.c
+srcs-y += uvmm.c
