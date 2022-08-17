@@ -1,0 +1,21 @@
+/* Enclave.edl - Top EDL file. */
+
+enclave {
+    include "ocelot/cuda/interface/cuda_runtime.h"
+
+    trusted {
+        public cudaError_t  cudaFree([user_check]void *devPtr);
+        public cudaError_t  cudaMalloc([out, size=8]void **devPtr, size_t size);
+        public cudaError_t  cudaMemcpyToHost([out, size=count]void *dst, [user_check]void *src, size_t count);
+        public cudaError_t  cudaMemcpyToDevice([user_check]void *dst, [in, size=count]void *src, size_t count);
+        public cudaError_t  cudaLaunchKernelByName([in, size=func_len] char *funcname, int func_len, dim3 gridDim, dim3 blockDim,
+            [in, size=argbufsize]void *argbuf, int argbufsize, [in, size=partotal_size]uint32_t* parameters, int partotal_size, size_t sharedMem, cudaStream_t stream);
+        // we do a hack by making n_par and parameters as in/out are not supported
+        // bugs using static array
+        public cudaError_t  cudaFuncGetParametersByName([out, size=4]uint32_t *n_par, [out,size=80]uint32_t* parameters, [in, size=name_len]const char *entryname, int name_len);
+        public cudaError_t  cudaThreadSynchronize(void);
+        public cudaError_t  cudaGetLastError(void);
+        public cudaError_t  cudaGetDeviceProperties([out, count=1]struct cudaDeviceProp *prop, int device);
+        public cudaError_t  cudaGetDeviceCount([out, count=1]int *count);
+    };
+};

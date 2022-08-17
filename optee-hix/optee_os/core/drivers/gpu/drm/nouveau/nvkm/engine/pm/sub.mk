@@ -1,0 +1,11 @@
+# SPDX-License-Identifier: MIT
+srcs-y += base.c
+srcs-y += nv40.c
+srcs-y += nv50.c
+srcs-y += g84.c
+srcs-y += gt200.c
+srcs-y += gt215.c
+srcs-y += gf100.c
+srcs-y += gf108.c
+srcs-y += gf117.c
+srcs-y += gk104.c

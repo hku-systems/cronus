@@ -1,0 +1,13 @@
+# Makefile
+TARGET	= user_test
+CC	= gcc
+SM_ARCH ?= sm_75
+NVCC	= nvcc -arch $(SM_ARCH) -cubin
+LIBS	= -lcuda
+CFLAGS	= -I /usr/local/cuda/include
+
+all:
+	gcc -o $(TARGET) $(CFLAGS) $(LIBS) main.c shm.c
+
+clean:
+	rm -f $(TARGET) *.cubin ./*~

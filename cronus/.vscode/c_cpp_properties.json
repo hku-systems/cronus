@@ -1,0 +1,24 @@
+{
+    "configurations": [
+        {
+            "name": "Linux",
+            "includePath": [
+                "${workspaceFolder}/**",
+                "optee_os/core/include/linux_headers/arch_header",
+                "optee_os/core/include/linux_headers/arch_header/generated",
+                "optee_os/core/include/linux_headers/linux_include",
+                "optee_os/core/include/linux_headers/arch_header/uapi",
+                "optee_os/core/include/linux_headers/arch_header/generated/uapi",
+                "optee_os/core/include/linux_headers/linux_include/uapi",
+                "optee_os/core/include/linux_headers/linux_include/generated/uapi",
+                "optee_os/core/include/linux_headers/kernel_header_include/"
+            ],
+            "defines": ["__KERNEL__=1", "ARM64=1", "__aarch64__=1"],
+            "compilerPath": "/usr/bin/gcc",
+            "cStandard": "gnu11",
+            "cppStandard": "gnu++14",
+            "intelliSenseMode": "linux-gcc-x64"
+        }
+    ],
+    "version": 4
+}

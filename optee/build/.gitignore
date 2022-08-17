@@ -1,0 +1,7 @@
+/Makefile
+*.swp
+/serial0.log
+/serial1.log
+.gdb_history
+gdb
+pi3.cfg

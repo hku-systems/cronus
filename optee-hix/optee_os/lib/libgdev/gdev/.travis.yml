@@ -1,0 +1,29 @@
+language: cpp
+
+env:
+    - BUILD_TYPE=Debug
+    - BUILD_TYPE=Release
+
+before_install:
+    - sudo add-apt-repository -y ppa:ubuntu-toolchain-r/test
+    - sudo apt-get update -qq
+
+install:
+    - sudo apt-get install -qq gcc-4.8 g++-4.8 # Since gcc/g++ 4.9 are fragile.
+    - export CC="gcc-4.8"
+    - export CXX="g++-4.8"
+    - sudo apt-get install -y libdrm-dev # without runtime and compiler/as
+    - sudo apt-get install -y bison flex libboost1.48-all-dev # for ocelot
+
+before_script:
+    - "cmake -H. -Bout -Duse_as=ON -Druntime=ON -Duser=ON -Ddriver=nouveau -DCMAKE_BUILD_TYPE=$BUILD_TYPE"
+
+script:
+    - make -C out -j2
+
+notifications:
+    email:
+        recipients:
+            - gdev-developers@googlegroups.com
+        on_success: never
+        on_failure: always

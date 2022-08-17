@@ -1,0 +1,7 @@
+*.cmd
+*.swp
+cscope.*
+out
+.cproject
+.project
+_build

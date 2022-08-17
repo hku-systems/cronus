@@ -1,0 +1,8 @@
+#!/bin/sh
+
+for i in $(seq $1)
+do
+    echo "starting DNN training instance-"$i
+    dnn_mnist &
+    sleep 3
+done

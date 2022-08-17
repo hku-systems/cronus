@@ -1,0 +1,12 @@
+# SPDX-License-Identifier: MIT
+srcs-y += arb.c
+srcs-y += crtc.c
+srcs-y += cursor.c
+srcs-y += dac.c
+srcs-y += dfp.c
+srcs-y += disp.c
+srcs-y += hw.c
+srcs-y += overlay.c
+srcs-y += tvmodesnv17.c
+srcs-y += tvnv04.c
+srcs-y += tvnv17.c
