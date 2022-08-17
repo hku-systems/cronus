@@ -30,10 +30,10 @@ Please be noted that different evaluators cannot run experiments at the same tim
 
 ### Major Claims
 
-1. Cronus supports general accelerators (GPU) and programs (Experiment 1 and Experiment 2)
-2. Cronus incurs a low performance overhead compared with OPTEE (TrustZone) (Experiment 1-1 and Experiment 1-2)
+1. Cronus supports general accelerators (GPU, NPU) and programs (Experiment 1, Experiment 2 and Experiment 4)
+2. Cronus incurs a low performance overhead compared with OPTEE (TrustZone) (Experiment 1-1 and Experiment 1-2, Experiment 4-1 and Experiment 4-2)
 3. Cronus is much faster than HIX-Trustzone (Experiment 1-1 and 1-3)
-4. Cronus's spatial sharing of GPU improves performance during resource (GPU) contention (experiment 3)
+4. Cronus's spatial sharing of GPU improves performance during resource (GPU) contention (Experiment 3)
 
 ### Kick-off Functional (CUDA matrix addition)
 
@@ -203,7 +203,7 @@ Step 1-3 is the same as experiment 1-2, in Step 4, execute the following command
 dnn_mnist
 ```
 
-**Expected results in Experiment-1:**
+**Expected results in Experiment-2:**
 
 - Training MNIST in Cronus incurs moderate performance overhead compared with OPTEE (TrustZone).
 
@@ -216,4 +216,30 @@ For both OPTEE (TrustZone) and Cronus, Step 1-5 is the same as experiment 1-1 (e
 # (change 2 to the number of concurrent enclaves)
 dnn_mnist_spatial 2
 ```
+
+**Expected results in Experiment-3:**
+
+- Spatially sharing a GPU improves utilizations of GPU, and incurs moderate overhead for each training tasks
+
+
+### Experiment 4: End-to-end performance of VTA-Bench in OPTEE (TrustZone)/Cronus
+
+#### Experiment 4-1: End-to-end performance of VTA-Bench in Cronus
+
+Step 1-5 is the same as experiment 1-1, in Step 6, execute the following commands:
+```shell
+vta_bench
+```
+
+#### Experiment 4-2: End-to-end performance of VTA-Bench in OPTEE (TrustZone)
+
+Step 1-3 is the same as experiment 1-2, in Step 4, execute the following commands:
+```shell
+vta_bench
+```
+
+**Expected results in Experiment-4:**
+
+- Executing VTA-Bench in Cronus incurs moderate performance overhead compared with OPTEE (TrustZone).
+
 
