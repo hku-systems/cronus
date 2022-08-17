@@ -739,11 +739,15 @@ int psci_validate_entry_point(entry_point_info_t *ep,
 	int rc;
 
 	/* Validate the entrypoint using platform psci_ops */
+	/** FIXME: This sometimes fails
 	if (psci_plat_pm_ops->validate_ns_entrypoint != NULL) {
 		rc = psci_plat_pm_ops->validate_ns_entrypoint(entrypoint);
-		if (rc != PSCI_E_SUCCESS)
+		if (rc != PSCI_E_SUCCESS) {
+			ERROR("invalid address\n");
 			return PSCI_E_INVALID_ADDRESS;
+		}
 	}
+	*/
 
 	/*
 	 * Verify and derive the re-entry information for

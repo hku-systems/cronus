@@ -99,7 +99,7 @@ static void gpex_host_realize(DeviceState *dev, Error **errp)
     char bus_name[10];
     memset(bus_name, 0, 10);
     sprintf(bus_name, "pcie.%d", pcie_bus_cnt);
-    printf("creating %s\n", bus_name);
+    // printf("creating %s\n", bus_name);
     pcie_bus_cnt += 1;
 
     pci->bus = pci_register_root_bus(dev, bus_name, gpex_set_irq,

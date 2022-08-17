@@ -25,9 +25,14 @@
  * POSSIBILITY OF SUCH DAMAGE.
  */
 
+#define _GNU_SOURCE
+
 #include <err.h>
 #include <stdio.h>
 #include <string.h>
+
+#include <pthread.h>
+#include <sched.h>
 
 /* OP-TEE TEE client API (built by optee_client) */
 #include <tee_client_api.h>
@@ -35,14 +40,30 @@
 /* For the UUID (found in the TA's h-file(s)) */
 #include <hello_world_ta.h>
 
-int main(void)
-{
+static void * do_concurrent_ta_call(void* args) {
 	TEEC_Result res;
 	TEEC_Context ctx;
 	TEEC_Session sess;
 	TEEC_Operation op;
 	TEEC_UUID uuid = TA_HELLO_WORLD_UUID;
 	uint32_t err_origin;
+	cpu_set_t cpuset; 
+
+	//the CPU we whant to use
+	int cpu = (int)(args);
+
+	CPU_ZERO(&cpuset);       //clears the cpuset
+	CPU_SET(cpu, &cpuset); //set CPU 2 on cpuset
+
+
+	/*
+	* cpu affinity for the calling thread 
+	* first parameter is the pid, 0 = calling thread
+	* second parameter is the size of your cpuset
+	* third param is the cpuset in which your thread will be
+	* placed. Each bit represents a CPU
+	*/
+	sched_setaffinity(0, sizeof(cpuset), &cpuset);
 
 	/* Initialize a context connecting us to the TEE */
 	res = TEEC_InitializeContext(NULL, &ctx);
@@ -101,6 +122,15 @@ int main(void)
 	TEEC_CloseSession(&sess);
 
 	TEEC_FinalizeContext(&ctx);
+}
+
+int main(void)
+{
+	pthread_t tid;
+	if (pthread_create(&tid, NULL, do_concurrent_ta_call, (void*)1) != 0) {
+		errx(1, "pthread_create fail");
+	}
+	do_concurrent_ta_call((void*)2);
 
 	return 0;
 }

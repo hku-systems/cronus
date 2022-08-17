@@ -116,7 +116,7 @@
 #define PLATFORM_BUS_NUM_IRQS 64
 
 /* Legacy RAM limit in GB (< version 4.0) */
-#define SECURE_VRAM_GB (1)
+#define SECURE_VRAM_GB (3)
 #define SECURE_VRAM_LEN (SECURE_VRAM_GB * GiB)
 #define LEGACY_RAMLIMIT_GB (255 - SECURE_VRAM_GB)
 #define LEGACY_RAMLIMIT_BYTES (LEGACY_RAMLIMIT_GB * GiB)

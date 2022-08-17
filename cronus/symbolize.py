@@ -11,18 +11,25 @@ for line in open("log", "r"):
 addrs = []
 
 load_addr = 0
-is_kernel = True
+is_kernel = False
 for line in open("stack", "r"):
-    if load_addr == 0 and is_kernel == False:
+    if load_addr == 0:
         ss = line.split("@")
         if len(ss) > 1:
             load_addr = int(ss[1][1:-1], 16)
             print("loaded addr {}".format(hex(load_addr)))
+            if load_addr == 0xe100000:
+                is_kernel = True
         else:
             continue
     else:
         line_arr = line.split(" ")
-        addrs.append(hex(int(line_arr[-1][:-1], 16) - load_addr))
+        if line_arr[-1][:-1] == "stack:":
+            continue
+        if is_kernel:
+            addrs.append(hex(int(line_arr[-1][:-1], 16)))
+        else:
+            addrs.append(hex(int(line_arr[-1][:-1], 16) - load_addr))
 
 for addr in addrs:
     print(dic[addr[2:]])

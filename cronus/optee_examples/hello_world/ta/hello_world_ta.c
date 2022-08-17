@@ -97,6 +97,8 @@ void TA_CloseSessionEntryPoint(void __maybe_unused *sess_ctx)
 	IMSG("Goodbye!\n");
 }
 
+static volatile int concurrency = 0;
+
 static TEE_Result inc_value(uint32_t param_types,
 	TEE_Param params[4])
 {
@@ -107,17 +109,17 @@ static TEE_Result inc_value(uint32_t param_types,
 
 	DMSG("has been called");
 
-	char* buf = mmap(NULL, 0x8000, PROT_READ | PROT_WRITE, 0, 0, 0);
-	memcpy(buf, "hello!\n", strlen("hello!\n") + 1);
-	fprintf(stderr, buf);
-
-	munmap(buf, 0x8000);
-
 	if (param_types != exp_param_types)
 		return TEE_ERROR_BAD_PARAMETERS;
 
+	volatile int* map_shared = (volatile int*) mmap(0, 1024, PROT_READ | PROT_WRITE, MAP_SHARED, -1, 0);
+
+	map_shared[0] += 1;
+
+	while (map_shared[0] < 2);
+
 	IMSG("Got value: %u from NW", params[0].value.a);
-	params[0].value.a++;
+	params[0].value.a = map_shared[0];
 	IMSG("Increase value to: %u", params[0].value.a);
 
 	return TEE_SUCCESS;

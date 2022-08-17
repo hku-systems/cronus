@@ -188,9 +188,9 @@ soc-term-clean:
 .PHONY: run
 # This target enforces updating root fs etc
 run: all
-	$(MAKE) run-only
+	$(MAKE) run-only-bg
 
-QEMU_SMP ?= 8
+QEMU_SMP ?= 4
 
 .PHONY: run-only-default
 run-only-default:
@@ -233,6 +233,7 @@ run-only-bg:
 		-kernel Image -no-acpi \
 		-append 'console=ttyAMA0,38400 keep_bootcon root=/dev/vda2' \
 		-device vfio-pci,host=3b:00.0,bus=pcie.0 \
+		-device vta,bus=pcie.0 \
 		$(QEMU_EXTRA_ARGS)
 
 # memory limitation?
@@ -254,7 +255,7 @@ run-only:
 		-M virt \
 		-m 3000,maxmem=16G \
 		-bios bl1.bin \
-		-hda ../../../vm-20.04/focal-server-cloudimg-arm64.img \
+		-hda ../../../vm-20.04-2/focal-server-cloudimg-arm64.img \
 		-kernel Image -no-acpi \
 		-append 'console=ttyAMA0,38400 keep_bootcon root=/dev/vda1' \
 		-device vfio-pci,host=3b:00.0,bus=pcie.0 \

@@ -16,6 +16,33 @@ define OPTEE_EXAMPLES_EXT_BUILD_TAS
 			$(TARGET_CONFIGURE_OPTS) -C $(dir $f) all &&) true
 endef
 
+define OPTEE_EXAMPLES_EXT_BUILD_CPU_TAS
+	@$(foreach f,$(wildcard $(@D)/*/cpumenclave/Makefile), \
+		echo Building $f && \
+			$(MAKE) CROSS_COMPILE="$(shell echo $(BR2_PACKAGE_OPTEE_EXAMPLES_EXT_CROSS_COMPILE))" \
+			O=out TA_DEV_KIT_DIR=$(OPTEE_EXAMPLES_EXT_SDK) \
+			PYTHON3=$(HOST_DIR)/bin/python3 \
+			$(TARGET_CONFIGURE_OPTS) -C $(dir $f) all &&) true
+endef
+
+define OPTEE_EXAMPLES_EXT_BUILD_CUDA_TAS
+	@$(foreach f,$(wildcard $(@D)/*/cudamenclave/Makefile), \
+		echo Building $f && \
+			$(MAKE) CROSS_COMPILE="$(shell echo $(BR2_PACKAGE_OPTEE_EXAMPLES_EXT_CROSS_COMPILE))" \
+			O=out TA_DEV_KIT_DIR=$(OPTEE_EXAMPLES_EXT_SDK) \
+			PYTHON3=$(HOST_DIR)/bin/python3 \
+			$(TARGET_CONFIGURE_OPTS) -C $(dir $f) all &&) true
+endef
+
+define OPTEE_EXAMPLES_EXT_BUILD_VTA_TAS
+	@$(foreach f,$(wildcard $(@D)/*/vtamenclave/Makefile), \
+		echo Building $f && \
+			$(MAKE) CROSS_COMPILE="$(shell echo $(BR2_PACKAGE_OPTEE_EXAMPLES_EXT_CROSS_COMPILE))" \
+			O=out TA_DEV_KIT_DIR=$(OPTEE_EXAMPLES_EXT_SDK) \
+			PYTHON3=$(HOST_DIR)/bin/python3 \
+			$(TARGET_CONFIGURE_OPTS) -C $(dir $f) all &&) true
+endef
+
 define OPTEE_EXAMPLES_EXT_INSTALL_TAS
 	@$(foreach f,$(wildcard $(@D)/*/ta/out/*.ta), \
 		mkdir -p $(TARGET_DIR)/lib/optee_armtz && \
@@ -24,7 +51,38 @@ define OPTEE_EXAMPLES_EXT_INSTALL_TAS
 			&&) true
 endef
 
-OPTEE_EXAMPLES_EXT_POST_BUILD_HOOKS += OPTEE_EXAMPLES_EXT_BUILD_TAS
+define OPTEE_EXAMPLES_EXT_INSTALL_CPU_TAS
+	@$(foreach f,$(wildcard $(@D)/*/cpumenclave/out/*.ta), \
+		mkdir -p $(TARGET_DIR)/lib/optee_armtz && \
+		$(INSTALL) -v -p  --mode=444 \
+			--target-directory=$(TARGET_DIR)/lib/optee_armtz $f \
+			&&) true
+endef
+
+define OPTEE_EXAMPLES_EXT_INSTALL_CUDA_TAS
+	@$(foreach f,$(wildcard $(@D)/*/cudamenclave/out/*.ta), \
+		mkdir -p $(TARGET_DIR)/lib/optee_armtz && \
+		$(INSTALL) -v -p  --mode=444 \
+			--target-directory=$(TARGET_DIR)/lib/optee_armtz $f \
+			&&) true
+endef
+
+define OPTEE_EXAMPLES_EXT_INSTALL_VTA_TAS
+	@$(foreach f,$(wildcard $(@D)/*/vtamenclave/out/*.ta), \
+		mkdir -p $(TARGET_DIR)/lib/optee_armtz && \
+		$(INSTALL) -v -p  --mode=444 \
+			--target-directory=$(TARGET_DIR)/lib/optee_armtz $f \
+			&&) true
+endef
+
+OPTEE_EXAMPLES_EXT_POST_BUILD_HOOKS += OPTEE_EXAMPLES_EXT_BUILD_TAS 
+OPTEE_EXAMPLES_EXT_POST_BUILD_HOOKS += OPTEE_EXAMPLES_EXT_BUILD_CPU_TAS
+OPTEE_EXAMPLES_EXT_POST_BUILD_HOOKS += OPTEE_EXAMPLES_EXT_BUILD_CUDA_TAS
+OPTEE_EXAMPLES_EXT_POST_BUILD_HOOKS += OPTEE_EXAMPLES_EXT_BUILD_VTA_TAS
+
 OPTEE_EXAMPLES_EXT_POST_INSTALL_TARGET_HOOKS += OPTEE_EXAMPLES_EXT_INSTALL_TAS
+OPTEE_EXAMPLES_EXT_POST_INSTALL_TARGET_HOOKS += OPTEE_EXAMPLES_EXT_INSTALL_CPU_TAS
+OPTEE_EXAMPLES_EXT_POST_INSTALL_TARGET_HOOKS += OPTEE_EXAMPLES_EXT_INSTALL_CUDA_TAS
+OPTEE_EXAMPLES_EXT_POST_INSTALL_TARGET_HOOKS += OPTEE_EXAMPLES_EXT_INSTALL_VTA_TAS
 
 $(eval $(cmake-package))

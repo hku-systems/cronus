@@ -21,11 +21,20 @@ define OPTEE_EXAMPLES_BUILD_TAS
 			O=out -C $(dir $f) all
 	)
 endef
+define OPTEE_EXAMPLES_BUILD_TASS
+	$(foreach f,$(wildcard $(@D)/*/ta2/Makefile), \
+		$(TARGET_CONFIGURE_OPTS) \
+		$(MAKE) CROSS_COMPILE=$(TARGET_CROSS) \
+			TA_DEV_KIT_DIR=$(OPTEE_OS_SDK) \
+			O=out -C $(dir $f) all
+	)
+endef
 define OPTEE_EXAMPLES_INSTALL_TAS
 	@mkdir -p $(TARGET_DIR)/lib/optee_armtz
 	@$(INSTALL) -D -m 444 -t $(TARGET_DIR)/lib/optee_armtz $(@D)/*/ta/out/*.ta
 endef
-OPTEE_EXAMPLES_POST_BUILD_HOOKS += OPTEE_EXAMPLES_BUILD_TAS
+# OPTEE_EXAMPLES_POST_BUILD_HOOKS += OPTEE_EXAMPLES_BUILD_TAS
+OPTEE_EXAMPLES_POST_BUILD_HOOKS += OPTEE_EXAMPLES_BUILD_TASS
 OPTEE_EXAMPLES_POST_INSTALL_TARGET_HOOKS += OPTEE_EXAMPLES_INSTALL_TAS
 
 $(eval $(cmake-package))
