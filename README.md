@@ -11,6 +11,40 @@ Cronus is a fault-isolated, secure, and high-performance heterogeneous computing
 - Metrics: execution time and throughput.
 - Expected runtime: each trial of each data point takes about 2 xxx.
 
+## Structure
+
+The code structure for Cronus, HIX-TrustZone and TrustZone (OPTEE) is as follows. To reduce the code size, we did not include the shared code (the one shared with Cronus) for HIX-TrustZone and TrustZone, and they can be copy from the cronus directory or can be link by a softlink. We create a script (link.sh) for linking the shared code from Cronus to TrustZone or HIX-TrustZone.
+
+    .
+    ├── cronus                  # Code for Cronus
+    │   ├── build               # Makefiles [Modified]
+    │   ├── buildroot           # For untrusted OS
+    │   ├── edk2                # Firmware for ARM
+    │   ├── linux               # For untrusted OS
+    │   ├── mbedtls             # Crypto libs for crypto operations
+    │   ├── optee_benchmark     # Benchmark for optee, not used
+    │   ├── optee_client        # Enclave API for untrusted OS
+    │   ├── optee_examples      # mEnclaves APP implementations [Modified]
+    │   ├── optee_os            # mOS implementations [Modified]
+    │   ├── optee_test          # Benchmark for optee, not used
+    │   ├── qemu                # Modified QEMU [Modified]
+    │   ├── soc_term            # For system console
+    │   ├── symbolize.py        # For debugging mEnclaves [New]
+    │   ├── toolchains          # Cross-compiling toolchains
+    │   └── trusted-firmware-a  # Secure Monitor for ARM TrustZone [Modified]
+    ├── docs                    # Documentations
+    ├── devices                 # Code for simulating accelerators
+    │   └── vta_device          # Implementation for the VTA (NPU) device
+    ├── optee                   # Code for TrustZone (OPTEE)
+    │   ├── build               # Makefiles
+    │   ├── optee_examples      # Enclave APP implementation
+    │   └── optee_os            # Monolithic trust OS implementations
+    ├── optee-hix               # Code for HIX-TrustZone
+    │   ├── build               # Makefiles
+    │   ├── optee_examples      # Enclave APP implementations in HIX-TrustZone
+    │   └── optee_os            # OS implementation for HIX-TrustZone
+    └── README.md
+
 ## Experiments
 
 If otherwise specified, all Cronus's experiments run on one NVIDIA 2080 Ti GPU or a simulated VTA device.
