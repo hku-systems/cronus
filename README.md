@@ -9,7 +9,7 @@ Cronus is a fault-isolated, secure, and high-performance heterogeneous computing
 - Code link: <https://github.com/hku-systems/Cronus>
 - OS Version: Ubuntu 16.04 or 18.04.
 - Metrics: execution time and throughput.
-- Expected runtime: each trial of each data point takes about 2 xxx.
+- Expected runtime: each trial of each data point takes about 1 minute.
 
 ## Structure
 
