@@ -12,6 +12,8 @@
 
 ## Setup steps
 
+### Install CUDA
+
 1. Install CUDA (NVCC) to /usr/local/cuda-11.4
 
 2. Configure the NVIDIA GPU Driver for passthrough
@@ -85,7 +87,7 @@
             Kernel driver in use: vfio-pci
         ```
 3. clone the source code and run the following command to build the software
-    ```
+    ```bash
     cd /path/to/cronus/build
     make -j40
     ```
@@ -95,3 +97,28 @@
    # change the "3b:00.0" in following line in the run-only-bg target, using the information in Step 2
    device vfio-pci,host=3b:00.0,bus=pcie.0
    ```
+
+5. Install the cross-compiling script
+
+```bash
+# at scripts/
+make
+sudo make install
+```
+
+### Install and Configure VTA device
+
+1. Build the VTA device simulator
+    ```shell
+    # at devices/vta_device
+    mkdir build
+    cd build
+    cmake ../
+    make -j
+    sudo make install
+    ```
+
+2. configure the VTA device in the Makefile
+    ```bash
+    # add "-device vta,bus=pcie.0" to the run-only-bg target
+    ```

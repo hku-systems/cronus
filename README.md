@@ -13,7 +13,7 @@ Cronus is a fault-isolated, secure, and high-performance heterogeneous computing
 
 ## Structure
 
-The code structure for Cronus, HIX-TrustZone and TrustZone (OPTEE) is as follows. To reduce the code size, we did not include the shared code (the one shared with Cronus) for HIX-TrustZone and TrustZone, and they can be copy from the cronus directory or can be link by a softlink. We create a script (link.sh) for linking the shared code from Cronus to TrustZone or HIX-TrustZone.
+The code structure for Cronus, HIX-TrustZone and TrustZone (OPTEE) is as follows. To reduce the code size, we did not include the shared code (the one shared with Cronus) for HIX-TrustZone and TrustZone, and they can be copy from the cronus directory or can be link by a softlink. We create a Makefile (optee/Makefile and optee-hix/Makefile) for linking the shared code from Cronus to TrustZone or HIX-TrustZone.
 
     .
     ├── cronus                  # Code for Cronus
@@ -33,6 +33,7 @@ The code structure for Cronus, HIX-TrustZone and TrustZone (OPTEE) is as follows
     │   ├── toolchains          # Cross-compiling toolchains
     │   └── trusted-firmware-a  # Secure Monitor for ARM TrustZone [Modified]
     ├── docs                    # Documentations
+    ├── scripts                 # Scripts
     ├── devices                 # Code for simulating accelerators
     │   └── vta_device          # Implementation for the VTA (NPU) device
     ├── optee                   # Code for TrustZone (OPTEE)

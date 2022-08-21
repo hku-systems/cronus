@@ -1,0 +1,19 @@
+#/bin/bash
+
+/usr/local/cuda-11.4/bin/nvcc -ccbin GCC_DIR/optee/toolchains/aarch64/bin/ "$@"
+
+for op in "$@"
+do
+	# echo "$op"
+	if [ "$last" = "-o" ]; then
+		OUTFILE=$op
+	fi
+	last=$op
+done
+
+
+echo "NVCC $@ > $OUTFILE"
+
+GCC_DIR/optee/toolchains/aarch64/aarch64-none-linux-gnu/bin/objcopy --set-section-flags .nvFatBinSegment=contents,alloc,load,data "$OUTFILE" "$OUTFILE".bk.o
+
+cp "$OUTFILE".bk.o "$OUTFILE"
