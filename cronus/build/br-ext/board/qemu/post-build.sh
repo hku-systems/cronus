@@ -28,6 +28,10 @@ if [[ -z $PSS_AUTOMOUNT ]]; then
     exit 1
 fi
 
+mkdir -p "$TARGETDIR"/mnt/data
+echo "data /mnt/data 9p trans=virtio,version=9p2000.L,rw 0 0" >> "$TARGETDIR"/etc/fstab
+echo "[+] shared directory mount added to fstab"
+
 
 if [[ $VIRTFS_AUTOMOUNT == "y" ]]; then
     grep host "$TARGETDIR"/etc/fstab > /dev/null || \
