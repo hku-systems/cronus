@@ -11,4 +11,6 @@ target_include_directories(${PROJECT_NAME}
 target_link_libraries (${PROJECT_NAME} PRIVATE teec)
 
 install (TARGETS ${PROJECT_NAME} DESTINATION ${CMAKE_INSTALL_BINDIR})
+install (PROGRAMS rodinia_bench DESTINATION ${CMAKE_INSTALL_BINDIR})
+install (PROGRAMS rodinia_bench_avg DESTINATION ${CMAKE_INSTALL_BINDIR})
 install (DIRECTORY data/ DESTINATION ${CMAKE_INSTALL_BINDIR}/../../data/tee/rodinia)

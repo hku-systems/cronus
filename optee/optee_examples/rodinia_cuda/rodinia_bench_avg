@@ -1,0 +1,18 @@
+#!/bin/sh
+
+prefix=/mnt/data
+
+for i in $(seq 5)
+do
+    if [ ! -f $prefix/$1.$i.txt ]
+    then
+        echo "run $1-$i"
+        $1 > $prefix/$1.$i.log.txt
+        mv $prefix/$1.$i.log.txt $prefix/$1.$i.txt
+    else
+        echo "run $1-$i using cache"
+    fi
+done
+
+echo "$1 average:"
+cat $prefix/$1*.txt | awk '{ total += $3; count++ } END { print total/count }'

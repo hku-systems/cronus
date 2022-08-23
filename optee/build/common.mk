@@ -372,6 +372,10 @@ QEMU_EXTRA_ARGS +=\
 	-object rng-random,filename=/dev/urandom,id=rng0 \
 	-device virtio-rng-pci,rng=rng0,max-bytes=1024,period=1000
 
+QEMU_EXTRA_ARGS +=\
+	-fsdev local,id=fsdev0,path=$(ROOT)/data,security_model=none \
+	-device virtio-9p-device,fsdev=fsdev0,mount_tag=data
+
 ifeq ($(QEMU_VIRTFS_ENABLE),y)
 QEMU_CONFIGURE_PARAMS_COMMON +=  --enable-virtfs
 QEMU_EXTRA_ARGS +=\
