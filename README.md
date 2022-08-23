@@ -48,7 +48,7 @@ The code structure for Cronus, HIX-TrustZone and TrustZone (OPTEE) is as follows
 
 ## Experiments
 
-If otherwise specified, all Cronus's experiments run on one NVIDIA 2080 Ti GPU or a simulated VTA device.
+If otherwise specified, all Cronus's experiments run on one NVIDIA 2080 Ti GPU or a simulated VTA device. For developing new applications, please see [this page](https://github.com/hku-systems/cronus/blob/main/docs/app.md).
 
 ### Prepare
 
