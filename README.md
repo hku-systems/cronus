@@ -153,15 +153,9 @@ check_cpu
 6. start the rodinia benchmark (9 programs)
 ```shell
 # these program will usually runs less than 60s, so a long execution time suggests possible bugs in the system, please reboot the machine for solving the problem (see troubleshooting).
-rodinia_bp
-rodinia_bfs
-rodinia_gs
-rodinia_hs
-rodinia_lud
-rodinia_nn
-rodinia_nw
-rodinia_pf
-rodinia_srad
+# new: we create a rodinia_bench script for running each program 5 times and calculate the average execution time
+rodinia_bebch clean
+# new2: if the program crashes, please reboot the machine and run rodinia_bench (i.e., without clean), the program will continue from the last program)
 ```
 
 **Output:**
@@ -198,15 +192,9 @@ sudo make run-only-bg
 
 ```shell
 # these programs will usually runs less than 60s, so a long execution time suggests possible bugs in the system, please reboot the machine for solving the problem (see troubleshooting).
-rodinia_bp
-rodinia_bfs
-rodinia_gs
-rodinia_hs
-rodinia_lud
-rodinia_nn
-rodinia_nw
-rodinia_pf
-rodinia_srad
+# new: we create a rodinia_bench script for running each program 5 times and calculate the average execution time
+rodinia_bebch clean
+# new2: if the program crashes, please reboot the machine and run rodinia_bench (i.e., without clean), the program will continue from the last program)
 ```
 
 **Output:**
