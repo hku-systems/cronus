@@ -1,0 +1,17 @@
+#!/bin/sh
+
+if [ "$1" == "clean" ]
+then
+    rm /mnt/data/rodinia*.txt
+    echo "cleaning log files"
+fi
+
+rodinia_bench_avg rodinia_bp
+rodinia_bench_avg rodinia_bfs
+rodinia_bench_avg rodinia_gs
+rodinia_bench_avg rodinia_hs
+rodinia_bench_avg rodinia_lud
+rodinia_bench_avg rodinia_nn
+rodinia_bench_avg rodinia_nw
+rodinia_bench_avg rodinia_pf
+rodinia_bench_avg rodinia_srad
